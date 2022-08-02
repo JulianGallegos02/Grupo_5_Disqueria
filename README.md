@@ -2,10 +2,11 @@
 
 Nuestro sitio ofrece la compra de vinilos y cds. Este apunta a un publico de 20 años en adelante, coleccionistas y consumidores que prefieran el formato fisico.
 
-Itegrantes: Julian Gallegos: 
-Florencia Petronacci: 32 años, Montserrat (CABA).  
-Gonzalo Chamorro:
-Agustin Costa Ditarcio:
+Itegrantes: 
+-Julian Gallegos: 
+-Florencia Petronacci: 32 años, Montserrat (CABA).  
+-Gonzalo Chamorro:
+-Agustin Costa Ditarcio:
 
 
 Paginas de referencia:
