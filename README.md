@@ -6,7 +6,7 @@ Itegrantes:
 -Julian Gallegos: 
 -Florencia Petronacci: 32 años, Montserrat (CABA).  
 -Gonzalo Chamorro:
--Agustin Costa Ditarcio:
+-Agustin Costa Ditarcio: 27 años, Banfield (Buenos Aires)
 
 
 Paginas de referencia:
