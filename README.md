@@ -2,11 +2,11 @@
 
 Nuestro sitio ofrece la compra de vinilos y cds. Este apunta a un publico de 20 años en adelante, coleccionistas y consumidores que prefieran el formato fisico.
 
-Itegrantes: 
--Julian Gallegos: 
+Integrantes: 
+-Julian Gallegos: 27 años, Banfield (Buenos Aires).
 -Florencia Petronacci: 32 años, Montserrat (CABA).  
--Gonzalo Chamorro:
--Agustin Costa Ditarcio: 27 años, Banfield (Buenos Aires)
+-Gonzalo Chamorro: 30 años, Lago Puelo (Chubut).
+-Agustin Costa Ditarcio: 27 años, Banfield (Buenos Aires).
 
 
 Paginas de referencia:
