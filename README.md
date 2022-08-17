@@ -19,3 +19,10 @@ Paginas de referencia:
 -https://www.exilesrecords.com/ Estetica,encabezado dinamico e interaccion con productos. 
 
 -https://www.makearchitects.com/ Fondos que se mueven mientras uno scrollea, animaciones.
+
+-https://www.phonicarecords.com/ Reproduccion de clips de los albums 
+
+Plataforma que utilizamos para organizar el trabajo:
+https://trello.com/b/3G5NSJfJ/tablero-de-trabajo-grupo-5/
+
+
