@@ -34,7 +34,7 @@ Nuestro sitio ofrece la compra de vinilos y cds. Este apunta a un público de 20
 
 ## Tablero de Trabajo
 
-La plataforma que utilizamos para organizar nuestro trabajo es **Trello**:
+Utilizamos la plataforma **Trello** para organizar nuestro trabajo. Pueden acceder a la misma en el siguiente link:
 https://trello.com/b/3G5NSJfJ/tablero-de-trabajo-grupo-5/
 
 
