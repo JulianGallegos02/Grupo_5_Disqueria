@@ -1,6 +1,4 @@
 # Grupo_5_Disqueria
-![logo-banner1](https://user-images.githubusercontent.com/108841314/185523498-bccd72c6-b408-4edc-8378-a566981268d2.jpg)
-
 
 Nuestro sitio ofrece la compra de vinilos y cds. Este apunta a un público de 20 años en adelante, coleccionistas y consumidores que prefieran el formato físico.
 
