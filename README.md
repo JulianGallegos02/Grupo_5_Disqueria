@@ -21,13 +21,13 @@ Nuestro sitio ofrece la compra de vinilos y cds. Este apunta a un público de 20
 
 2. **Maniac Records**. https://maniacrecords.mercadoshops.com.ar/ Venta de discos/Mercadoshop.
 
-3. **Rough Trade**. https://www.roughtrade.com/ Diseño,interfaz,descripcion de producto y Home.
+3. **Rough Trade**. https://www.roughtrade.com/ Diseño,interfaz,descripción de producto y Home.
 
-4. **Exiles Records**. https://www.exilesrecords.com/ Estetica,encabezado dinamico e interaccion con productos. 
+4. **Exiles Records**. https://www.exilesrecords.com/ Estética,encabezado dinámico e interacción con productos. 
 
 5. **Make Architects**. https://www.makearchitects.com/ Fondos que se mueven mientras uno scrollea, animaciones.
 
-6. **Phonica Records**. https://www.phonicarecords.com/ Reproduccion de clips de los albums. 
+6. **Phonica Records**. https://www.phonicarecords.com/ Reproducción de clips de los discos.
 
 
 
