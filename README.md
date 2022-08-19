@@ -3,6 +3,7 @@
 Nuestro sitio ofrece la compra de vinilos y cds. Este apunta a un público de 20 años en adelante, coleccionistas y consumidores que prefieran el formato físico.
 
 
+
 ## Integrantes
 
 ***Julian Gallegos**: 27 años, Banfield (Buenos Aires).
@@ -12,6 +13,7 @@ Nuestro sitio ofrece la compra de vinilos y cds. Este apunta a un público de 20
 ***Gonzalo Chamorro**: 30 años, Lago Puelo (Chubut).
 
 ***Agustin Costa Ditarcio**: 27 años, Banfield (Buenos Aires).
+
 
 
 ## Páginas de referencia
@@ -27,6 +29,8 @@ Nuestro sitio ofrece la compra de vinilos y cds. Este apunta a un público de 20
 5. **Make Architects**. https://www.makearchitects.com/ Fondos que se mueven mientras uno scrollea, animaciones.
 
 6. **Phonica Records**. https://www.phonicarecords.com/ Reproduccion de clips de los albums. 
+
+
 
 ## Tablero de Trabajo
 
