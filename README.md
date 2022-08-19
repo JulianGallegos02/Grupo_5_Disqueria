@@ -4,7 +4,7 @@ Nuestro sitio ofrece la compra de vinilos y cds. Este apunta a un publico de 20 
 
 
 ## Integrantes
-----
+
 *Julian Gallegos: 27 años, Banfield (Buenos Aires).
 
 *Florencia Petronacci: 32 años, Montserrat (CABA).  
@@ -15,7 +15,7 @@ Nuestro sitio ofrece la compra de vinilos y cds. Este apunta a un publico de 20 
 
 
 ## Páginas de referencia
----
+
 1. https://www.zivals.com.ar/ Nos gusta el diseño del Home.
 
 2. https://maniacrecords.mercadoshops.com.ar/ Venta de discos/Mercadoshop.
@@ -29,7 +29,7 @@ Nuestro sitio ofrece la compra de vinilos y cds. Este apunta a un publico de 20 
 6. https://www.phonicarecords.com/ Reproduccion de clips de los albums. 
 
 ## Tablero de Trabajo
----
+
 Plataforma que utilizamos para organizar el trabajo:
 https://trello.com/b/3G5NSJfJ/tablero-de-trabajo-grupo-5/
 
