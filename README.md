@@ -1,9 +1,9 @@
 # Grupo_5_Disqueria
----
+
 Nuestro sitio ofrece la compra de vinilos y cds. Este apunta a un publico de 20 años en adelante, coleccionistas y consumidores que prefieran el formato fisico.
 
 
-##Integrantes
+## Integrantes
 ----
 *Julian Gallegos: 27 años, Banfield (Buenos Aires).
 
@@ -14,7 +14,7 @@ Nuestro sitio ofrece la compra de vinilos y cds. Este apunta a un publico de 20 
 *Agustin Costa Ditarcio: 27 años, Banfield (Buenos Aires).
 
 
-##Páginas de referencia
+## Páginas de referencia
 ---
 1. https://www.zivals.com.ar/ Nos gusta el diseño del Home.
 
@@ -28,7 +28,7 @@ Nuestro sitio ofrece la compra de vinilos y cds. Este apunta a un publico de 20 
 
 6. https://www.phonicarecords.com/ Reproduccion de clips de los albums. 
 
-##Tablero de Trabajo
+## Tablero de Trabajo
 ---
 Plataforma que utilizamos para organizar el trabajo:
 https://trello.com/b/3G5NSJfJ/tablero-de-trabajo-grupo-5/
