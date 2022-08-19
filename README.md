@@ -4,7 +4,7 @@ Nuestro sitio ofrece la compra de vinilos y cds. Este apunta a un público de 20
 
 
 
-## Integrantes
+### Integrantes
 
 ***Julian Gallegos**: 27 años, Banfield (Buenos Aires).
 
@@ -16,7 +16,7 @@ Nuestro sitio ofrece la compra de vinilos y cds. Este apunta a un público de 20
 
 
 
-## Páginas de referencia
+### Páginas de referencia
 
 1. **Zivals**. https://www.zivals.com.ar/ Nos gusta el diseño del Home.
 
@@ -32,7 +32,7 @@ Nuestro sitio ofrece la compra de vinilos y cds. Este apunta a un público de 20
 
 
 
-## Tablero de Trabajo
+### Tablero de Trabajo
 
 Utilizamos la plataforma **Trello** para organizar nuestro trabajo. Pueden acceder a la misma en el siguiente link:
 https://trello.com/b/3G5NSJfJ/tablero-de-trabajo-grupo-5/
