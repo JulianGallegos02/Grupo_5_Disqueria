@@ -1,6 +1,6 @@
 # Grupo_5_Disqueria
 
-Nuestro sitio ofrece la compra de vinilos y cds. Este apunta a un oúblico de 20 años en adelante, coleccionistas y consumidores que prefieran el formato físico.
+Nuestro sitio ofrece la compra de vinilos y cds. Este apunta a un público de 20 años en adelante, coleccionistas y consumidores que prefieran el formato físico.
 
 
 ## Integrantes
