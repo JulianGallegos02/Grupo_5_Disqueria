@@ -1,6 +1,7 @@
 # Grupo_5_Disqueria
 
-![Logo Banner](https://user-images.githubusercontent.com/108841314/185527467-e632f288-725c-4b82-8762-79ac4d25d4cc.png)
+![SoudBitesRecords-Logo](https://user-images.githubusercontent.com/108841314/185528151-f94a0ef7-04f0-4dfc-b4c6-14f74a8d57c4.jpg)
+
 
 Nuestro sitio ofrece la compra de vinilos y cds. Este apunta a un público de 20 años en adelante, coleccionistas y consumidores que prefieran el formato físico.
 
