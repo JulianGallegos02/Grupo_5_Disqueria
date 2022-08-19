@@ -5,7 +5,7 @@ Nuestro sitio ofrece la compra de vinilos y cds. Este apunta a un público de 20
 
 ## Integrantes
 
-***Julian Gallegos**: 27 años, Banfield (Buenos Aires).
+item **Julian Gallegos**: 27 años, Banfield (Buenos Aires).
 
 ***Florencia Petronacci**: 32 años, Montserrat (CABA).  
 
