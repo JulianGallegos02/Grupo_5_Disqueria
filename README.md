@@ -2,7 +2,7 @@
 
 ![SoudBitesRecords-Logo](https://user-images.githubusercontent.com/108841314/185528151-f94a0ef7-04f0-4dfc-b4c6-14f74a8d57c4.jpg)
 
-## Introduction
+## Sound Bites Records
 Nuestro sitio ofrece la compra de vinilos y cds. Este apunta a un público de 20 años en adelante, coleccionistas y consumidores que prefieran el formato físico.
 
 
