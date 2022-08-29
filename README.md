@@ -41,7 +41,7 @@ https://trello.com/b/3G5NSJfJ/sound-bites-records
 
 ## Paleta de Colores
 
-* **Colores en Hex**
+* **Colores en Hex
 Verde { color: #73BFA3; } 
 
 Beige { color: #F2DBAE; }
@@ -50,9 +50,9 @@ Naranja claro { color: #F29829; }
 
 Naranja oscuro { color: #D9631E; }
 
-Marron { color: #593C2C; }
+Marron { color: #593C2C; } **
 
-* **Colores en RGBA**
+* **Colores en RGBA
 Verde { color: rgba(115, 191, 163, 1); }
 
 Beige { color: rgba(242, 219, 174, 1); }
@@ -61,6 +61,6 @@ Naranja claro { color: rgba(242, 152, 41, 1); }
 
 Naranja oscuro { color: rgba(217, 99, 30, 1); }
 
-Marron { color: rgba(89, 60, 44, 1); }
+Marron { color: rgba(89, 60, 44, 1); } **
 
 **Fuente:** https://color.adobe.com/Paleta-de-Colores-color-theme-20477352/
