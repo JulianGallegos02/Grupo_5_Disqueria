@@ -16,7 +16,7 @@ header{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 15px;
+    padding: 4px;
 }
 
 .logo {
@@ -43,21 +43,27 @@ header{
     align-self: center;
     display: flex;
     justify-content: space-between;
-    width: 16%
 }
 
-.sign-up, .login, .cart {
-    background-color: #73BFA3;
+.login-bar div {
     padding: 5px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 4px;
+    color: white;
+}
+
+.login-bar div i{
+    font-size: 30px;
 }
 
 .registrate, .ingresa, .carrito {
     text-decoration: none;
-    color: black;
+    color: white;
+    margin-top: 8px;
+    margin-bottom: -5px;
 }
 
 main{
@@ -70,7 +76,7 @@ main{
 
 .categorias{
     display:flex;
-    width: 80%;
+    width: 90%;
     justify-content: space-around;
     margin: 0 auto;
 }
@@ -81,8 +87,71 @@ main{
     padding: 8px;
     margin: 10px;
     border-radius: 10px;
+    border: 3px solid #D9631E;
+    transition: 500ms;
+}
+
+.vinilos:hover{
+    background-image: url(../images/gifprueba.gif);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 2px 15px 23px 2px rgba(0,0,0,0.75);
+    border-color: white;
+}
+
+.vinilos:hover img{
+    visibility: hidden;
+}
+
+.cassettes:hover{
+    background-image: url(../images/rolling-cassette.gif);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 2px 15px 23px 2px rgba(0,0,0,0.75);
+    border-color: white;
+}
+
+.cassettes:hover img{
+    visibility: hidden;
+}
+
+.discos:hover{
+    background-image: url(../images/cd2.gif);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 2px 15px 23px 2px rgba(0,0,0,0.75);
+    border-color: white;
+}
+
+.discos:hover img{
+    visibility: hidden;
+}
+
+.digital:hover{
+    background-image: url(../images/sound.gif);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 2px 15px 23px 2px rgba(0,0,0,0.75);
+    border-color: white;
+}
+
+.digital:hover img{
+    visibility: hidden;
+}
+
+.icono-categoria{
+    width: 60%;
 }
 
 h2 {
     font-family: 'cooper-black-std', serif;
+}
+
+.nuevos-lanzamientos{
+    display: flex;
+
+}
+
+.album{
+    
 }
