@@ -76,7 +76,8 @@ header{
 }
 
 main{
-    background-color: #F2DBAE;
+    background-color: #F2DBAEff;
+
 }
 
 .banner {
@@ -203,6 +204,10 @@ footer{
 .info-footer{
     display: flex;
     justify-content: space-between;
+}
+
+.texto-footer{
+    margin-right: 18px;
 }
 
 .legal{
