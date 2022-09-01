@@ -1,6 +1,6 @@
 # Starfish Retrospective (Retrospectiva de estrella de mar)
 
-* La retrospectiva de la estrella de mar nos ayuda a entender mejor qué salió mal en el equipo y cómo podemos mejorar para el futuro. En este aspecto, tuvimos en cuenta nuestros errores y aciertos, y llegamos a un acuerdo para solventar lo que no pudimos implementar en el sprint I.
+La retrospectiva de la estrella de mar nos ayuda a entender mejor qué salió mal en el equipo y cómo podemos mejorar para el futuro. En este aspecto, tuvimos en cuenta nuestros errores y aciertos, y llegamos a un acuerdo para solventar lo que no pudimos implementar en el sprint I.
 
 ## 1. Comenzar a hacer (Start doing)
 
@@ -20,13 +20,13 @@
 
 * Terminar de definir las fuentes, la paleta de colores y el logo.
 
-## 3. Continuar haciendo (keep doing)
+## 3. Continuar haciendo (Keep doing)
 
 * El lindo ambiente del grupo. Nos escuchamos, nos motivamos, nos ayudamos mutuamente.
 
 * Seguir organizando las cosas para luego trabajar de manera mas óptima. Ej: Listados, imagenes de productos.
 
-## 4. Hacer menos (less of)
+## 4. Hacer menos (Less of)
 
 * Requires solo con los datos estrictamente necesarios.
 
