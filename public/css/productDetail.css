@@ -1,0 +1,188 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    background-color: #593C2C;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.logo {
+    height: 60px;
+}
+
+.logo-svg {
+    height: 100%;
+
+}
+
+.barra-busqueda {
+    align-self: center;
+    width: 45%;
+}
+
+.barra {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.burger-menu {
+    align-self: center;
+    margin: 10px;
+    color: white;
+    font-size: 35px;
+}
+
+.login-bar {
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+.login-bar div {
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 4px;
+    color: white;
+}
+
+.login-bar div i {
+    font-size: 30px;
+}
+
+.registrate,
+.ingresa,
+.carrito {
+    text-decoration: none;
+    color: white;
+    margin-top: 8px;
+    margin-bottom: -5px;
+}
+
+main {
+    background-color: #F2DBAE;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.productDetail-container {}
+
+.info-producto {
+    background-color: aqua;
+    width: 50%;
+    padding: 30px;
+    margin: 10px;
+
+}
+
+
+
+.titular {
+    font-family: 'cooper-black-std', serif;
+    margin: 10px;
+}
+
+.cover-art {
+    width: 100%;
+}
+
+.album {
+    width: 80%;
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+    transition: 500ms;
+}
+
+.album:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 2px 6px 21px 7px rgba(0, 0, 0, 0.56);
+    padding: 12px;
+}
+
+.info-album {
+    margin-top: 10px;
+}
+
+.titulo-album {
+    margin-bottom: 5px;
+}
+
+.banda-album {
+    font-weight: bold;
+}
+
+footer {
+    background-color: sandybrown;
+    padding: 10px;
+}
+
+.info-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.legal {
+    font-size: 11px;
+}
+
+@media (min-width: 361px) {}
+
+@media (min-width: 769px) {
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 4px;
+    }
+
+    .barra-busqueda {
+        align-self: center;
+        width: 30%;
+    }
+
+    .login-bar {
+        align-self: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .album {
+        width: 45%;
+    }
+
+
+
+
+}
+
+@media (min-width:1200px) {
+    .album {
+        width: 23%;
+    }
+
+}

@@ -8,12 +8,13 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-header {
+header{
     background-color: #593C2C;
 }
 
-.header {
-    display: flex;
+
+.header{
+    display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 4px;
@@ -25,7 +26,7 @@ header {
 
 .logo-svg {
     height: 100%;
-
+    
 }
 
 .barra-busqueda {
@@ -40,7 +41,7 @@ header {
     width: 100%;
 }
 
-.burger-menu {
+.burger-menu{
     align-self: center;
     margin: 10px;
     color: white;
@@ -64,42 +65,58 @@ header {
     color: white;
 }
 
-.login-bar div i {
+.login-bar div i{
     font-size: 30px;
 }
 
-.registrate,
-.ingresa,
-.carrito {
+.registrate, .ingresa, .carrito {
     text-decoration: none;
     color: white;
     margin-top: 8px;
     margin-bottom: -5px;
 }
 
+
+/* FORMULARIO */
+
 main{
     background-color: #F2DBAE;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    box-sizing: border-box;
 }
 
+.cover-art{
+    width: 100%;
+}
 
-.login-container {
-    width: 50%;
-    text-align: center;
+.album{
+    width: 80%;
+    margin: 10px;
+    padding: 15px;
     background-color: white;
-    border: 1px solid #666;
-    box-sizing: border-box;
-
-    display: inline-block;
-    margin: auto;
-    padding: 30px 90px;
-    justify-content: center;
-    font-weight: 600;
+    transition: 500ms;
 }
+
+.album:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 2px 6px 21px 7px rgba(0,0,0,0.56);
+    padding: 12px;
+}
+
+.info-album{
+    margin-top: 10px;
+}
+
+.titulo-album{
+    margin-bottom: 5px;
+}
+
+.banda-album{
+    font-weight: bold;
+}
+
+
+
+/* FOOTER */
 
 
 footer{
@@ -116,6 +133,10 @@ footer{
 .legal{
     font-size: 11px;
 }
+
+
+
+/* MEDIA QUERRIES */
 
 @media (min-width: 361px){
 
@@ -148,14 +169,4 @@ footer{
         width: 45%;
     }
     
-
-
-
-}
-
-@media (min-width:1200px){
-    .album{
-        width: 23%;
-    }
-
 }
