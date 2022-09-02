@@ -1,4 +1,150 @@
 * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+form {
+    width: 450px;
+    min-height: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px black (20, 67%, 75%, 0.31);
+    padding: 2%;
+    background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+    opacity: .95;
+}
+
+
+form .login-caja {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+form header {
+    margin: 2% auto 10% auto;
+    text-align: center;
+}
+
+form header h2 {
+    font-size: 250%;
+    color: #3e403f;
+}
+
+
+form header p {
+    letter-spacing: 0.05em;
+}
+
+
+. {
+    background: #fff;
+    color: #333;
+    padding: 14.5px 0px 15px 9px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+
+.form-input {
+    width: 240px;
+    height: 50px;
+
+    margin-top: 2%;
+    padding: 15px;
+
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: #5E6472;
+
+    outline: none;
+    border: none;
+
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s linear;
+}
+
+input[id="usuario"] {
+    width: 250px;
+}
+
+
+input:focus {
+    transform: translateX(-2px);
+    border-radius: 5px;
+}
+
+
+button {
+    width: 280px;
+    height: 50px;
+    background: #fff;
+    display: inline-block;
+    color: #252537;
+    padding: 0 20px;
+    border-radius: 5px
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+}
+
+
+.submits {
+    width: 48%;
+    display: inline-block;
+    float: left;
+    margin-left: 2%;
+}
+
+
+.forgot-password {
+    background: transparent;
+}
+
+.sign-up {
+    background: #F29829;
+}
+
+
+button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+/* Animacion */
+button:hover {
+    animation: animacion 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes animacion {
+    0% {
+        transform: translateY(3px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+
+
+/* MI CODIGO ANTERIOR
+
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -8,13 +154,13 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-header{
+header {
     background-color: #593C2C;
 }
 
 
-.header{
-    display:flex;
+.header {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 4px;
@@ -26,7 +172,7 @@ header{
 
 .logo-svg {
     height: 100%;
-    
+
 }
 
 .barra-busqueda {
@@ -41,7 +187,7 @@ header{
     width: 100%;
 }
 
-.burger-menu{
+.burger-menu {
     align-self: center;
     margin: 10px;
     color: white;
@@ -65,72 +211,106 @@ header{
     color: white;
 }
 
-.login-bar div i{
+.login-bar div i {
     font-size: 30px;
 }
 
-.registrate, .ingresa, .carrito {
+.registrate,
+.ingresa,
+.carrito {
     text-decoration: none;
     color: white;
     margin-top: 8px;
     margin-bottom: -5px;
 }
-
+*/
 
 /* FORMULARIO */
 
-main{
+main {
     background-color: #F2DBAE;
+
+
 }
 
-.cover-art{
-    width: 100%;
+.login-container {
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    padding: 20px;
+
 }
 
-.album{
-    width: 80%;
-    margin: 10px;
-    padding: 15px;
-    background-color: white;
-    transition: 500ms;
+.login-form {
+    width: 45%;
+    min-height: 70%;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 2%;
+    background-image: linear-gradient(to top, #dd8fff 0%, #78ffd6 100%);
+
 }
 
-.album:hover{
-    background-color: black;
-    color: white;
-    box-shadow: 2px 6px 21px 7px rgba(0,0,0,0.56);
-    padding: 12px;
+.login-form div {
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    margin: 0 auto;
 }
 
-.info-album{
-    margin-top: 10px;
-}
+/* chequear 
 
-.titulo-album{
-    margin-bottom: 5px;
-}
+    .login-form {
+        width: 450px;
+        min-height: 500px;
+        height: auto;
+        border-radius: 5px;
+        margin: 2% auto;
+        box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+        padding: 2%;
+        background-image: linear-gradient(to top, #dd8fff 0%, #78ffd6 100%);
+        
+    }
+*/
 
-.banda-album{
-    font-weight: bold;
-}
 
+
+
+/* chequear 
+.login-container {
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    background-image: linear-gradient(to top, #F2DBAE 0%, #fed6e3 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+*/
 
 
 /* FOOTER */
 
 
-footer{
+footer {
     background-color: sandybrown;
     padding: 10px;
 
 }
 
-.info-footer{
+.info-footer {
     display: flex;
     justify-content: space-between;
 }
 
-.legal{
+.legal {
     font-size: 11px;
 }
 
@@ -138,13 +318,11 @@ footer{
 
 /* MEDIA QUERRIES */
 
-@media (min-width: 361px){
+@media (min-width: 361px) {}
 
-}
-
-@media (min-width: 769px){
-    .header{
-        display:flex;
+@media (min-width: 769px) {
+    .header {
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 4px;
@@ -155,18 +333,18 @@ footer{
         width: 30%;
     }
 
-    .login-bar{
+    .login-bar {
         align-self: center;
         display: flex;
-        justify-content: space-between; 
+        justify-content: space-between;
     }
 
-    .burger-menu{
+    .burger-menu {
         display: none;
     }
 
-    .album{
+    .album {
         width: 45%;
     }
-    
+
 }

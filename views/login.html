@@ -2,17 +2,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sound Bites Records</title>
+    <title>Login </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://use.typekit.net/nzu0lpj.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
 </head>
 
 <body>
 
     <body>
+        <!--        MI CODIGO 
         <header>
             <section class="header">
                 <div class="logo">
@@ -40,26 +41,73 @@
                 </div>
             </section>
         </header>
-        <main></main>
-        <section class="login-container">
-            <h2> Login</h2>
-            <form action="login" method="GET" class="login-form">
-                <div class="usuario">
-                    <p><input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" required></p>
-                </div>
-                <div class="password">
-                    <p><input type="password" id="password" name="password" placeholder="Contraseña" required></p>
-                </div>
+   TERMINA MI CODIGO-->
 
-                <div class="ingresar">>
-                    <button type="submit">Ingresar</button>
-                </div>
-            </form>
-            <div class="registrarse">
-                <div>¿No tenés cuenta?</div>
-                <a href="http://localhost:3030/register">Registrate</a>
+        <main>
+            <div class="login-container">
+                <form action="login" method="GET" class="login-form">
+                    <div class="caja-login">
+                        <header class="head-form">
+                            <h2>Login</h2>
+                            <p>Ingresá usando tu usario y contraseña</p>
+                        </header>
+
+                        <div class="usuario">
+                            <br>
+                            <input type="text" name="usuario" class="form-imput" id="usuario"
+                                placeholder="Nombre de usuario" required>
+                            </br>
+                        </div>
+
+                        <div class="password">
+                            <br><input type="password" class="form-input" placeholder="Contraseña" id="password"
+                                name="password" required>
+                            </br>
+                        </div>
+
+                        <div class="ingresar">
+                            <button type="submit" class="log-in">Ingresar</button>
+                        </div>
+
+
+                        <div class="button-bottom">
+                            <button class="boton forgot-password">Olvide la contraseña</button>
+                            <button class="boton sign-up">Registrarse
+                                <i class="fa fa-user-plus" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                </form>
             </div>
-        </section>
+        </main>
+
+
+
+
+
+        <!--        EL QUE VA 
+            <section class="login-container">
+                <h2> Login</h2>
+                    <form action="login" method="GET" class="login-form"></form>
+                    <div class = "login-datos"></div>
+                    <div class="usuario">
+                        <p><input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" required></p>
+                    </div>
+                    <div class="password">
+                        <p><input type="password" id="password" name="password" placeholder="Contraseña" required></p>
+                    </div>
+
+                    <div class="ingresar">>
+                        <button type="submit">Ingresar</button>
+                    </div>
+                    </form>
+                    <div class="registrarse">
+                        <div>¿No tenés cuenta?</div>
+                        <a href="http://localhost:3030/register">Registrate</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+-->
 
         <footer>
             <div class="info-footer">
