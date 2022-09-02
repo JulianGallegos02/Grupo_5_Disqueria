@@ -77,10 +77,45 @@ header {
     margin-bottom: -5px;
 }
 
-main {
+main{
     background-color: #F2DBAE;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
 }
 
+
+.login-container {
+    width: 50%;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #666;
+    box-sizing: border-box;
+
+    display: inline-block;
+    margin: auto;
+    padding: 30px 90px;
+    justify-content: center;
+    font-weight: 600;
+}
+
+
+footer{
+    background-color: sandybrown;
+    padding: 10px;
+
+}
+
+.info-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.legal{
+    font-size: 11px;
+}
 
 @media (min-width: 361px){
 
@@ -108,4 +143,19 @@ main {
     .burger-menu{
         display: none;
     }
+
+    .album{
+        width: 45%;
+    }
+    
+
+
+
+}
+
+@media (min-width:1200px){
+    .album{
+        width: 23%;
+    }
+
 }

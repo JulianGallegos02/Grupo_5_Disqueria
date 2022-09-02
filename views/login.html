@@ -1,6 +1,6 @@
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Login de usuario </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://use.typekit.net/nzu0lpj.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
@@ -39,17 +39,22 @@
     <main>
         <section class="login-container">
             <h2> Login</h2>
-            <form action="login" method="POST" class="login-form">
+            <form action="login" method="GET" class="login-form">
                 <div class="usuario">
                     <p><input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" required></p>
                 </div>
                 <div class="password">
                     <p><input type="password" id="password" name="password" placeholder="Contraseña" required></p>
                 </div>
-                <div class="enviar">
-                    <button type="submit">Enviar</button>
+
+                <div class="ingresar">>
+                    <button type="submit">Ingresar</button>
                 </div>
             </form>
+                <div class="registrarse">
+                <div>¿No tenés cuenta?</div>
+                <a href="http://localhost:3030/register">Registrate</a>
+                </div> 
         </section>
     </main>
 
