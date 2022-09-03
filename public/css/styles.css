@@ -9,7 +9,7 @@ body {
 }
 
 header{
-    background-color: #593C2C;
+    background-color: salmon;
 }
 
 .header{
@@ -76,7 +76,8 @@ header{
 }
 
 main{
-    background-color: #F2DBAE;
+    background-image: url(../images/fondos/fondoaqua.png);
+    background-size: cover;
 }
 
 .carrusel{
@@ -101,12 +102,12 @@ main{
 }
 
 .categorias article{
-    background-color: #F29829;
+    background-color: salmon;
     text-align: center;
     padding: 8px;
     margin: 10px;
     border-radius: 10px;
-    border: 3px solid #D9631E;
+    border: salmon;
     transition: 500ms;
 }
 
@@ -142,6 +143,20 @@ main{
     transition: 500ms;
 }
 
+.info-album{
+    margin-top: 10px;
+}
+
+.titulo-album{
+    margin-bottom: 5px;
+    color: salmon;
+}
+
+.banda-album{
+    font-weight: bold;
+    color: indigo;
+}
+
 .album:hover{
     background-color: black;
     color: white;
@@ -149,19 +164,12 @@ main{
     padding: 12px;
 }
 
-.info-album{
-    margin-top: 10px;
+.album:hover .titulo-album, .album:hover .banda-album {
+    color: white;
 }
 
-.titulo-album{
-    margin-bottom: 5px;
-}
-
-.banda-album{
-    font-weight: bold;
-}
 footer{
-    background-color: sandybrown;
+    background-color: white;
     padding: 10px;
 
 }
@@ -215,12 +223,12 @@ footer{
     }
     
     .categorias article{
-        background-color: #F29829;
+        background-color: salmon;
         text-align: center;
         padding: 8px;
         margin: 10px;
         border-radius: 10px;
-        border: 3px solid #D9631E;
+        border: solid 3px salmon;
         transition: 500ms;
     }
 
