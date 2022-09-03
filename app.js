@@ -5,20 +5,20 @@ let app = express();
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.listen(3000, () => console.log("Servidor corriendo en http://localhost:3000"));
+app.listen(3000, () => console.log("Servidor corriendo en el puerto 3000"));
 
 app.get("/", function(req,res) {
     res.sendFile(path.join(__dirname, "/views/index.html"))
 });
 
+app.get("/productDetail", function(req,res) {
+    res.sendFile(path.join(__dirname, "/views/productDetail.html"))
+})
+
 app.get("/register", function(req,res) {
     res.sendFile(path.join(__dirname, "/views/register.html"))
-});
+})
 
-app.get("/login", function(req,res) {         
-    res.sendFile(path.join(__dirname, "/views/login.html")) 
-});
-
-app.get("/productDetail", function(req,res) {         
-    res.sendFile(path.join(__dirname, "/views/productDetail.html")) 
-});
+app.get("/login", function(req,res) {
+    res.sendFile(path.join(__dirname, "/views/login.html"))
+})

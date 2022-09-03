@@ -1,113 +1,158 @@
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sound Bites Records</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://use.typekit.net/nzu0lpj.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+        <link href="css/productDetail.css" rel="stylesheet">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title> Detalle de Producto </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://use.typekit.net/nzu0lpj.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link href="css/productDetail.css" rel="stylesheet">
-</head>
+    <body>
+        <header>
+            <section class="header">
+                <article class="logo">
+                    <img class="logo-svg" src="images\sinblanco.svg" alt="Logo">
+                </article>
 
-<body>
-    <header>
-        <section class="header">
-            <div class="logo">
-                <img class="logo-svg" src="images\sinblanco.svg" alt="Logo">
-            </div>
-            <div class="barra-busqueda">
-                <input class="barra" type="text" name="barra-de-busqueda" placeholder="Busca...">
-            </div>
+                <article class="info-bar">
+                    <div class="vinilos-nav">
+                        <p>Vinilos</p>
+                    </div>  
+                    <div class="cassetes-nav">
+                        <p>Cassetes</p>  
+                    </div>  
+                    <div class="cd-nav">
+                        <p>CD's</p>  
+                    </div>  
+                    <div class="digital-nav">
+                        <p>Digital</p>  
+                    </div>  
+                </article>
 
-            <div class="burger-menu"><i class="fas fa-bars"></i></div>
+                 <article class="barra-busqueda">
+                    <input class="barra" type="text" name="barra-de-busqueda" placeholder="Busca..."> 
+                 </article>
 
-            <div class="login-bar">
-                <div class="sign-up">
-                    <a class="registrate" href=#><i class="far fa-address-card"></i></a>
-                    <a class="registrate" href=#>Registrate</a>
-                </div>
-                <div class="login">
-                    <a class="ingresa" href=#><i class="fas fa-user-circle"></i></a>
-                    <a class="ingresa" href=#> Ingresá</a>
-                </div>
-                <div class="cart">
-                    <a class="carrito" href=#><i class="fas fa-shopping-cart"></i></a>
-                    <a class="carrito" href=#>Carrito</a>
-                </div>
-            </div>
-        </section>
-    </header>
+                <div class="burger-menu"><i class="fas fa-bars"></i></div>
 
-    <main>
-        <section class="productDetail-container">
-            <div class="album">
-                <img src="images\cover-art\arctic-the-car.jpg" alt="cover" class="cover-art">
-            </div>
-
-            <section class="info-producto">
-                <div class="seleccion-formato">
-                    <p>Formato</p>
-                    <select class="seleccionar">
-                        <option>Seleccionar...</option>
-                        <option value="1">CD</option>
-                        <option value="2">Vinilo</option>
-                        <option value="3">12" - Clasic Format</option>
-                        <option value="4">10" - Intermediate Format</option>
-                        <option value="5">7" - Small</option>
-                        <option value="6">3" - Single</option>
-                        <option value="7">LP - Long Play </option>
-                        <option value="8">EP - Extended Play</option>
-                        <option value="9">Cassette</option>
-                        <option value="10">Digital</option>
-                    </select>
-                    <p class="precio-album">$Precio</p>
-                </div>
-
-                <div class="info-album">
-                    <p class="banda-album">Arctic Monkeys</p>
-                    <p class="titulo-album">The Car</p>
-                    <p class="genero-album">indie Rock</p>
-                    <p class="sello-album"> Domino Records</p>
-                    <p class="descripcion-album"> The Car es el séptimo álbum de estudio de Arctic Monkeys. Con diez
-                        nuevas
-                        canciones escritas por Alex Turner, producidas por James Ford y grabadas en Butley Priory,
-                        Suffolk,
-                        Le Frette, París y RAK Studios, Londres.</p>
-                </div>
-                <div class="codigo">
-                    <p>Incluye código de descarga</p>
-                </div>
-                <form action="" method="GET">
-                    <input type="submit" name="add-to-cart" value="Agregar al carrito">
-                    <i class="fas fa-shopping-cart"></i>
-                </form>
-                </div>
+                <article class="login-bar">
+                        <div class="sign-up">  
+                            <a class="registrate" href= #><i class="far fa-address-card"></i></a>
+                            <a class="registrate" href= #>Registrate</a>
+                        </div>  
+                        <div class="login">
+                            <a class="ingresa" href= #><i class="fas fa-user-circle"></i></a>
+                            <a class="ingresa" href= #> Ingresá</a>
+                        </div>
+                        <div class="cart">
+                            <a class="carrito" href= #><i class="fas fa-shopping-cart"></i></a>
+                            <a class="carrito" href= #>Carrito</a>
+                        </div>
+                </article> 
             </section>
-        </section>
-    </main>
 
-    <footer>
-        <div class="info-footer">
-            <div class="iconos-footer">
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-youtube"></i>
-                <i class="fab fa-soundcloud"></i>
-                <i class="fab fa-spotify"></i>
+        </header>
+        
+        <main>
+            <section class="detalle-compra">
+
+                <article class="imagen-producto">
+                    <img class="imagen-detalle" src="images\Willofthepeopleproducto.png">
+
+                    <div class="titulo-banda">
+                        <p class="titulo">Will of the People</p>
+                        <p class="banda">Muse</p>
+                    </div>
+
+                </article>
+                
+            <article class="boton-opciones">
+                <article class="opcion-agregar-carrito">
+
+                    <div class="agregar-carrito">
+
+                        <div class="opciones-contenedor"><i class="fas fa-record-vinyl"></i> LP </div>
+                        <div class="precio"> $7000</div>
+                    </div>
+                    
+                    <div class="boton-carrito">
+                        <a href=#><p class="botonCarrito"> Agregar al carrito</P></a>
+                    </div>
+
+                </article>
+
+                <article class="descripcion-producto">
+
+                    <div class="opciones">
+                        
+                        <div class="formato-precio">
+                            <div class="opciones-contenedor"><i class="fas fa-record-vinyl"></i> LP </div>
+                            <div class="precio"> $7000</div>
+                        </div>
+
+                        <div class="formato-precio">
+                            <div class="opciones-contenedor"><i class="fas fa-compact-disc"></i> CD</div>
+                            <div class="precio"> $7000</div>
+                        </div>
+
+                        <div class="formato-precio">
+                            <div class="opciones-contenedor"><img src="images\cassete.svg" class="icono-cassette"> Cassette</div>
+                            <div class="precio"> $7000</div>
+                        </div>
+
+                        <div class="formato-precio">
+                            <div class="opciones-contenedor"><i class="fas fa-play"></i> Digital</div>
+                            <div class="precio"> $7000</div>
+                        </div>
+
+                    </div>
+
+                </article>
+            </article>
+
+                <article class="descripcion">
+                        <p class="parrafo">Will of the people es el título del noveno álbum de Muse, y el de la pista de apertura del mismo. Un disco "creado en Los Ángeles y Londres bajo el influjo de una creciente incertidumbre e inestabilidad en el mundo. Una pandemia, nuevas guerras en Europa, protestas y disturbios masivos, un intento de insurrección, la vacilación de la democracia occidental, el aumento del autoritarismo, los incendios forestales y los desastres naturales y la desestabilización del orden global", comentan en nota promocional, sobre unos tiempos de preocupación por las amenazas que planean sobre los seres humanos y el planeta en el que habitan. "Esta obra es una navegación personal a través de esos miedos y la preparación para lo que viene después".
+
+                            <p class="parrafo">Una colección de 10 pistas con Won't stand down como primer avance, una canción sobre defender tu posición contra los acosadores, estrenada junto a un audiovisual dirigido por Jared Hogan. Da continuidad Compliance el 17 de marzo de 2022 con un videoclip de Jeremi Durand, acompañando al anuncio del lanzamiento de 'Will of the people', incluidos nombre, listado de temas y fecha de salida. Como tercer avance la pista titular, y el cuarto Kill or be killed. Con You make me feel like it's Halloween como single de enfoque.</p>
+                            
+                            <p class="parrafo">Sobre el sonido Matt Bellamy comentó a Apple Music 1: "Este álbum va desde el metal hasta el pop hasta mi primera versión de una canción de Adele… mucha electrónica. Es como un completo… Lo producimos nosotros mismos. Estuvimos analizando todo lo que hemos hecho hasta la fecha". Con mucha aportación del baterista Dominic Howard. Bellamy añadió: "Dejé que Dom tomara la iniciativa un poco. Es por eso que este álbum ha tomado dos años. Cada decisión tarda como una semana en volver con nosotros. Normalmente apresuro todo. Con él es muy lento, se toma su tiempo en cada decisión. Le permití tomar muchas decisiones sobre lo que era bueno y lo que no".</p>
+                </article>
+
+                <article class="datos-tecnicos">
+                    <ul class="lista-tecnica">
+                        <li>Label: <a href=# class="link-tecnico"> Warner Bros</a></li>
+                        <li>Genre: <a href=# class="link-tecnico">  Rock-Pop</a></li>
+                        <li>Artist: <a href=# class="link-tecnico"> Muse</a></li>
+                        <li>Released 08/26/22</li>
+                    </ul>
+                </article>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="info-footer">                
+                <div class="iconos-footer">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-soundcloud"></i>
+                    <i class="fab fa-spotify"></i>
+                </div>
+
+                <div class="texto-footer">
+                    <p>Ayuda</p>
+                    <p>Newsletter</p>
+                    <p>Contacto</p>
+                </div>
             </div>
 
-            <div class="texto-footer">
-                <p>Ayuda</p>
-                <p>Newsletter</p>
-                <p>Contacto</p>
-            </div>
-        </div>
+            <p class="legal">© 2022 Sound Bites. All rights reserved.</p>
 
-        <p class="legal">© 2022 Sound Bites. All rights reserved.</p>
-
-    </footer>
-</body>
-
+        </footer>
+    </body>
 </html>
