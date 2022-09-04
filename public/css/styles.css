@@ -31,6 +31,14 @@ header{
 .barra-busqueda {
     align-self: center;
     width: 45%;
+    display: flex;
+}
+
+.barra-busqueda i {
+    align-self: center;
+    color: gray;
+    position: relative;
+    right: 26px;
 }
 
 .barra {
@@ -62,6 +70,14 @@ header{
     align-items: center;
     margin-right: 4px;
     color: white;
+}
+
+.login-bar div:hover a{
+    transition: 500ms;
+}
+
+.login-bar div:hover a{
+    color: #099a84;
 }
 
 .login-bar div i{
@@ -120,8 +136,9 @@ main{
 }
 
 .titular {
-    font-family: 'cooper-black-std', serif;
+    font-family: 'Rubik Mono One', sans-serif;
     margin: 10px;
+    text-align: center;
 }
 
 .nuevos-lanzamientos{
@@ -141,6 +158,10 @@ main{
     padding: 15px;
     background-color: white;
     transition: 500ms;
+}
+
+.nuevos-lanzamientos a{
+    text-decoration: none;
 }
 
 .info-album{
@@ -233,7 +254,7 @@ footer{
     }
 
     .vinilos:hover{
-        background-image: url(../images/gifprueba.gif);
+        background-image: url(../images/gifs/vinilo-texto.gif);
         background-position: center;
         background-size: cover;
         box-shadow: 2px 15px 23px 2px rgba(0,0,0,0.75);
@@ -245,7 +266,7 @@ footer{
     }
     
     .cassettes:hover{
-        background-image: url(../images/rolling-cassette.gif);
+        background-image: url(../images/gifs/cassette-texto.gif);
         background-position: center;
         background-size: cover;
         box-shadow: 2px 15px 23px 2px rgba(0,0,0,0.75);
@@ -257,7 +278,7 @@ footer{
     }
     
     .discos:hover{
-        background-image: url(../images/cd2.gif);
+        background-image: url(../images/gifs/cd-texto.gif);
         background-position: center;
         background-size: cover;
         box-shadow: 2px 15px 23px 2px rgba(0,0,0,0.75);
@@ -269,7 +290,7 @@ footer{
     }
     
     .digital:hover{
-        background-image: url(../images/sound.gif);
+        background-image: url(../images/gifs/digital-texto.gif);
         background-position: center;
         background-size: cover;
         box-shadow: 2px 15px 23px 2px rgba(0,0,0,0.75);

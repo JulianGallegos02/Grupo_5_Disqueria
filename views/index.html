@@ -1,11 +1,12 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Sound Bites</title>
+        <title>Sound Bites Records</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://use.typekit.net/nzu0lpj.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
     </head>
 
@@ -13,26 +14,27 @@
         <header>
             <section class="header">
                 <div class="logo">
-                    <img class="logo-svg" src="images\sinblanco.svg" alt="Logo">
+                    <a href="/"><img class="logo-svg" src="images\iconos-logos\sinblanco.svg" alt="Logo"></a>
                 </div>
                  <div class="barra-busqueda">
-                    <input class="barra" type="text" name="barra-de-busqueda" placeholder="Busca..."> 
+                    <input class="barra" type="text" name="barra-de-busqueda" placeholder="Busca..." >
+                    <i class="fas fa-search"></i>
                 </div>
 
                 <div class="burger-menu"><i class="fas fa-bars"></i></div>
 
                 <div class="login-bar">
                         <div class="sign-up">  
-                            <a class="registrate" href= #><i class="far fa-address-card"></i></a>
-                            <a class="registrate" href= #>Registrate</a>
+                            <a class="registrate" href= "/register"><i class="far fa-address-card"></i></a>
+                            <a class="registrate" href= "/register">Registrate</a>
                         </div>  
                         <div class="login">
-                            <a class="ingresa" href= #><i class="fas fa-user-circle"></i></a>
-                            <a class="ingresa" href= #> Ingresá</a>
+                            <a class="ingresa" href= "/login"><i class="fas fa-user-circle"></i></a>
+                            <a class="ingresa" href= "/login"> Ingresá</a>
                         </div>
                         <div class="cart">
-                            <a class="carrito" href= #><i class="fas fa-shopping-cart"></i></a>
-                            <a class="carrito" href= #>Carrito</a>
+                            <a class="carrito" href= "/productCart"><i class="fas fa-shopping-cart"></i></a>
+                            <a class="carrito" href= "/productCart">Carrito</a>
                         </div>
                 </div> 
             </section>
@@ -40,24 +42,24 @@
 
         <main>
             <section class="carrusel">
-                <img class="banner" src="images\banner_carrusel.png" alt="Carrusel">
+                <img class="banner" src="images\carrusel\banner-gorillaz.png" alt="Carrusel">
             </section>
             
             <section class="categorias">
                 <a href= # ><article class="vinilos">
-                    <img src="images\vinilo.svg" class="icono-categoria" alt="Vinilo">
+                    <img src="images\iconos-logos\vinilo.svg" class="icono-categoria" alt="Vinilo">
                 </article></a>
 
                 <a href= # ><article class="cassettes">
-                    <img src="images\cassete.svg" class="icono-categoria" alt="Cassete">   
+                    <img src="images\iconos-logos\cassete.svg" class="icono-categoria" alt="Cassete">   
                     </article></a>
 
                 <a href= # ><article class="discos">
-                    <img src="images\cd.svg" class="icono-categoria" alt="cd">                    
+                    <img src="images\iconos-logos\cd.svg" class="icono-categoria" alt="cd">                    
                     </article></a>
 
                 <a href=#><article class="digital">
-                    <img src="images\wave.svg"class="icono-categoria" alt="Onda de Sonido">
+                    <img src="images\iconos-logos\wave.svg"class="icono-categoria" alt="Onda de Sonido">
                 </article></a>
 
             </section>
@@ -66,38 +68,50 @@
 
             <section class="nuevos-lanzamientos">
 
-                    <article class="album">
+                   
+                <article class="album">
+                    <a href="/productDetail"> 
                         <img class="cover-art" src="images\cover-art\arctic-the-car.jpg" alt="cover">
                         <div class="info-album">
                             <p class="titulo-album">The Car</p>
                             <p class="banda-album">Arctic Monkeys</p>
                         </div>
-
-                    </article>
-                    <article class="album">
+                    </a>
+                </article>
+                
+                
+                <article class="album">
+                    <a href="/productDetail">
                         <img class="cover-art" src="images\cover-art\UnlimitedLove.jpg" alt="cover">
                         <div class="info-album">
                             <p class="titulo-album">Unlimited Love</p>
                             <p class="banda-album">Red Hot Chili Peppers</p>
                         </div>
-
-                    </article>
-                    <article class="album">
+                    </a>
+                </article>
+                
+                
+                <article class="album">
+                    <a href="/productDetail">
                         <img class="cover-art" src="images\cover-art\WillofthePeople.jpg" alt="cover">
                         <div class="info-album">
                             <p class="titulo-album">Will of The People</p>
                             <p class="banda-album">Muse</p>
                         </div>
-
-                    </article>
-                    <article class="album">
+                    </a>
+                </article>
+                
+                
+                <article class="album">
+                    <a href="/productDetail">
                         <img class="cover-art" src="images\cover-art\FreakoutRelease.jpg" alt="cover">
                         <div class="info-album">
                             <p class="titulo-album">Freakout/Release</p>
                             <p class="banda-album">Hot Chip</p>
                         </div>
-
-                    </article>
+                    </a>
+                </article>
+            
 
                 </section>
 
@@ -105,38 +119,48 @@
 
                 <section class="nuevos-lanzamientos">
     
-                        <article class="album">
-                            <img class="cover-art" src="images\cover-art\arctic-the-car.jpg" alt="cover">
+                    <article class="album">
+                        <a href="/productDetail"> 
+                            <img class="cover-art" src="images\cover-art\UnknownPleasures.jpg" alt="cover">
                             <div class="info-album">
-                                <p class="titulo-album">The Car</p>
-                                <p class="banda-album">Arctic Monkeys</p>
+                                <p class="titulo-album">Unknown Pleasures</p>
+                                <p class="banda-album">Joy Division</p>
                             </div>
-    
-                        </article>
-                        <article class="album">
-                            <img class="cover-art" src="images\cover-art\UnlimitedLove.jpg" alt="cover">
+                        </a>
+                    </article>
+                    
+                    
+                    <article class="album">
+                        <a href="/productDetail">
+                            <img class="cover-art" src="images\cover-art\FranzFerdinand.jpg" alt="cover">
                             <div class="info-album">
-                                <p class="titulo-album">Unlimited Love</p>
-                                <p class="banda-album">Red Hot Chili Peppers</p>
+                                <p class="titulo-album">Franz Ferdinand</p>
+                                <p class="banda-album">Franz Ferdinand</p>
                             </div>
-    
-                        </article>
-                        <article class="album">
-                            <img class="cover-art" src="images\cover-art\WillofthePeople.jpg" alt="cover">
+                        </a>
+                    </article>
+                    
+                    
+                    <article class="album">
+                        <a href="/productDetail">
+                            <img class="cover-art" src="images\cover-art\flowerboy.jpg" alt="cover">
                             <div class="info-album">
-                                <p class="titulo-album">Will of The People</p>
-                                <p class="banda-album">Muse</p>
+                                <p class="titulo-album">Flower Boy</p>
+                                <p class="banda-album">Tyler, The Creator</p>
                             </div>
-    
-                        </article>
-                        <article class="album">
-                            <img class="cover-art" src="images\cover-art\FreakoutRelease.jpg" alt="cover">
+                        </a>
+                    </article>
+                    
+                    
+                    <article class="album">
+                        <a href="/productDetail">
+                            <img class="cover-art" src="images\cover-art\FirstImpressionsofEarth.jpg" alt="cover">
                             <div class="info-album">
-                                <p class="titulo-album">Freakout/Release</p>
-                                <p class="banda-album">Hot Chip</p>
+                                <p class="titulo-album">First Impressions of Earth</p>
+                                <p class="banda-album">The Strokes</p>
                             </div>
-    
-                        </article>
+                        </a>
+                    </article>
     
                     </section>
         </main>

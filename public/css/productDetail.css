@@ -9,7 +9,7 @@ body {
 }
 
 header{
-    background-color: #593C2C;
+    background-color: salmon;
 }
 
 .header{
@@ -31,6 +31,14 @@ header{
 .barra-busqueda {
     align-self: center;
     width: 45%;
+    display: flex;
+}
+
+.barra-busqueda i {
+    align-self: center;
+    color: gray;
+    position: relative;
+    right: 26px;
 }
 
 .barra {
@@ -64,6 +72,14 @@ header{
     color: white;
 }
 
+.login-bar div:hover a{
+    transition: 500ms;
+}
+
+.login-bar div:hover a{
+    color: #099a84;
+}
+
 .login-bar div i{
     font-size: 30px;
 }
@@ -86,7 +102,8 @@ header{
 }
 
 main{
-    background-color: #F2DBAE;
+    background-image: url(../images/fondos/fondovioletaclaro.png);
+    background-size: cover;
 }
 
 .imagen-detalle{
@@ -107,7 +124,7 @@ main{
 }
 
 .banda{
-    color: gray;
+    color: white;
     font-size: x-large;
     margin-top: 10px;    
 }
@@ -135,11 +152,15 @@ main{
 .boton-carrito{
     background-color: black;
     padding: 10px;
-    color: white;
     border: none;
     width: 90%;
     margin-left: 5px;
     text-align: center;
+    transition: 500ms;
+}
+
+.boton-carrito:hover {
+    background-color: white;
 }
 
 .boton-carrito a{
@@ -152,8 +173,12 @@ main{
     border: none;
     padding: 16px;
     font-size: inherit;
+    transition: 500ms;
 }
 
+.boton-carrito:hover .botonCarrito{
+    color: black;
+}
 
 .detalle-compra{
     display: flex;
@@ -221,7 +246,7 @@ main{
 
 
 footer{
-    background-color: sandybrown;
+    background-color: white;
     padding: 10px;
 
 }
