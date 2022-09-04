@@ -103,6 +103,7 @@ main {
     width: 40%;
     margin: 30px;
     padding: 50px;
+    position: relative;
 }
 
 .login-container div {
@@ -121,9 +122,16 @@ form input[type="password"]{
 	border:1px solid grey;
 	border-radius:3px;
 	background-color:#f6f6f6;
-	
 	display:inline-block;
 }
+
+
+form input[type="text"]:focus,
+form input[type="password"]:focus{
+	background-color:coral;
+}
+
+
 
 main section h2 {
     color: white;
@@ -166,7 +174,6 @@ button:hover {
     transform: translatey(2px);
     box-shadow: none;
     background-color: aqua;
-
 }
 
 
