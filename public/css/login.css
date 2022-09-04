@@ -79,9 +79,22 @@ header {
 
 
 main {
-    background-image: url(../images/fondos/fondoaqua.png);
+  
     background-size: cover;
     text-align: center;
+
+
+    background-color:black;
+    background-image:
+    radial-gradient(circle at 100% 150%, black 24%, white 24%, white 28%, black 28%, black 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, black 24%, white 24%, white 28%, black 28%, black 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, white 10%, black 10%, black 23%, white 23%, white 30%, black 30%, black 43%, white 43%, white 50%, black 50%, black 63%, white 63%, white 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, white 5%, black 5%, black 15%, white 15%, white 20%, black 20%, black 29%, white 29%, white 34%, black 34%, black 44%, white 44%, white 49%, transparent 49%, transparent),
+    radial-gradient(circle at 0    50%, white 5%, black 5%, black 15%, white 15%, white 20%, black 20%, black 29%, white 29%, white 34%, black 34%, black 44%, white 44%, white 49%, transparent 49%, transparent);
+    background-size: 100px 50px;
+
+
+
 }
 
 
@@ -145,5 +158,53 @@ button:hover {
     transform: translatey(2px);
     box-shadow: none;
     background-color: aqua;
+
+}
+
+
+
+
+
+footer{
+    background-color: white;
+    padding: 10px;
+
+}
+
+.info-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.legal{
+    font-size: 11px;
+}
+
+@media (min-width: 361px){
+
+}
+
+@media (min-width: 769px){
+    .header{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 4px;
+    }
+
+    .barra-busqueda {
+        align-self: center;
+        width: 30%;
+    }
+
+    .login-bar{
+        align-self: center;
+        display: flex;
+        justify-content: space-between; 
+    }
+
+    .burger-menu{
+        display: none;
+    }
 
 }
