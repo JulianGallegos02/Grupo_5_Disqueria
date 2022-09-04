@@ -1,8 +1,7 @@
 <html>
-
 <head>
     <meta charset="UTF-8">
-    <title>Login </title>
+    <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://use.typekit.net/nzu0lpj.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
@@ -13,7 +12,6 @@
 <body>
 
     <body>
-        <!--        MI CODIGO 
         <header>
             <section class="header">
                 <div class="logo">
@@ -41,95 +39,28 @@
                 </div>
             </section>
         </header>
-   TERMINA MI CODIGO-->
-
         <main>
-            <div class="login-container">
-                <form action="login" method="GET" class="login-form">
-                    <div class="caja-login">
-                        <header class="head-form">
-                            <h2>Login</h2>
-                            <p>Ingresá usando tu usario y contraseña</p>
-                        </header>
-
-                        <div class="usuario">
-                            <br>
-                            <input type="text" name="usuario" class="form-imput" id="usuario"
-                                placeholder="Nombre de usuario" required>
-                            </br>
-                        </div>
-
-                        <div class="password">
-                            <br><input type="password" class="form-input" placeholder="Contraseña" id="password"
-                                name="password" required>
-                            </br>
-                        </div>
-
-                        <div class="ingresar">
-                            <button type="submit" class="log-in">Ingresar</button>
-                        </div>
-
-
-                        <div class="button-bottom">
-                            <button class="boton forgot-password">Olvide la contraseña</button>
-                            <button class="boton sign-up">Registrarse
-                                <i class="fa fa-user-plus" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                </form>
-            </div>
-        </main>
-
-
-
-
-
-        <!--        EL QUE VA 
             <section class="login-container">
-                <h2> Login</h2>
-                    <form action="login" method="GET" class="login-form"></form>
-                    <div class = "login-datos"></div>
+                <h2> Iniciar Sesión</h2>
+                <form action="login" method="GET" class="login-form">
                     <div class="usuario">
                         <p><input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" required></p>
                     </div>
                     <div class="password">
                         <p><input type="password" id="password" name="password" placeholder="Contraseña" required></p>
                     </div>
-
-                    <div class="ingresar">>
-                        <button type="submit">Ingresar</button>
+                    <div class = "ingresar-recuperarclave">
+                    <div class="ingresar">
+                        <button class = "boton-ingresar" type="submit">Ingresar</button>
                     </div>
-                    </form>
-                    <div class="registrarse">
-                        <div>¿No tenés cuenta?</div>
-                        <a href="http://localhost:3030/register">Registrate</a>
-                    </div>
-                </div>
-            </section>
-        </main>
--->
-
-        <footer>
-            <div class="info-footer">
-                <div class="iconos-footer">
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-soundcloud"></i>
-                    <i class="fab fa-spotify"></i>
-                </div>
-
-                <div class="texto-footer">
-                    <p>Ayuda</p>
-                    <p>Newsletter</p>
-                    <p>Contacto</p>
+                    <div class = "forgot-password">
+                    <button class = "boton-olvideclave">Olvidé la contraseña</button>
                 </div>
             </div>
-
-            <p class="legal">© 2022 Sound Bites. All rights reserved.</p>
-
-        </footer>
-    </body>
-
-</html>
+                    <div class="registrarse">
+                    <p>¿No tenés cuenta?</p>
+                    <button class="boton-registrate"><a href="http://localhost:3030/register">Registrate</a></button>
+                    </div> 
+                </form>
+            </section>
+        </main>
