@@ -79,40 +79,50 @@ header {
 
 
 main {
-  
-    background-size: cover;
     text-align: center;
+    background-size: cover;
 
 
-    background-color:black;
+    background-color: black;
     background-image:
-    radial-gradient(circle at 100% 150%, black 24%, white 24%, white 28%, black 28%, black 36%, white 36%, white 40%, transparent 40%, transparent),
-    radial-gradient(circle at 0    150%, black 24%, white 24%, white 28%, black 28%, black 36%, white 36%, white 40%, transparent 40%, transparent),
-    radial-gradient(circle at 50%  100%, white 10%, black 10%, black 23%, white 23%, white 30%, black 30%, black 43%, white 43%, white 50%, black 50%, black 63%, white 63%, white 71%, transparent 71%, transparent),
-    radial-gradient(circle at 100% 50%, white 5%, black 5%, black 15%, white 15%, white 20%, black 20%, black 29%, white 29%, white 34%, black 34%, black 44%, white 44%, white 49%, transparent 49%, transparent),
-    radial-gradient(circle at 0    50%, white 5%, black 5%, black 15%, white 15%, white 20%, black 20%, black 29%, white 29%, white 34%, black 34%, black 44%, white 44%, white 49%, transparent 49%, transparent);
+        radial-gradient(circle at 100% 150%, black 24%, white 24%, white 28%, black 28%, black 36%, white 36%, white 40%, transparent 40%, transparent),
+        radial-gradient(circle at 0 150%, black 24%, white 24%, white 28%, black 28%, black 36%, white 36%, white 40%, transparent 40%, transparent),
+        radial-gradient(circle at 50% 100%, white 10%, black 10%, black 23%, white 23%, white 30%, black 30%, black 43%, white 43%, white 50%, black 50%, black 63%, white 63%, white 71%, transparent 71%, transparent),
+        radial-gradient(circle at 100% 50%, white 5%, black 5%, black 15%, white 15%, white 20%, black 20%, black 29%, white 29%, white 34%, black 34%, black 44%, white 44%, white 49%, transparent 49%, transparent),
+        radial-gradient(circle at 0 50%, white 5%, black 5%, black 15%, white 15%, white 20%, black 20%, black 29%, white 29%, white 34%, black 34%, black 44%, white 44%, white 49%, transparent 49%, transparent);
     background-size: 100px 50px;
-
-
-
+    opacity: 0.7;
 }
 
 
 .login-container {
     background-color: #ffbba8;
-    border: 2px solid white;
+    border: 3px solid white;
     display: inline-block;
-    padding: 40px;
-    margin: 50px;
     border-radius: 20px;
     width: 40%;
+    margin: 30px;
+    padding: 50px;
+}
+
+.login-container div {
+    margin: 5px;
 }
 
 .login-form {
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 5px;
-   
+}
 
+form input[type="text"],
+form input[type="password"]{
+	width:250px;
+	padding:8px 15px;
+	border:1px solid grey;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	
+	display:inline-block;
 }
 
 main section h2 {
@@ -120,7 +130,7 @@ main section h2 {
 }
 
 .registrarse {
-padding: 40px;
+    padding: 40px;
 }
 
 .registrarse p {
@@ -129,29 +139,27 @@ padding: 40px;
 }
 
 .ingresar-recuperarclave {
-    display:flex;
+    display: flex;
     justify-content: center;
-    margin-top:10px;
+    margin-top: 10px;
 }
 
 .usuario,
 .password {
     padding: 10px;
     border-radius: 0px 5px 5px 0px;
-    transition: 0.2s linear;
 }
-
 
 .boton-registrate a {
     text-decoration: none;
-    color:grey;
+    color: black;
 }
 
 button {
     padding: 5px 3px;
     border-radius: 5px;
     border: white;
-    color: grey;
+    color: black;
 }
 
 button:hover {
@@ -165,28 +173,26 @@ button:hover {
 
 
 
-footer{
+footer {
     background-color: white;
     padding: 10px;
 
 }
 
-.info-footer{
+.info-footer {
     display: flex;
     justify-content: space-between;
 }
 
-.legal{
+.legal {
     font-size: 11px;
 }
 
-@media (min-width: 361px){
+@media (min-width: 361px) {}
 
-}
-
-@media (min-width: 769px){
-    .header{
-        display:flex;
+@media (min-width: 769px) {
+    .header {
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 4px;
@@ -197,14 +203,19 @@ footer{
         width: 30%;
     }
 
-    .login-bar{
+    .login-bar {
         align-self: center;
         display: flex;
-        justify-content: space-between; 
+        justify-content: space-between;
     }
 
-    .burger-menu{
+    .burger-menu {
         display: none;
+    }
+
+    .login-container {
+        align-self: center;
+
     }
 
 }
