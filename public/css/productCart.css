@@ -78,8 +78,23 @@ header{
 main{
     background-image: url(../images/fondos/fondoaqua.png);
     background-size: cover;
+    display: flex;
+    
 }
 
+.imagen-detalle{
+    width: 90%;
+    margin-left: 22px;
+    margin-top: 20px;
+}
+
+.carrito-container {
+background-color: white;
+border: 3px solid black;
+padding: 20px;
+justify-content: flex-end;
+
+}
 
 
 
