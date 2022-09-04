@@ -100,9 +100,9 @@ main {
     border: 3px solid white;
     display: inline-block;
     border-radius: 20px;
-    width: 40%;
+    width: 300px;
     margin: 30px;
-    padding: 50px;
+    padding: 10px;
     position: relative;
 }
 
@@ -183,6 +183,10 @@ button:hover {
 footer {
     background-color: white;
     padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+
 
 }
 
