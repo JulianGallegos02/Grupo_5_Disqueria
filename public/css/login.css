@@ -98,6 +98,7 @@ main {
 .login-form {
     margin-top: 30px;
     padding: 5px;
+   
 
 }
 
@@ -115,7 +116,7 @@ padding: 40px;
 }
 
 .ingresar-recuperarclave {
-    display: flex;
+    display:flex;
     justify-content: center;
     margin-top:10px;
 }
@@ -143,4 +144,6 @@ button {
 button:hover {
     transform: translatey(2px);
     box-shadow: none;
+    background-color: aqua;
+
 }
