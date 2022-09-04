@@ -1,0 +1,209 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+    background-color: salmon;
+}
+
+.header{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.logo {
+    height: 60px;
+}
+
+.logo-svg {
+    height: 100%;
+    
+}
+
+.barra-busqueda {
+    align-self: center;
+    width: 45%;
+}
+
+.barra {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.burger-menu{
+    align-self: center;
+    margin: 10px;
+    color: white;
+    font-size: 35px;
+}
+
+.login-bar {
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+.login-bar div {
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 4px;
+    color: white;
+}
+
+.login-bar div i{
+    font-size: 30px;
+}
+
+.registrate, .ingresa, .carrito {
+    text-decoration: none;
+    color: white;
+    margin-top: 8px;
+    margin-bottom: -5px;
+}
+
+main{
+    background-image: url(../images/fondos/fondoaqua.png);
+    background-size: cover;
+}
+
+
+
+
+
+footer{
+    background-color: white;
+    padding: 10px;
+
+}
+
+.info-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.legal{
+    font-size: 11px;
+}
+
+@media (min-width: 361px){
+
+}
+
+@media (min-width: 769px){
+    .header{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 4px;
+    }
+
+    .barra-busqueda {
+        align-self: center;
+        width: 30%;
+    }
+
+    .login-bar{
+        align-self: center;
+        display: flex;
+        justify-content: space-between; 
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .album{
+        width: 45%;
+    }
+
+    .categorias{
+        display:flex;
+        flex-wrap: nowrap;
+        width: 90%;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    
+    .categorias article{
+        background-color: salmon;
+        text-align: center;
+        padding: 8px;
+        margin: 10px;
+        border-radius: 10px;
+        border: solid 3px salmon;
+        transition: 500ms;
+    }
+
+    .vinilos:hover{
+        background-image: url(../images/gifprueba.gif);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 2px 15px 23px 2px rgba(0,0,0,0.75);
+        border-color: white;
+    }
+    
+    .vinilos:hover img{
+        visibility: hidden;
+    }
+    
+    .cassettes:hover{
+        background-image: url(../images/rolling-cassette.gif);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 2px 15px 23px 2px rgba(0,0,0,0.75);
+        border-color: white;
+    }
+    
+    .cassettes:hover img{
+        visibility: hidden;
+    }
+    
+    .discos:hover{
+        background-image: url(../images/cd2.gif);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 2px 15px 23px 2px rgba(0,0,0,0.75);
+        border-color: white;
+    }
+    
+    .discos:hover img{
+        visibility: hidden;
+    }
+    
+    .digital:hover{
+        background-image: url(../images/sound.gif);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 2px 15px 23px 2px rgba(0,0,0,0.75);
+        border-color: white;
+    }
+    
+    .digital:hover img{
+        visibility: hidden;
+    }
+    
+
+
+
+}
+
+@media (min-width:1200px){
+    .album{
+        width: 23%;
+    }
+
+}
