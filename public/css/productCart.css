@@ -89,10 +89,9 @@ main {
 
 }
 
-.imagen-detalle {
-    width: 90%;
-    margin-left: 22px;
-    margin-top: 20px;
+
+.titulo-carrito{
+    font-size: 20px;
 }
 
 .carrito-container {
@@ -118,6 +117,10 @@ main {
     text-align: end;
 }
 
+.total{
+    text-align: end;
+    margin-top: 18px;
+}
 
 .cover-carrito{
     width: 100%;
@@ -136,8 +139,34 @@ main {
     display: flex;
     flex-direction: column;
     align-items: self-end;
-    margin-top: 20%;
+    margin-top: 10%;
 
+}
+
+.botones, .botones2{
+    align-self: center;
+    background-color: black;
+    padding: 10px;
+    border: none;
+    width: 60%;
+    text-align: center;
+}
+
+.botones a, .botones2 a{
+    text-decoration: none;
+}
+
+.boton-compra, .boton-seguir{
+    color: white;
+    background: none;
+    border: none;
+    padding: 8px;
+    font-size: inherit;
+}
+
+.botones2{
+    margin-top: 2px;
+    background-color: salmon;
 }
 
 

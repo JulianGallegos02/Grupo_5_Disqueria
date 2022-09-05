@@ -78,7 +78,7 @@ header {
 }
 
 
-main {
+body {
     text-align: center;
     background-size: cover;
 
@@ -91,7 +91,6 @@ main {
         radial-gradient(circle at 100% 50%, white 5%, black 5%, black 15%, white 15%, white 20%, black 20%, black 29%, white 29%, white 34%, black 34%, black 44%, white 44%, white 49%, transparent 49%, transparent),
         radial-gradient(circle at 0 50%, white 5%, black 5%, black 15%, white 15%, white 20%, black 20%, black 29%, white 29%, white 34%, black 34%, black 44%, white 44%, white 49%, transparent 49%, transparent);
     background-size: 100px 50px;
-    opacity: 0.7;
 }
 
 

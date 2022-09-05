@@ -13,7 +13,7 @@
         <header>
             <section class="header">
                 <div class="logo">
-                    <img class="logo-svg" src="images\sinblanco.svg" alt="Logo">
+                    <a href="/"><img class="logo-svg" src="images\iconos-logos\sinblanco.svg" alt="Logo"></a>
                 </div>
                  <div class="barra-busqueda">
                     <input class="barra" type="text" name="barra-de-busqueda" placeholder="Busca..."> 
@@ -22,18 +22,18 @@
                 <div class="burger-menu"><i class="fas fa-bars"></i></div>
 
                 <div class="login-bar">
-                        <div class="sign-up">  
-                            <a class="registrate" href= #><i class="far fa-address-card"></i></a>
-                            <a class="registrate" href= #>Registrate</a>
-                        </div>  
-                        <div class="login">
-                            <a class="ingresa" href= #><i class="fas fa-user-circle"></i></a>
-                            <a class="ingresa" href= #> Ingresá</a>
-                        </div>
-                        <div class="cart">
-                            <a class="carrito" href= #><i class="fas fa-shopping-cart"></i></a>
-                            <a class="carrito" href= #>Carrito</a>
-                        </div>
+                    <div class="sign-up">  
+                        <a class="registrate" href= "/register"><i class="far fa-address-card"></i></a>
+                        <a class="registrate" href= "/register">Registrate</a>
+                    </div>  
+                    <div class="login">
+                        <a class="ingresa" href= "/login"><i class="fas fa-user-circle"></i></a>
+                        <a class="ingresa" href= "/login"> Ingresá</a>
+                    </div>
+                    <div class="cart">
+                        <a class="carrito" href= "/productCart"><i class="fas fa-shopping-cart"></i></a>
+                        <a class="carrito" href= "/productCart">Carrito</a>
+                    </div>
                 </div> 
             </section>
         </header>
@@ -41,7 +41,7 @@
     <main>
         
         <section class="carrito-container">
-
+            <p class="titulo-carrito">Carrito de compras</p>
             <article class="carrito-top">
                             
                 <article class = "imagen-album">
@@ -69,7 +69,7 @@
                 </article>
                 
                 <article class="subtotal">
-                        <p class="subtotal-p"> Subtotal: $7.000 </p> 
+                        <p class="subtotal-p"> Subtotal: $7.000 <i class="fas fa-trash-alt"></i></p> 
                 </article>  
                 
             </article>
@@ -101,22 +101,22 @@
                 </article>
                 
                 <article class="subtotal">
-                        <p class="subtotal-p"> Subtotal: $7.000 </p> 
+                        <p class="subtotal-p"> Subtotal: $7.000 <a href=#><i class="fas fa-trash-alt"></i></a></p> 
                 </article>  
                 
             </article>
-
-            <article class="carrito-bottom">
 
                 <article class="total">
                     <p class="total">Total: $7.000</p>
                 </article>
+            
+            <article class="carrito-bottom">
 
                 <article class="botones">
-                    <form action="" method="post" class = "carrito-form" >
-                        <button>Iniciar Compra</button>
-                        <button>Seguir Comprando</button> 
-                    </form> 
+                        <a href=#><p class="boton-compra"> Comprar</P></a>
+                </article>
+                <article class="botones2">
+                        <a href=#><p class="boton-seguir"> Seguir Comprando</P></a>
                 </article>
 
             </article>
