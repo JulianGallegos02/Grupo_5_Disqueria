@@ -195,6 +195,10 @@ footer {
     justify-content: space-between;
 }
 
+.texto-footer{
+    margin-right: 25px;
+}
+
 .legal {
     font-size: 11px;
 }
