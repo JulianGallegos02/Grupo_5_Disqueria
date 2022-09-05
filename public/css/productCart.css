@@ -77,10 +77,15 @@ header {
     margin-bottom: -5px;
 }
 
-main {
+body{
     background-image: url(../images/fondos/fondoaqua.png);
     background-size: cover;
+}
+
+main {
+
     display: flex;
+    justify-content: center
 
 }
 
@@ -94,20 +99,54 @@ main {
     background-color: white;
     border: 3px solid black;
     padding: 20px;
-    justify-content: flex-end;
     margin: 20px;
 
 }
 
-.carrito-container div {
-    margin: 5px;
+.imagen-album{
+    width: 33%;
+}
+
+.descripcion{
+    align-self: end;
+    line-height: 20px;
+    width: 33%;
+}
+
+.subtotal{
+    align-self: flex-end;
+    text-align: end;
+}
+
+
+.cover-carrito{
+    width: 100%;
+}
+
+.carrito-top{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: solid 1px gray;
     
+}
+
+.carrito-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    margin-top: 20%;
+
 }
 
 
 footer {
     background-color: white;
     padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
 
 }
 
