@@ -77,17 +77,21 @@ header {
     margin-bottom: -5px;
 }
 
-main {
+body{
     background-image: url(../images/fondos/fondoaqua.png);
     background-size: cover;
+}
+
+main {
+
     display: flex;
+    justify-content: center
 
 }
 
-.imagen-detalle {
-    width: 90%;
-    margin-left: 22px;
-    margin-top: 20px;
+
+.titulo-carrito{
+    font-size: 20px;
 }
 
 .carrito-container {
@@ -98,15 +102,80 @@ main {
 
 }
 
-.carrito-container div {
-    margin: 5px;
+.imagen-album{
+    width: 33%;
+}
+
+.descripcion{
+    align-self: end;
+    line-height: 20px;
+    width: 33%;
+}
+
+.subtotal{
+    align-self: flex-end;
+    text-align: end;
+}
+
+.total{
+    text-align: end;
+    margin-top: 18px;
+}
+
+.cover-carrito{
+    width: 100%;
+}
+
+.carrito-top{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: solid 1px gray;
     
+}
+
+.carrito-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    margin-top: 10%;
+
+}
+
+.botones, .botones2{
+    align-self: center;
+    background-color: black;
+    padding: 10px;
+    border: none;
+    width: 60%;
+    text-align: center;
+}
+
+.botones a, .botones2 a{
+    text-decoration: none;
+}
+
+.boton-compra, .boton-seguir{
+    color: white;
+    background: none;
+    border: none;
+    padding: 8px;
+    font-size: inherit;
+}
+
+.botones2{
+    margin-top: 2px;
+    background-color: salmon;
 }
 
 
 footer {
     background-color: white;
     padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
 
 }
 

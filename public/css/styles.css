@@ -91,7 +91,7 @@ header{
     margin-bottom: -5px;
 }
 
-main{
+body{
     background-image: url(../images/fondos/fondoaqua.png);
     background-size: cover;
 }
