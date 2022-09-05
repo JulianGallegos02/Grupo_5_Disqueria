@@ -6,10 +6,15 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(2,48,71,1) 0%, rgba(33,158,188,1) 100%);
+    background-attachment: fixed;
 }
 
 header{
-    background-color: salmon;
+    background-color: #fb8501;
 }
 
 .header{
@@ -72,12 +77,13 @@ header{
     color: white;
 }
 
-.login-bar div:hover a{
+.login-bar div a{
     transition: 500ms;
 }
 
 .login-bar div:hover a{
-    color: #099a84;
+    color: #219ebc;
+    text-shadow: 1px 1px 3px black;
 }
 
 .login-bar div i{
@@ -91,10 +97,6 @@ header{
     margin-bottom: -5px;
 }
 
-body{
-    background-image: url(../images/fondos/fondoaqua.png);
-    background-size: cover;
-}
 
 .carrusel{
     display: flex;
@@ -104,9 +106,8 @@ body{
 .banner {
     width: 90%;
     margin: 10px;
-    border: solid 3 px black;
+    /* border: solid 2px white; */
     border-radius: 40px;
-
 }
 
 .categorias{
@@ -118,12 +119,12 @@ body{
 }
 
 .categorias article{
-    background-color: salmon;
+    background-color: #fb8501;
     text-align: center;
     padding: 8px;
     margin: 10px;
     border-radius: 10px;
-    border: salmon;
+    border: #fb8501;
     transition: 500ms;
 }
 
@@ -137,8 +138,10 @@ body{
 
 .titular {
     font-family: 'Rubik Mono One', sans-serif;
-    margin: 10px;
+    margin: 50px;
     text-align: center;
+    color: #ffb703;
+    font-size: xx-large;
 }
 
 .nuevos-lanzamientos{
@@ -170,12 +173,12 @@ body{
 
 .titulo-album{
     margin-bottom: 5px;
-    color: salmon;
+    color: #fb8501;
 }
 
 .banda-album{
     font-weight: bold;
-    color: indigo;
+    color: #023047;
 }
 
 .album:hover{
@@ -190,9 +193,9 @@ body{
 }
 
 footer{
-    background-color: white;
+    background-color: #fb8501;
     padding: 10px;
-
+    color:  white;
 }
 
 .info-footer{
@@ -248,12 +251,12 @@ footer{
     }
     
     .categorias article{
-        background-color: salmon;
+        background-color: #fb8501;
         text-align: center;
         padding: 8px;
         margin: 10px;
         border-radius: 10px;
-        border: solid 3px salmon;
+        border: solid 3px #fb8501;
         transition: 500ms;
     }
 

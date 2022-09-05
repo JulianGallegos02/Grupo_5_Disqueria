@@ -1,7 +1,8 @@
 <html>
+
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Sound Bites</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://use.typekit.net/nzu0lpj.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
@@ -17,50 +18,67 @@
                 <div class="logo">
                     <a href="/"><img class="logo-svg" src="images\iconos-logos\sinblanco.svg" alt="Logo"></a>
                 </div>
-                <div class="barra-busqueda">
-                    <input class="barra" type="text" name="barra-de-busqueda" placeholder="Busca...">
+                 <div class="barra-busqueda">
+                    <input class="barra" type="text" name="barra-de-busqueda" placeholder="Busca..." >
+                    <i class="fas fa-search"></i>
                 </div>
-
 
                 <div class="burger-menu"><i class="fas fa-bars"></i></div>
 
                 <div class="login-bar">
-                    <div class="sign-up">  
-                        <a class="registrate" href= "/register"><i class="far fa-address-card"></i></a>
-                        <a class="registrate" href= "/register">Registrate</a>
-                    </div>  
-                    <div class="login">
-                        <a class="ingresa" href= "/login"><i class="fas fa-user-circle"></i></a>
-                        <a class="ingresa" href= "/login"> Ingresá</a>
-                    </div>
-                    <div class="cart">
-                        <a class="carrito" href= "/productCart"><i class="fas fa-shopping-cart"></i></a>
-                        <a class="carrito" href= "/productCart">Carrito</a>
-                    </div>
-                </div>
+                        <div class="sign-up">  
+                            <a class="registrate" href= "/register"><i class="far fa-address-card"></i></a>
+                            <a class="registrate" href= "/register">Registrate</a>
+                        </div>  
+                        <div class="login">
+                            <a class="ingresa" href= "/login"><i class="fas fa-user-circle"></i></a>
+                            <a class="ingresa" href= "/login"> Ingresá</a>
+                        </div>
+                        <div class="cart">
+                            <a class="carrito" href= "/productCart"><i class="fas fa-shopping-cart"></i></a>
+                            <a class="carrito" href= "/productCart">Carrito</a>
+                        </div>
+                </div> 
             </section>
         </header>
         <main>
-            <section class="registro">
-                <form class="fondo" action="/" method="GET">
+            <section class="register-container">
+                <h2> Registrate</h2>
+                <form action="login" method="GET" class="register-form">
+                    <div class="nombre-apellido">
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" required>
+                    </div>
+                    <div class="email">
+                        <input type="email" name="email" id="email" placeholder="E-Mail" required>
+                    </div>
+                    <div class="usuario">
+                        <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" required>
+                    </div>
+                    <div class="password">
+                        <input type="password" name="password" id="password" pattern=".{6,}" placeholder="Contraseña" required>
+                    </div> 
+                    <div class="password">
+                        <input type="password" name="password" id="password" pattern=".{6,}" placeholder="Confirmar Contraseña" required>
+                    </div>
+                    <div class="cumpleaños">
+                        <p>Fecha de Nacimiento</p>
+                        <input type="date" name="cumpleaños">
+                    </div>            
+                        <article class="botones">
+                            <a href=#><p class="boton-registro"> Registrate</P></a>
+                        </article>
                     <article>
-                        <h3>Nombre y Usuario</h3>
-                    
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido">
-                        
-                        <input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre de Usuari@">
+                        <p class="pregunta">¿Ya tenés cuenta?</p>
+                        <article class="botones2">
+                            <a href=#><p class="login-button"> Inicia sesión</P></a>
+                        </article>
                     </article>
-                    <article class="fecha-de-nacimiento">
-                        <label for="fechaNacimiento">Fecha de nacimiento</label>
-                        <input type="date" name="fechaNacimiento" id="fechaNacimiento">
-                    </article>
-                    <article>
-                        <input type="text" name="domicilio" placeholder="Domicilio">
-                    </article>    
+                </form>
+            </section>
         </main>
-        
+
         <footer>
-            <div class="info-footer">                
+            <div class="info-footer">
                 <div class="iconos-footer">
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-instagram"></i>
@@ -81,4 +99,5 @@
 
         </footer>
     </body>
+
 </html>

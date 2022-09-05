@@ -6,10 +6,15 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(2,48,71,1) 0%, rgba(33,158,188,1) 100%);
+    background-attachment: fixed;
 }
 
 header {
-    background-color: salmon;
+    background-color: #fb8501;
 }
 
 .header {
@@ -31,6 +36,14 @@ header {
 .barra-busqueda {
     align-self: center;
     width: 45%;
+    display: flex;
+}
+
+.barra-busqueda i {
+    align-self: center;
+    color: gray;
+    position: relative;
+    right: 26px;
 }
 
 .barra {
@@ -64,6 +77,15 @@ header {
     color: white;
 }
 
+.login-bar div a{
+    transition: 500ms;
+}
+
+.login-bar div:hover a{
+    color: #219ebc;
+    text-shadow: 1px 1px 3px black;
+}
+
 .login-bar div i {
     font-size: 30px;
 }
@@ -81,22 +103,9 @@ main{
     display: flex;
     justify-content: center;
 }
-body {
-    background-size: cover;
-
-    background-color: black;
-    background-image:
-        radial-gradient(circle at 100% 150%, black 24%, white 24%, white 28%, black 28%, black 36%, white 36%, white 40%, transparent 40%, transparent),
-        radial-gradient(circle at 0 150%, black 24%, white 24%, white 28%, black 28%, black 36%, white 36%, white 40%, transparent 40%, transparent),
-        radial-gradient(circle at 50% 100%, white 10%, black 10%, black 23%, white 23%, white 30%, black 30%, black 43%, white 43%, white 50%, black 50%, black 63%, white 63%, white 71%, transparent 71%, transparent),
-        radial-gradient(circle at 100% 50%, white 5%, black 5%, black 15%, white 15%, white 20%, black 20%, black 29%, white 29%, white 34%, black 34%, black 44%, white 44%, white 49%, transparent 49%, transparent),
-        radial-gradient(circle at 0 50%, white 5%, black 5%, black 15%, white 15%, white 20%, black 20%, black 29%, white 29%, white 34%, black 34%, black 44%, white 44%, white 49%, transparent 49%, transparent);
-    background-size: 100px 50px;
-}
-
 
 .login-container {
-    background-color: #ffbba8;
+    background-color: #8ecae6;
     border: 3px solid white;
     display: inline-block;
     border-radius: 20px;
@@ -138,15 +147,6 @@ main section h2 {
     color: white;
 }
 
-.registrarse {
-    padding: 40px;
-}
-
-.registrarse p {
-    color: white;
-    margin-bottom: 10px;
-}
-
 .ingresar-recuperarclave {
     display: flex;
     justify-content: center;
@@ -159,36 +159,52 @@ main section h2 {
     border-radius: 0px 5px 5px 0px;
 }
 
-.boton-registrate a {
+.ingresar-recuperarclave{
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    margin-top: 10%;
+
+}
+
+.botones, .botones2, .botones3{
+    align-self: center;
+    background-color: #fb8501;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    text-align: center;
+}
+
+.botones a, .botones2 a, .botones3 a{
     text-decoration: none;
-    color: black;
 }
 
-button {
-    padding: 5px 3px;
-    border-radius: 5px;
-    border: white;
-    color: black;
+.boton-ingresa, .forgot-password, .register2{
+    color: white;
+    background: none;
+    border: none;
+    padding: 8px;
+    font-size: inherit;
 }
 
-button:hover {
-    transform: translatey(2px);
-    box-shadow: none;
-    background-color: aqua;
+.botones2{
+    margin-top: 2px;
+    background-color: black;
 }
 
-
-
-
+.pregunta{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 
 footer {
-    background-color: white;
+    background-color: #fb8501;
     padding: 10px;
     position: absolute;
     bottom: 0px;
     width: 100%;
-
-
+    color:  white;
 }
 
 .info-footer {
