@@ -201,10 +201,10 @@ main section h2 {
 footer {
     background-color: #fb8501;
     padding: 10px;
-    position: absolute;
     bottom: 0px;
     width: 100%;
-    color:  white;
+    color: white;
+    margin-top: auto;
 }
 
 .info-footer {

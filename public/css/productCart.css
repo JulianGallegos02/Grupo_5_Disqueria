@@ -195,11 +195,9 @@ main {
 footer {
     background-color: #fb8501;
     padding: 10px;
-    position: absolute;
     bottom: 0px;
     width: 100%;
-    color:  white;
-    position: relative;
+    color: white;
     margin-top: auto;
 }
 

@@ -195,7 +195,10 @@ header{
 footer{
     background-color: #fb8501;
     padding: 10px;
-    color:  white;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    margin-top: auto;
 }
 
 .info-footer{
