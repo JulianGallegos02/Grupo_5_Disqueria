@@ -135,6 +135,10 @@ main {
     
 }
 
+.subtotal p{
+    text-decoration: none;
+}
+
 .carrito-bottom{
     display: flex;
     flex-direction: column;
@@ -182,6 +186,10 @@ footer {
 .info-footer {
     display: flex;
     justify-content: space-between;
+}
+
+.texto-footer{
+    margin-right: 25px;
 }
 
 .legal {
