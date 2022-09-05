@@ -6,10 +6,15 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(2,48,71,1) 0%, rgba(33,158,188,1) 100%);
+    background-attachment: fixed;
 }
 
 header{
-    background-color: salmon;
+    background-color: #fb8501;
 }
 
 .header{
@@ -72,12 +77,13 @@ header{
     color: white;
 }
 
-.login-bar div:hover a{
+.login-bar div a{
     transition: 500ms;
 }
 
 .login-bar div:hover a{
-    color: #099a84;
+    color: #219ebc;
+    text-shadow: 1px 1px 3px black;
 }
 
 .login-bar div i{
@@ -99,11 +105,6 @@ header{
     width: 40%;
     align-self: center;
     display: none;
-}
-
-body{
-    background-image: url(../images/fondos/fondovioletaclaro.png);
-    background-size: cover;
 }
 
 .imagen-detalle{
@@ -136,6 +137,7 @@ body{
     margin: 10px;
     padding: 15px;
     font-size: x-large;
+    
 }
 
 .agregar-carrito{
@@ -147,6 +149,7 @@ body{
     width: 90%;
     border: solid 3px black;
     padding: 20px;
+    background-color: #ffffffc2;
 }
 
 .boton-carrito{
@@ -160,7 +163,7 @@ body{
 }
 
 .boton-carrito:hover {
-    background-color: white;
+    background-color: #fb8501;
 }
 
 .boton-carrito a{
@@ -212,12 +215,15 @@ body{
     width: 90%;
     border: solid 3px black;
     padding: 20px;
-
+    background-color: #ffffffc2;
 }
 
 .descripcion{
     width: 82%;
     margin-left: 31px;
+    background-color: #ffffff88;
+    border-radius: 20px;
+    padding: 30px;
 }
 
 .parrafo{
@@ -232,7 +238,8 @@ body{
     border-bottom: solid 1px gray;
     padding-bottom: 10px;
     margin-bottom: 10px;
-
+    margin-top: 20px;
+    color: white;
 }
 
 .lista-tecnica{
@@ -240,15 +247,15 @@ body{
 }
 
 .link-tecnico{
-    color: black;
+    color: white;
     font-weight: 600;
 }
 
 
 footer{
-    background-color: white;
+    background-color: #fb8501;
     padding: 10px;
-
+    color:  white;
 }
 
 .info-footer{

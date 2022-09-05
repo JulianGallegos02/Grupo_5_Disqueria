@@ -6,6 +6,11 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(2,48,71,1) 0%, rgba(33,158,188,1) 100%);
+    background-attachment: fixed;
 }
 
 header {
@@ -181,13 +186,9 @@ button:hover {
 
 
 footer {
-    background-color: white;
+    background-color: #fb8501;
     padding: 10px;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-
-
+    color:  white;
 }
 
 .info-footer {
