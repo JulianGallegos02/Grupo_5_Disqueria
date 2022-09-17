@@ -1,5 +1,7 @@
 # Starfish Retrospective (Retrospectiva de estrella de mar)
 
+# :star: Sprint II
+
 La retrospectiva de la estrella de mar nos ayuda a entender mejor qué salió mal en el equipo y cómo podemos mejorar para el futuro. En este aspecto, tuvimos en cuenta nuestros errores y aciertos, y llegamos a un acuerdo para solventar lo que no pudimos implementar en el sprint I.
 
 ## 1. Comenzar a hacer (Start doing)
@@ -30,6 +32,45 @@ La retrospectiva de la estrella de mar nos ayuda a entender mejor qué salió ma
 
 * Requires solo con los datos estrictamente necesarios.
 
-## 5. Dejar de hacer (stop doing)
+## 5. Dejar de hacer (Stop doing)
 
 * No procrastinar.
+
+
+# :star: Sprint III
+
+En esta nueva retrospectiva tuvimos en cuenta nuestros errores y aciertos del Sprint II.
+
+## 1. Comenzar a hacer (Start doing)
+
+* Comunicar al grupo que se está haciendo y agregarlo al Trello para que no se repita el mismo trabajo.  
+
+* Cambiar la paleta de Colores. 
+
+## 2. Hacer más (More of)
+
+* Mantener el trello actualizado y chequearlo.
+
+* Mantener el repositorio en Github actualizado.  
+
+* Unificar criterios de antemano y no dejarlos a último momento.
+
+## 3. Continuar haciendo (Keep doing)
+
+* El lindo ambiente del grupo. Nos escuchamos, nos motivamos, nos ayudamos mutuamente. 
+
+* Scrum Weekly Meeting (La reunión semanal)/juntarnos más. 
+
+* La comunicación por WhatsApp. 
+
+## 4. Hacer menos (Less of)
+
+* Requires solo con los datos estrictamente necesarios.
+
+## 5. Dejar de hacer (Stop doing)
+
+* No procrastinar.
+
+
+
+
