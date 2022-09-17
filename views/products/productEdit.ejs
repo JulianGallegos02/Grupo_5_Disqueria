@@ -1,0 +1,45 @@
+<html>
+    <%- include("./partials/head") %>
+
+    <body>
+    <%- include("./partials/header") %>
+
+        <main>
+            
+            <h2 class="titular">Editar producto</h2>
+
+            <form action="/productCreate" method="POST">
+                <div>
+                    <label for="album">Nombre del Album:</label>
+                    <input type="text" name="album" id="album">
+                </div>
+                <div>
+                    <label for="artista">Nombre del Artista:</label>
+                    <input type="text" name="artista" id="artista">
+                </div>
+                <div>
+                    <label for="precio">Precio:</label>
+                    <input type="text" name="precio" id="precio">
+                </div>
+                <div>
+                    <label for="descripcion">Descripción:</label>
+                    <textarea name="descripcion" id="descripcion"></textarea>
+                </div>
+                <div>
+                    <label for="genero">Género:</label>
+                    <input type="text" name="genero" id="genero">
+                </div>
+                <div>
+                    <label for="cover">Imagen:</label>
+                    <input type="file" name="cover">
+                </div>
+                <div>
+                    <button type="submit">Crear</button>
+                </div>
+            </form>
+   
+        </main>
+
+       <%- include("./partials/footer") %>
+    </body>
+</html>

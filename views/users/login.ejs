@@ -1,0 +1,46 @@
+<html>
+
+    <%- include("./partials/head") %>
+
+<body>
+
+    <body>
+        <%- include("./partials/header") %>
+        <main>
+            <section class="login-container">
+                <h2> Iniciar Sesión</h2>
+                <form action="login" method="GET" class="login-form">
+                    <div class="usuario">
+                        <label>
+                            <p><input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" required>
+                            </p>
+                        </label>
+                    </div>
+                    <div class="password">
+                        <label>
+                            <p><input type="password" name="password" id="password" pattern=".{6,}"
+                                    placeholder="Contraseña" required></p>
+                        </label>
+                    </div>
+                    <div class="ingresar-recuperarclave">
+                        <article class="botones">
+                            <a href=#><p class="boton-ingresa"> Ingresá</P></a>
+                        </article>
+                        <article class="botones2">
+                            <a href=#><p class="forgot-password"> Olvidé la contraseña</P></a>
+                        </article>
+                    </div>
+                    <article class="registrarse">
+                        <p class="pregunta">¿No tenés cuenta?</p>
+                        <article class="botones3">
+                            <a href=#><p class="register2"> Registrate</P></a>
+                        </article>
+                    </article>
+                </form>
+            </section>
+        </main>
+
+        <%- include("./partials/footer") %>
+    </body>
+
+</html>

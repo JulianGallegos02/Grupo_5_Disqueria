@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "album": "The Cart",
+        "artista": "Arctic Monkeys",
+        "precio": 7000,
+        "descripcion": "",
+        "genero": "",
+        "imagen": ""
+    },
+    {
+        "id": 2,
+        "album": "Unlimited Love",
+        "artista": "Red Hot Chili Peppers",
+        "precio": 7000,
+        "descripcion": "",
+        "genero": "",
+        "imagen": ""
+    },
+    {
+        "id": 3,
+        "album": "Will of The People",
+        "artista": "Muse",
+        "precio": 7000,
+        "descripcion": "",
+        "genero": "",
+        "imagen": ""
+    },
+    {
+        "id": 4,
+        "album": "Freakout/Release",
+        "artista": "Hot Chip",
+        "precio": 7000,
+        "descripcion": "",
+        "genero": "",
+        "imagen": ""
+    },
+    {
+        "id": 5,
+        "album": "Unknown Pleasures",
+        "artista": "Joy Division",
+        "precio": 7000,
+        "descripcion": "",
+        "genero": "",
+        "imagen": ""
+    }
+]

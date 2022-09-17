@@ -1,0 +1,324 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(2,48,71,1) 0%, rgba(33,158,188,1) 100%);
+    background-attachment: fixed;
+}
+
+header{
+    background-color: #fb8501;
+}
+
+.header{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.logo {
+    height: 60px;
+}
+
+.logo-svg {
+    height: 100%;
+    
+}
+
+.barra-busqueda {
+    align-self: center;
+    width: 45%;
+    display: flex;
+}
+
+.barra-busqueda i {
+    align-self: center;
+    color: gray;
+    position: relative;
+    right: 26px;
+}
+
+.barra {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.burger-menu{
+    align-self: center;
+    margin: 10px;
+    color: white;
+    font-size: 35px;
+}
+
+.login-bar {
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+.login-bar div {
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 4px;
+    color: white;
+}
+
+.login-bar div a{
+    transition: 500ms;
+}
+
+.login-bar div:hover a{
+    color: #219ebc;
+    text-shadow: 1px 1px 3px black;
+}
+
+.login-bar div i{
+    font-size: 30px;
+}
+
+.registrate, .ingresa, .carrito {
+    text-decoration: none;
+    color: white;
+    margin-top: 8px;
+    margin-bottom: -5px;
+}
+
+
+.carrusel{
+    display: flex;
+    justify-content: center;
+}
+
+.banner {
+    width: 90%;
+    margin: 10px;
+    /* border: solid 2px white; */
+    border-radius: 40px;
+}
+
+.categorias{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.categorias article{
+    background-color: #fb8501;
+    text-align: center;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 10px;
+    border: #fb8501;
+    transition: 500ms;
+}
+
+.categorias a{
+    width: 40%;
+}
+
+.icono-categoria{
+    width: 60%;
+}
+
+.titular {
+    font-family: 'Rubik Mono One', sans-serif;
+    margin: 50px;
+    text-align: center;
+    color: #ffb703;
+    font-size: xx-large;
+}
+
+.nuevos-lanzamientos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.cover-art{
+    width: 100%;
+}
+
+.album{
+    width: 80%;
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+    transition: 500ms;
+}
+
+.nuevos-lanzamientos a{
+    text-decoration: none;
+}
+
+.info-album{
+    margin-top: 10px;
+}
+
+.titulo-album{
+    margin-bottom: 5px;
+    color: #fb8501;
+}
+
+.banda-album{
+    font-weight: bold;
+    color: #023047;
+}
+
+.album:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 2px 6px 21px 7px rgba(0,0,0,0.56);
+    padding: 12px;
+}
+
+.album:hover .titulo-album, .album:hover .banda-album {
+    color: white;
+}
+
+footer{
+    background-color: #fb8501;
+    padding: 10px;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    margin-top: auto;
+}
+
+.info-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto-footer{
+    margin-right: 25px;
+}
+
+.legal{
+    font-size: 11px;
+}
+
+@media (min-width: 361px){
+
+}
+
+@media (min-width: 769px){
+    .header{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 4px;
+    }
+
+    .barra-busqueda {
+        align-self: center;
+        width: 30%;
+    }
+
+    .login-bar{
+        align-self: center;
+        display: flex;
+        justify-content: space-between; 
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .album{
+        width: 45%;
+    }
+
+    .categorias{
+        display:flex;
+        flex-wrap: nowrap;
+        width: 90%;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    
+    .categorias article{
+        background-color: #fb8501;
+        text-align: center;
+        padding: 8px;
+        margin: 10px;
+        border-radius: 10px;
+        border: solid 3px #fb8501;
+        transition: 500ms;
+    }
+
+    .vinilos:hover{
+        background-image: url(../images/gifs/vinilo-texto.gif);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 2px 15px 23px 2px rgba(0,0,0,0.75);
+        border-color: white;
+    }
+    
+    .vinilos:hover img{
+        visibility: hidden;
+    }
+    
+    .cassettes:hover{
+        background-image: url(../images/gifs/cassette-texto.gif);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 2px 15px 23px 2px rgba(0,0,0,0.75);
+        border-color: white;
+    }
+    
+    .cassettes:hover img{
+        visibility: hidden;
+    }
+    
+    .discos:hover{
+        background-image: url(../images/gifs/cd-texto.gif);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 2px 15px 23px 2px rgba(0,0,0,0.75);
+        border-color: white;
+    }
+    
+    .discos:hover img{
+        visibility: hidden;
+    }
+    
+    .digital:hover{
+        background-image: url(../images/gifs/digital-texto.gif);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 2px 15px 23px 2px rgba(0,0,0,0.75);
+        border-color: white;
+    }
+    
+    .digital:hover img{
+        visibility: hidden;
+    }
+    
+
+
+
+}
+
+@media (min-width:1200px){
+    .album{
+        width: 23%;
+    }
+
+}
