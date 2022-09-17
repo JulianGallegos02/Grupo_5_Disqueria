@@ -1,0 +1,48 @@
+<html>
+
+    <%- include("./partials/head") %>
+
+<body>
+
+    <body>
+        <%- include("./partials/header") %>
+        <main>
+            <section class="register-container">
+                <h2> Registrate</h2>
+                <form action="login" method="GET" class="register-form">
+                    <div class="nombre-apellido">
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" required>
+                    </div>
+                    <div class="email">
+                        <input type="email" name="email" id="email" placeholder="E-Mail" required>
+                    </div>
+                    <div class="usuario">
+                        <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" required>
+                    </div>
+                    <div class="password">
+                        <input type="password" name="password" id="password" pattern=".{6,}" placeholder="Contraseña" required>
+                    </div> 
+                    <div class="password">
+                        <input type="password" name="password" id="password" pattern=".{6,}" placeholder="Confirmar Contraseña" required>
+                    </div>
+                    <div class="cumpleaños">
+                        <p>Fecha de Nacimiento</p>
+                        <input type="date" name="cumpleaños">
+                    </div>            
+                        <article class="botones">
+                            <a href=#><p class="boton-registro"> Registrate</P></a>
+                        </article>
+                    <article>
+                        <p class="pregunta">¿Ya tenés cuenta?</p>
+                        <article class="botones2">
+                            <a href=#><p class="login-button"> Inicia sesión</P></a>
+                        </article>
+                    </article>
+                </form>
+            </section>
+        </main>
+
+        <%- include("./partials/footer") %>
+    </body>
+
+</html>

@@ -1,25 +1,16 @@
 {
-  "name": "grupo_5_disqueria",
-  "version": "1.0.0",
-  "description": "![SoudBitesRecords-Logo](https://user-images.githubusercontent.com/108841314/185528151-f94a0ef7-04f0-4dfc-b4c6-14f74a8d57c4.jpg)",
-  "main": "app.js",
+  "name": "soundbites",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JulianGallegos02/Grupo_5_Disqueria.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JulianGallegos02/Grupo_5_Disqueria/issues"
-  },
-  "homepage": "https://github.com/JulianGallegos02/Grupo_5_Disqueria#readme",
   "dependencies": {
-    "express": "^4.18.1",
-    "nodemon": "^2.0.19"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
   }
 }

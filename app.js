@@ -1,29 +1,43 @@
-let express = require("express");
-let path = require("path")
+var createError = require('http-errors');
+var express = require('express');
+var path = require('path');
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
 
-let app = express();
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
+var productRouter = require('./routes/products');
 
-app.use(express.static(path.join(__dirname, "public")));
+var app = express();
 
-app.listen(process.env.PORT || 3000, () => console.log("Servidor corriendo en el puerto 3000"));
+// view engine setup
+app.set('views',  [path.join(__dirname, 'views'),path.join(__dirname, 'views/products'), path.join(__dirname, 'views/users')]);
+app.set('view engine', 'ejs');
 
-app.get("/", function(req,res) {
-    res.sendFile(path.join(__dirname, "/views/index.html"))
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use('/', indexRouter);
+app.use('/', usersRouter);
+app.use('/', productRouter);
+
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  next(createError(404));
 });
 
-app.get("/productDetail", function(req,res) {
-    res.sendFile(path.join(__dirname, "/views/productDetail.html"))
+// error handler
+app.use(function(err, req, res, next) {
+  // set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
+
+  // render the error page
+  res.status(err.status || 500);
+  res.render('error');
 });
 
-app.get("/productCart", function(req,res) {
-    res.sendFile(path.join(__dirname, "/views/productCart.html"))
-});
-
-app.get("/register", function(req,res) {
-    res.sendFile(path.join(__dirname, "/views/register.html"))
-});
-
-app.get("/login", function(req,res) {
-    res.sendFile(path.join(__dirname, "/views/login.html"))
-});
-
+module.exports = app;
