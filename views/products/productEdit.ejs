@@ -8,30 +8,30 @@
             
             <h2 class="titular">Editar producto</h2>
 
-            <form action="/productCreate" method="POST">
+            <form action="/productEdit/<%= disco.id %>?_method=PUT" method="POST">
                 <div>
                     <label for="album">Nombre del Album:</label>
-                    <input type="text" name="album" id="album">
+                    <input type="text" value="<%= disco.album %>" name="album" id="album">
                 </div>
                 <div>
                     <label for="artista">Nombre del Artista:</label>
-                    <input type="text" name="artista" id="artista">
+                    <input type="text" value="<%= disco.artista %>" name="artista" id="artista">
                 </div>
                 <div>
                     <label for="precio">Precio:</label>
-                    <input type="text" name="precio" id="precio">
+                    <input type="text" value="<%= disco.precio %>" name="precio" id="precio">
                 </div>
                 <div>
                     <label for="descripcion">Descripción:</label>
-                    <textarea name="descripcion" id="descripcion"></textarea>
+                    <textarea name="descripcion" id="descripcion"><%= disco.descripcion %></textarea>
                 </div>
                 <div>
                     <label for="genero">Género:</label>
-                    <input type="text" name="genero" id="genero">
+                    <input type="text" value="<%= disco.genero %>" name="genero" id="genero">
                 </div>
                 <div>
                     <label for="cover">Imagen:</label>
-                    <input type="file" name="cover">
+                    <input type="file" value="<%= disco.imagen %>" name="cover">
                 </div>
                 <div>
                     <button type="submit">Crear</button>
