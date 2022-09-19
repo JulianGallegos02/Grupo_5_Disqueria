@@ -18,4 +18,4 @@
 ## 3. Reunion Semanal III
 * Pagina de Edicion de Productos
 * Terminadas las Rutas
-* Falta arreglar la pagina de Edicion de Productos para que funcione correctamente. 
+* Falta arreglar la pagina de Edicion de Productos para que funcione correctamente, darle estilo y cambiar la paleta de colores.  
