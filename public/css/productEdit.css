@@ -144,6 +144,10 @@ header{
     font-size: xx-large;
 }
 
+.formEdit {
+    text-align: center;
+}
+
 .nuevos-lanzamientos{
     display: flex;
     flex-wrap: wrap;

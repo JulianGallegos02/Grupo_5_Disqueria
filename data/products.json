@@ -1,9 +1,9 @@
 [
     {
         "id": 1,
-        "album": "The Cart",
+        "album": "The Car",
         "artista": "Arctic Monkeys",
-        "precio": 7000,
+        "precio": "6000",
         "descripcion": "",
         "genero": "",
         "imagen": ""

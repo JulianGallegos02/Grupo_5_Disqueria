@@ -73,7 +73,7 @@ const controller = {
         discoEncontrado.genero = req.body.genero;
         discoEncontrado.imagen = req.body.cover;
 
-        writeFile(data);
+        create(data);
         res.redirect("/productList");
     }
 }

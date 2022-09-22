@@ -6,9 +6,9 @@
 
         <main>
             
-            <h2 class="titular">Editar producto</h2>
+            <h2 class="titular">Editar producto: "<%= disco.album %>"</h2>
 
-            <form action="/productEdit/<%= disco.id %>?_method=PUT" method="POST">
+            <form class="formEdit" action="/productEdit/<%= disco.id %>?_method=PUT" method="POST">
                 <div>
                     <label for="album">Nombre del Album:</label>
                     <input type="text" value="<%= disco.album %>" name="album" id="album">
@@ -34,7 +34,7 @@
                     <input type="file" value="<%= disco.imagen %>" name="cover">
                 </div>
                 <div>
-                    <button type="submit">Crear</button>
+                    <button type="submit">Editar</button>
                 </div>
             </form>
    
