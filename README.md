@@ -1,6 +1,7 @@
-# Grupo_5_Disqueria
+# Grupo Nº 5: Disqueria Sound Bites
 
-![SoudBitesRecords-Logo](https://user-images.githubusercontent.com/108841314/185528151-f94a0ef7-04f0-4dfc-b4c6-14f74a8d57c4.jpg)
+![![SoudBitesDisqueria](https://user-images.githubusercontent.com/108841314/192066839-bfbc23e9-b37b-42db-962c-ebf91164a5dc.jpg)]
+
 
 ## Introducción
 Nuestro sitio ofrece la compra de vinilos y cds. Este apunta a un público de 20 años en adelante, coleccionistas y consumidores que prefieran el formato físico.
