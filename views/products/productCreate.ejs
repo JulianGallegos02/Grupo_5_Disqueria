@@ -4,40 +4,39 @@
     <body>
     <%- include("./partials/header") %>
 
-        <main>
-            
+        <main> 
+            <section class = "productCreate-Container">
             <h2 class="titular">Crear nuevo producto</h2>
-
-            <form action="/productCreate" method="POST">
+            <form action="/productCreate" method="POST" class="productCreate-form">
                 <div>
                     <label for="album">Nombre del Album:</label>
-                    <input type="text" name="album" id="album">
+                    <input type="text" name="album" id="album" class="nombreAlbum">
                 </div>
                 <div>
                     <label for="artista">Nombre del Artista:</label>
-                    <input type="text" name="artista" id="artista">
+                    <input type="text" name="artista" id="artista" class="nombreArtista">
                 </div>
                 <div>
                     <label for="precio">Precio:</label>
-                    <input type="text" name="precio" id="precio">
+                    <input type="text" name="precio" id="precio" class="precio">
                 </div>
                 <div>
                     <label for="descripcion">Descripción:</label>
-                    <textarea name="descripcion" id="descripcion"></textarea>
+                    <textarea name="descripcion" id="descripcion" class="campo-descripcion"></textarea>
                 </div>
                 <div>
                     <label for="genero">Género:</label>
-                    <input type="text" name="genero" id="genero">
+                    <input type="text" name="genero" id="genero" class="genero">
                 </div>
                 <div>
                     <label for="cover">Imagen:</label>
-                    <input type="file" name="cover">
+                    <input type="file" name="cover" class="buscar-Imagen">
                 </div>
                 <div>
-                    <button type="submit">Crear</button>
+                    <button type="submit" class= "boton-crear">Crear</button>
                 </div>
             </form>
-   
+        </section>
         </main>
 
        <%- include("./partials/footer") %>

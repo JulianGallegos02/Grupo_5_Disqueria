@@ -97,100 +97,65 @@ header{
     margin-bottom: -5px;
 }
 
+/*Product-Create */
 
-.carrusel{
-    display: flex;
+main{
     justify-content: center;
-}
-
-.banner {
-    width: 90%;
-    margin: 10px;
-    /* border: solid 2px white; */
-    border-radius: 40px;
-}
-
-.categorias{
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    margin: 0 auto;
 }
 
-.categorias article{
-    background-color: #fb8501;
-    text-align: center;
-    padding: 8px;
-    margin: 10px;
-    border-radius: 10px;
-    border: #fb8501;
-    transition: 500ms;
-}
-
-.categorias a{
-    width: 40%;
-}
-
-.icono-categoria{
-    width: 60%;
+.productCreate-Container {
+    background-color: #8ecae6;
+    border: 3px solid white;
+    border-radius: 20px;
+    text-align:center;
+    width: 300px;
+    margin: 30px;
+    padding: 10px;
+    position:relative; 
 }
 
 .titular {
-    font-family: 'Rubik Mono One', sans-serif;
-    margin: 50px;
+    color: white;
+}
+
+.productCreate-form {
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.nombreAlbum, .nombreArtista, .precio, .genero {
+	width:250px;
+	padding:8px 15px;
+	border:1px solid grey;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	display:inline-block;
+    margin: 5px;
+}
+
+.campo-descripcion {
+width: 95%;
+}
+
+.buscar-Imagen {
+    width:250px;
+	padding:8px 0px;
+}
+
+.boton-crear {
+    align-self: center;
+    background-color: #fb8501;
+    padding: 10px;
+    border: none;
+    width: 95%;
     text-align: center;
-    color: #ffb703;
-    font-size: xx-large;
-}
-
-.nuevos-lanzamientos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-}
-
-.cover-art{
-    width: 100%;
-}
-
-.album{
-    width: 80%;
-    margin: 10px;
-    padding: 15px;
-    background-color: white;
-    transition: 500ms;
-}
-
-.nuevos-lanzamientos a{
-    text-decoration: none;
-}
-
-.info-album{
-    margin-top: 10px;
-}
-
-.titulo-album{
-    margin-bottom: 5px;
-    color: #fb8501;
-}
-
-.banda-album{
-    font-weight: bold;
-    color: #023047;
-}
-
-.album:hover{
-    background-color: black;
-    color: white;
-    box-shadow: 2px 6px 21px 7px rgba(0,0,0,0.56);
-    padding: 12px;
-}
-
-.album:hover .titulo-album, .album:hover .banda-album {
     color: white;
 }
+/*Fin ProductCreate*/
+
+
+/*Footer */
 
 footer{
     background-color: #fb8501;
