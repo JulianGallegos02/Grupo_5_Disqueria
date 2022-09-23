@@ -1,6 +1,6 @@
 # Grupo Nº 5: Disqueria Sound Bites
 
-![![SoudBitesDisqueria](https://user-images.githubusercontent.com/108841314/192066839-bfbc23e9-b37b-42db-962c-ebf91164a5dc.jpg)]
+![SoudBitesDisqueria](https://user-images.githubusercontent.com/108841314/192066839-bfbc23e9-b37b-42db-962c-ebf91164a5dc.jpg)
 
 
 ## Introducción
