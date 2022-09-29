@@ -1,6 +1,6 @@
 # Grupo Nº 5: Sound Bites (Disquería)
 
-![](![Soundbites-logo3](https://user-images.githubusercontent.com/108841314/192911617-2cdce186-74ec-4c12-9983-95b17c1d89bd.png)
+![Soundbites-logo3](https://user-images.githubusercontent.com/108841314/192911617-2cdce186-74ec-4c12-9983-95b17c1d89bd.png)
 
 
 ## Introducción
