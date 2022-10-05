@@ -30,7 +30,7 @@ La retrospectiva de la estrella de mar nos ayuda a entender mejor qué salió ma
 
 ## 4. Hacer menos (Less of)
 
-* Requires solo con los datos estrictamente necesarios.
+* Commits solo con los datos estrictamente necesarios.
 
 ## 5. Dejar de hacer (Stop doing)
 
@@ -65,11 +65,51 @@ En esta nueva retrospectiva tuvimos en cuenta nuestros errores y aciertos del Sp
 
 ## 4. Hacer menos (Less of)
 
-* Requires solo con los datos estrictamente necesarios.
+* Commits solo con los datos estrictamente necesarios.
 
 ## 5. Dejar de hacer (Stop doing)
 
 * No procrastinar.
+
+
+# :star: Sprint IV
+
+En esta nueva retrospectiva tuvimos en cuenta nuestros errores y aciertos del Sprint III.
+
+## 1. Comenzar a hacer (Start doing)
+
+* Cambiar la paleta de Colores.  
+
+* Emprolijar el css.
+
+* Cambiar estilo de los formularios. 
+
+* Distribuir más las tareas. 
+
+## 2. Hacer más (More of)
+
+* Mantener el trello actualizado y chequearlo.
+
+
+## 3. Continuar haciendo (Keep doing)
+
+* El lindo ambiente del grupo. Nos escuchamos, nos motivamos, nos ayudamos mutuamente. 
+
+* Scrum Weekly Meeting (La reunión semanal). 
+
+* La comunicación por WhatsApp. 
+
+* Mantener el repositorio en Github actualizado.
+
+## 4. Hacer menos (Less of)
+
+* Commits solo con los datos estrictamente necesarios.
+
+## 5. Dejar de hacer (Stop doing)
+
+* No procrastinar.
+
+
 
 
 
