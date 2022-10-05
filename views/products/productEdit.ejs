@@ -8,7 +8,7 @@
             <section class = "productEdit-Container">
             <h2 class="titular">Editar producto: "<%= disco.album %>"</h2>
 
-            <form class="formEdit" action="/productEdit/<%= disco.id %>?_method=PUT" method="POST" class="productEdit-form">
+            <form class="edit" action="/products/edit/<%= disco.id %>?_method=PUT" method="POST" class="productEdit-form">
                 <div>
                     <label for="album">Nombre del Album:</label>
                     <input type="text" value="<%= disco.album %>" name="album" id="album" class="nombreAlbum">
@@ -30,11 +30,20 @@
                     <input type="text" value="<%= disco.genero %>" name="genero" id="genero" class="genero">
                 </div>
                 <div>
+                    <label for="discografica">Discografica:</label>
+                    <input type="text" name="discografica" id="discografica" class="discografica">
+                </div>
+                <div>
                     <label for="cover">Imagen:</label>
                     <input type="file" value="<%= disco.imagen %>" name="cover" class="buscar-Imagen">
                 </div>
                 <div>
                     <button type="submit" class= "boton-editar">Editar</button>
+                </div>
+            </form>
+            <form class="delete" action="/products/edit/<%= disco.id %>?_method=DELETE" method="POST" class="productEdit-form">
+                <div>
+                    <button type="" class= "boton-borrar">Eliminar producto</button>
                 </div>
             </form>
         </section>

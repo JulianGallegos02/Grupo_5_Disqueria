@@ -14,7 +14,13 @@ function create(data) {
 
 const controller = {
     detalleProducto: function (req, res) {
-        res.render("productDetail", { style: "productDetail" });
+        const data = findAll()
+
+        const discoEncontrado = data.find(function (disco) {
+            return disco.id == req.params.id
+        });
+
+        res.render("productDetail", { style: "productDetail", products: discoEncontrado });
     },
 
     carrito: function (req, res) {
@@ -41,6 +47,7 @@ const controller = {
             precio: Number(req.body.precio),
             descripcion: req.body.descripcion,
             genero: req.body.genero,
+            discografica: req.body.discografica,
             imagen: req.body.cover
         }
 
@@ -48,7 +55,7 @@ const controller = {
 
         create(data);
 
-        res.redirect("/productList");
+        res.redirect("/products");
 
     },
 
@@ -68,14 +75,27 @@ const controller = {
         })
         discoEncontrado.album = req.body.album;
         discoEncontrado.artista = req.body.artista;
-        discoEncontrado.precio = req.body.precio;
+        discoEncontrado.precio = Number(req.body.precio);
         discoEncontrado.descripcion = req.body.descripcion;
         discoEncontrado.genero = req.body.genero;
+        discoEncontrado.discografica = req.body.discografica,
         discoEncontrado.imagen = req.body.cover;
 
         create(data);
-        res.redirect("/productList");
+        res.redirect("/products");
+    },
+
+    delete: function(req,res){
+        const data = findAll()
+        const nuevoArray = data.filter(function(disco){
+            return disco.id != req.params.id
+
+        })
+        create(nuevoArray);
+        res.redirect("/products");
     }
+
+
 }
 
 module.exports = controller;

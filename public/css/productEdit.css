@@ -130,7 +130,8 @@ main {
 .nombreAlbum,
 .nombreArtista,
 .precio,
-.genero {
+.genero,
+.discografica {
     width: 250px;
     padding: 8px 15px;
     border: 1px solid grey;
@@ -160,6 +161,21 @@ main {
     text-align: center;
     color: white;
 }
+
+.boton-borrar {
+
+     align-self: center;
+     background-color: black;
+     padding: 10px;
+     border: none;
+     width: 95%;
+     text-align: center;
+     color: white;
+     margin-top: 10px;
+
+
+}
+
 
 /*Fin ProductEdit*/
 

@@ -8,11 +8,11 @@
             <section class="detalle-compra">
 
                 <article class="imagen-producto">
-                    <img class="imagen-detalle" src="images\album-detail\Willofthepeopleproducto.png">
+                    <img class="imagen-detalle" src="/images\album-detail\Willofthepeopleproducto.png">
 
                     <div class="titulo-banda">
-                        <p class="titulo">Will of the People</p>
-                        <p class="banda">Muse</p>
+                        <p class="titulo"><%=products.album %></p>
+                        <p class="banda"><%=products.artista %></p>
                     </div>
 
                 </article>
@@ -23,7 +23,7 @@
                     <div class="agregar-carrito">
 
                         <div class="opciones-contenedor"><i class="fas fa-record-vinyl"></i> LP </div>
-                        <div class="precio"> $7000</div>
+                        <div class="precio"> $<%=products.precio %></div>
                     </div>
                     
                     <div class="boton-carrito">
@@ -38,22 +38,22 @@
                         
                         <div class="formato-precio">
                             <div class="opciones-contenedor"><i class="fas fa-record-vinyl"></i> LP </div>
-                            <div class="precio"> $7000</div>
+                            <div class="precio"> $<%=products.precio + 200 %></div>
                         </div>
 
                         <div class="formato-precio">
                             <div class="opciones-contenedor"><i class="fas fa-compact-disc"></i> CD</div>
-                            <div class="precio"> $7000</div>
+                            <div class="precio"> $<%=products.precio + 400 %></div>
                         </div>
 
                         <div class="formato-precio">
-                            <div class="opciones-contenedor"><img src="images\iconos-logos\cassete.svg" class="icono-cassette"> Cassette</div>
-                            <div class="precio"> $7000</div>
+                            <div class="opciones-contenedor"><img src="/images\iconos-logos\cassete.svg" class="icono-cassette"> Cassette</div>
+                            <div class="precio"> $<%=products.precio + 600 %></div>
                         </div>
 
                         <div class="formato-precio">
                             <div class="opciones-contenedor"><i class="fas fa-play"></i> Digital</div>
-                            <div class="precio"> $7000</div>
+                            <div class="precio"> $<%=products.precio + 800 %></div>
                         </div>
 
                     </div>
@@ -62,19 +62,16 @@
             </article>
 
                 <article class="descripcion">
-                        <p class="parrafo">Will of the people es el título del noveno álbum de Muse, y el de la pista de apertura del mismo. Un disco "creado en Los Ángeles y Londres bajo el influjo de una creciente incertidumbre e inestabilidad en el mundo. Una pandemia, nuevas guerras en Europa, protestas y disturbios masivos, un intento de insurrección, la vacilación de la democracia occidental, el aumento del autoritarismo, los incendios forestales y los desastres naturales y la desestabilización del orden global", comentan en nota promocional, sobre unos tiempos de preocupación por las amenazas que planean sobre los seres humanos y el planeta en el que habitan. "Esta obra es una navegación personal a través de esos miedos y la preparación para lo que viene después".
-
-                            <p class="parrafo">Una colección de 10 pistas con Won't stand down como primer avance, una canción sobre defender tu posición contra los acosadores, estrenada junto a un audiovisual dirigido por Jared Hogan. Da continuidad Compliance el 17 de marzo de 2022 con un videoclip de Jeremi Durand, acompañando al anuncio del lanzamiento de 'Will of the people', incluidos nombre, listado de temas y fecha de salida. Como tercer avance la pista titular, y el cuarto Kill or be killed. Con You make me feel like it's Halloween como single de enfoque.</p>
-                            
-                            <p class="ultimo-parrafo">Sobre el sonido Matt Bellamy comentó a Apple Music 1: "Este álbum va desde el metal hasta el pop hasta mi primera versión de una canción de Adele… mucha electrónica. Es como un completo… Lo producimos nosotros mismos. Estuvimos analizando todo lo que hemos hecho hasta la fecha". Con mucha aportación del baterista Dominic Howard. Bellamy añadió: "Dejé que Dom tomara la iniciativa un poco. Es por eso que este álbum ha tomado dos años. Cada decisión tarda como una semana en volver con nosotros. Normalmente apresuro todo. Con él es muy lento, se toma su tiempo en cada decisión. Le permití tomar muchas decisiones sobre lo que era bueno y lo que no".</p>
+                    <p>
+                        <%=products.descripcion %>
+                    </p>
                 </article>
 
                 <article class="datos-tecnicos">
                     <ul class="lista-tecnica">
-                        <li>Label: <a href=# class="link-tecnico"> Warner Bros</a></li>
-                        <li>Genre: <a href=# class="link-tecnico">  Rock-Pop</a></li>
-                        <li>Artist: <a href=# class="link-tecnico"> Muse</a></li>
-                        <li>Released 08/26/22</li>
+                        <li>Label: <a href=# class="link-tecnico"> <%=products.discografica %></a></li>
+                        <li>Genre: <a href=# class="link-tecnico">  <%=products.genero %></a></li>
+                        <li>Artist: <a href=# class="link-tecnico"> <%=products.artista %></a></li>
                     </ul>
                 </article>
 

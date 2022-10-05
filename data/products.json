@@ -3,18 +3,20 @@
         "id": 1,
         "album": "The Car",
         "artista": "Arctic Monkeys",
-        "precio": "6000",
+        "precio": 6000,
         "descripcion": "",
         "genero": "",
+        "discografica": "",
         "imagen": ""
     },
     {
         "id": 2,
         "album": "Unlimited Love",
         "artista": "Red Hot Chili Peppers",
-        "precio": 7000,
-        "descripcion": "",
-        "genero": "",
+        "precio": 3500,
+        "descripcion": "Con cuatro décadas de trayectoria musical sobre sus espaldas, los siempre energéticos e irreverentes Red Hot Chili Peppers han lanzado el doceavo álbum de su carrera, el cual ha sido uno de los más esperados de los últimos años por sus aficionados. Eso incluye el regreso, no de uno, sino de dos personas muy importantes en la carrera de la agrupación.\r\n\r\n¿Qué tanto han cambiado durante sus 40 años de trayectoria? ¿Cuánto les habrá afectado el constante cambio de integrantes? ¿Acaso John Frusciante aún mantiene su talento con la guitarra? Estas son sólo algunas interrogantes que surgieron tanto en aficionados como con la crítica especializada cuando se anunció el nuevo disco.\r\n\r\nUnlimited Love se estrenó el primero de abril de 2022 y después de estarlo escuchando constantemente durante varios días, podemos afirmar que es quizá su disco más maduro y uno de los más personales para sus integrantes.",
+        "genero": "Rock, Funk / Soul",
+        "discografica": "Warner Records",
         "imagen": ""
     },
     {
@@ -22,8 +24,9 @@
         "album": "Will of The People",
         "artista": "Muse",
         "precio": 7000,
-        "descripcion": "",
-        "genero": "",
+        "descripcion": "Will of the people es el título del noveno álbum de Muse, y el de la pista de apertura del mismo. Un disco creado en Los Ángeles y Londres bajo el influjo de una creciente incertidumbre e inestabilidad en el mundo. Una pandemia, nuevas guerras en Europa, protestas y disturbios masivos, un intento de insurrección, la vacilación de la democracia occidental, el aumento del autoritarismo, los incendios forestales y los desastres naturales y la desestabilización del orden global, comentan en nota promocional, sobre unos tiempos de preocupación por las amenazas que planean sobre los seres humanos y el planeta en el que habitan. Esta obra es una navegación personal a través de esos miedos y la preparación para lo que viene después. Una colección de 10 pistas con Won't stand down como primer avance, una canción sobre defender tu posición contra los acosadores, estrenada junto a un audiovisual dirigido por Jared Hogan. Da continuidad Compliance el 17 de marzo de 2022 con un videoclip de Jeremi Durand, acompañando al anuncio del lanzamiento de 'Will of the people', incluidos nombre, listado de temas y fecha de salida. Como tercer avance la pista titular, y el cuarto Kill or be killed. Con You make me feel like it's Halloween como single de enfoque.Sobre el sonido Matt Bellamy comentó a Apple Music 1: Este álbum va desde el metal hasta el pop hasta mi primera versión de una canción de Adele… mucha electrónica. Es como un completo… Lo producimos nosotros mismos. Estuvimos analizando todo lo que hemos hecho hasta la fecha. Con mucha aportación del baterista Dominic Howard. Bellamy añadió: ''Dejé que Dom tomara la iniciativa un poco. Es por eso que este álbum ha tomado dos años. Cada decisión tarda como una semana en volver con nosotros. Normalmente apresuro todo. Con él es muy lento, se toma su tiempo en cada decisión. Le permití tomar muchas decisiones sobre lo que era bueno y lo que no''.",
+        "genero": "Rock-Pop",
+        "discografica": "Warner Records",
         "imagen": ""
     },
     {
@@ -32,7 +35,8 @@
         "artista": "Hot Chip",
         "precio": 7000,
         "descripcion": "",
-        "genero": "",
+        "genero": "Pop",
+        "discografica": "",
         "imagen": ""
     },
     {
@@ -42,6 +46,37 @@
         "precio": 7000,
         "descripcion": "",
         "genero": "",
+        "discografica": "",
+        "imagen": ""
+    },
+    {
+        "id": 6,
+        "album": "Franz Ferdinand",
+        "artista": "Franz Ferdinand",
+        "precio": 7000,
+        "descripcion": "",
+        "genero": "",
+        "discografica": "",
+        "imagen": ""
+    },
+    {
+        "id": 7,
+        "album": "Flower Boy",
+        "artista": "Tyler, The Creator",
+        "precio": 7000,
+        "descripcion": "",
+        "genero": "",
+        "discografica": "",
+        "imagen": ""
+    },
+    {
+        "id": 8,
+        "album": "First Impressions of Earth",
+        "artista": "The Strokes",
+        "precio": 7000,
+        "descripcion": "",
+        "genero": "",
+        "discografica": "",
         "imagen": ""
     }
 ]

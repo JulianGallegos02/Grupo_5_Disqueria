@@ -7,7 +7,7 @@
         <main> 
             <section class = "productCreate-Container">
             <h2 class="titular">Crear nuevo producto</h2>
-            <form action="/productCreate" method="POST" class="productCreate-form">
+            <form action="/products/create" method="POST" class="productCreate-form">
                 <div>
                     <label for="album">Nombre del Album:</label>
                     <input type="text" name="album" id="album" class="nombreAlbum">
@@ -27,6 +27,10 @@
                 <div>
                     <label for="genero">Género:</label>
                     <input type="text" name="genero" id="genero" class="genero">
+                </div>
+                <div>
+                    <label for="discografica">Discografica:</label>
+                    <input type="text" name="discografica" id="discografica" class="discografica">
                 </div>
                 <div>
                     <label for="cover">Imagen:</label>
