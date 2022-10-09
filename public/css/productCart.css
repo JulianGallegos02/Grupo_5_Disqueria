@@ -113,10 +113,10 @@ main {
 }
 
 .carrito-container {
-    background-color: white;
-    border: 3px solid black;
+    background-color: #ffffff87;
     padding: 20px;
     margin: 20px;
+    border-radius: 10px;
 
 }
 
@@ -130,6 +130,10 @@ main {
     width: 33%;
 }
 
+.fa-trash-alt{
+    color: black;
+    
+}
 .subtotal{
     align-self: flex-end;
     text-align: end;

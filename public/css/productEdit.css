@@ -108,14 +108,14 @@ main {
 }
 
 .productEdit-Container {
-    background-color: #8ecae6;
-    border: 3px solid white;
-    border-radius: 20px;
+    background-color: #0000002b;
+    border-radius: 10px;
     text-align: center;
     width: 300px;
     margin: 30px;
     padding: 10px;
     position: relative;
+    color: white;
 }
 
 .titular {

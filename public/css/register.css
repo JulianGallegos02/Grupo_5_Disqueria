@@ -105,20 +105,16 @@ main{
 }
 
 .register-container {
-    background-color: #8ecae6;
-    border: 3px solid white;
+    background-color: #0000002b;
     display: inline-block;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 300px;
     margin: 30px;
     padding: 10px;
     position: relative;
     text-align: center;
+    color: white;
 }
-
-/*.register-container div {
-    margin: 5px;
-}*/
 
 .register-form {
     margin-top: 20px;
