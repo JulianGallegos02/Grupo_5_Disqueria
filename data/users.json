@@ -1,6 +1,6 @@
 [
     {
-        "id":1,
+        "id": 1,
         "nombre": "Julian",
         "apellido": "Gallegos",
         "email": "julian@soundbites.com",
@@ -8,7 +8,7 @@
         "imagen": ""
     },
     {
-        "id":1,
+        "id": 2,
         "nombre": "Julian",
         "apellido": "Gallegos",
         "email": "julian@soundbites.com",
@@ -16,7 +16,7 @@
         "imagen": ""
     },
     {
-        "id":1,
+        "id": 3,
         "nombre": "Julian",
         "apellido": "Gallegos",
         "email": "julian@soundbites.com",
@@ -24,11 +24,19 @@
         "imagen": ""
     },
     {
-        "id":1,
+        "id": 4,
         "nombre": "Julian",
         "apellido": "Gallegos",
         "email": "julian@soundbites.com",
         "contraseña": "1234",
         "imagen": ""
+    },
+    {
+        "id": 5,
+        "nombre": "Agustin",
+        "apellido": "Ditarcio",
+        "email": "agus@soundbites.com",
+        "contraseña": "12345",
+        "imagen": "avatar1666922669992-.png"
     }
 ]

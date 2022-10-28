@@ -9,28 +9,25 @@
         <main>
             <section class="register-container">
                 <h2> Registrate</h2>
-                <form action="login" method="GET" class="register-form">
+                <form action="/users/register" enctype="multipart/form-data" method="POST" class="register-form">
                     <div class="nombre-apellido">
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" required>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="nombre-apellido">
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
                     </div>
                     <div class="email">
                         <input type="email" name="email" id="email" placeholder="E-Mail" required>
                     </div>
-                    <div class="usuario">
-                        <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" required>
-                    </div>
                     <div class="password">
-                        <input type="password" name="password" id="password" pattern=".{6,}" placeholder="Contraseña" required>
+                        <input type="password" name="password" id="password" placeholder="Contraseña" required>
                     </div> 
-                    <div class="password">
-                        <input type="password" name="password" id="password" pattern=".{6,}" placeholder="Confirmar Contraseña" required>
-                    </div>
-                    <div class="cumpleaños">
-                        <p>Fecha de Nacimiento</p>
-                        <input type="date" name="cumpleaños">
-                    </div>            
+                    <div class="avatar">
+                        <label for="avatar">Foto de perfil:</label>
+                        <input type="file" name="avatar" id="avatar">
+                    </div>           
                         <article class="botones">
-                            <a href=#><p class="boton-registro"> Registrate</p></a>
+                            <button class="boton-registro" type="submit">Registrate</button>
                         </article>
                     <article>
                         <p class="pregunta">¿Ya tenés cuenta?</p>
