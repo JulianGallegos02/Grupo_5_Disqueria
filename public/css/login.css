@@ -221,6 +221,12 @@ footer {
     font-size: 11px;
 }
 
+.error-login{ 
+    color: #fb8501;
+    margin: 10px;
+    margin-right: 46px;
+}
+
 @media (min-width: 361px) {}
 
 @media (min-width: 769px) {
@@ -250,5 +256,6 @@ footer {
         align-self: center;
 
     }
+
 
 }

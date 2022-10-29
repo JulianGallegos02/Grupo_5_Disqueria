@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const bcryptjs = require("bcryptjs");
-const {validationResult} = require("express-validator")
+const {validationResult} = require("express-validator");
 
 function findAll() {
     const jsonData = fs.readFileSync(path.join(__dirname, "../data/users.json"));
@@ -28,13 +28,34 @@ const controller = {
         const users = findAll();
 
         const userFound = users.find(function(user){
-           return user.email == req.body.email && bcryptjs.compareSync(req.body.password, user.password)
+           return user.email == req.body.email && bcryptjs.compareSync(req.body.password, user.contraseña)
         })
 
         if(!userFound){
             return res.render("login", { errorLogin: "Credenciales invalidas!",style: "login" })
+        }else{
+
+            req.session.usuarioLogueado = {
+                id: userFound.id,
+                email: userFound.email
+
+            };
+
+            if(req.body.remember){
+                res.cookie("recordame",userFound.id)
+            }
+
+            res.redirect("/")
+
         }
 
+    },
+
+    logout: function(req,res){
+
+        req.session.destroy()
+        res.clearCookie("recordame");
+        res.redirect("/");
     },
 
     register: function(req, res){

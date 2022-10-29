@@ -25,6 +25,11 @@
                             <% } %>
                     </div>
 
+                    <div>
+                        <input type="checkbox" name="remember" class="recordar-contraseña" id="remember">
+                        <label for="remember" class="recordar-contraseña-texto">Recordar</label>
+                    </div>
+
 
                     <div class="ingresar-recuperarclave">
                         <article class="botones">
@@ -32,7 +37,7 @@
                         </article>
 
                         <% if(locals.errorLogin){ %>
-                            <p> <%= errorLogin %> </p>
+                            <p class="error-login"> <%= errorLogin %> </p>
                             <% } %>
 
                         <article class="botones2">

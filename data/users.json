@@ -34,25 +34,9 @@
     {
         "id": 5,
         "nombre": "Agustin",
-        "apellido": "Ditarcio",
-        "email": "agus@soundbites.com",
-        "contraseña": "12345",
+        "apellido": "Costa Ditarcio",
+        "email": "aguscosta@soundbites.com",
+        "contraseña": "$2a$10$SiU.gQKrUdUW9ZNjmzdUKOzMKufAgjPI0hC9N3eicUfpf4L9TLMkq",
         "imagen": "avatar1666922669992-.png"
-    },
-    {
-        "id": 6,
-        "nombre": "Hola",
-        "apellido": "po",
-        "email": "123@gmail.com",
-        "contraseña": "$2a$10$QXxrWNYSFQtnNW6t9EvkMuWzcYCPtQUJZM/U7sPMm72FpxJBcmhzO",
-        "imagen": "avatar1667079626344-.png"
-    },
-    {
-        "id": 7,
-        "nombre": "julian",
-        "apellido": "gallegos",
-        "email": "123@gmail.com",
-        "contraseña": "$2a$10$gc.W6JjvaK.uMlJygrl.pu4voXDl8Qdmfm5azzTMCjt0C.UMg0SY.",
-        "imagen": "avatar1667080545571-.png"
     }
 ]
