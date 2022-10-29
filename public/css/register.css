@@ -189,6 +189,10 @@ footer {
     font-size: 11px;
 }
 
+.msg-error{
+    color: #fb8501;
+}
+
 @media (min-width: 361px) {}
 
 @media (min-width: 769px) {
@@ -217,6 +221,10 @@ footer {
     .register-container {
         align-self: center;
 
+    }
+    
+    .msg-error{
+        color: #fb8501,
     }
 
 }

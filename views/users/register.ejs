@@ -11,16 +11,28 @@
                 <h2> Registrate</h2>
                 <form action="/users/register" enctype="multipart/form-data" method="POST" class="register-form">
                     <div class="nombre-apellido">
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" >
+                        <% if(locals.errors && locals.errors.nombre){ %>
+                            <p class="msg-error"> <%= errors.nombre.msg %> </p>
+                            <% } %>
                     </div>
                     <div class="nombre-apellido">
-                        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido" >
+                        <% if(locals.errors && locals.errors.apellido){ %>
+                            <p class="msg-error"> <%= errors.apellido.msg %> </p>
+                            <% } %>
                     </div>
                     <div class="email">
-                        <input type="email" name="email" id="email" placeholder="E-Mail" required>
+                        <input type="email" name="email" id="email" placeholder="E-Mail" >
+                        <% if(locals.errors && locals.errors.email){ %>
+                            <p class="msg-error"> <%= errors.email.msg %> </p>
+                            <% } %>
                     </div>
                     <div class="password">
-                        <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                        <input type="password" name="password" id="password" placeholder="Contraseña" >
+                        <% if(locals.errors && locals.errors.password){ %>
+                            <p class="msg-error"> <%= errors.password.msg %> </p>
+                            <% } %>
                     </div> 
                     <div class="avatar">
                         <label for="avatar">Foto de perfil:</label>

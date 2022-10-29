@@ -125,7 +125,7 @@ main{
     padding: 5px;
 }
 
-form input[type="text"],
+form input[type="email"],
 form input[type="password"]{
 	width:250px;
 	padding:8px 15px;
@@ -153,10 +153,11 @@ main section h2 {
     margin-top: 10px;
 }
 
-.usuario,
+.email,
 .password {
     padding: 10px;
     border-radius: 0px 5px 5px 0px;
+    
 }
 
 .ingresar-recuperarclave{

@@ -9,23 +9,32 @@
         <main>
             <section class="login-container">
                 <h2> Iniciar Sesión</h2>
-                <form action="login" method="GET" class="login-form">
-                    <div class="usuario">
-                        <label>
-                            <p><input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" required>
-                            </p>
-                        </label>
+                <form action="/users/login" method="POST" class="login-form">
+
+                    <div class="email">
+                            <input type="email" name="email" id="email" placeholder="E-Mail" >
+                            <% if(locals.errors && locals.errors.email){ %>
+                                <p class="msg-error"> <%= locals.errors.email.msg %> </p>
+                                <% } %>
                     </div>
+
                     <div class="password">
-                        <label>
-                            <p><input type="password" name="password" id="password" pattern=".{6,}"
-                                    placeholder="Contraseña" required></p>
-                        </label>
+                        <input  type="password" name="password" id="password" placeholder="Contraseña" >
+                        <% if(locals.errors && locals.errors.password){ %>
+                            <p class="msg-error"> <%= locals.errors.password.msg %> </p>
+                            <% } %>
                     </div>
+
+
                     <div class="ingresar-recuperarclave">
                         <article class="botones">
-                            <a href=#><p class="boton-ingresa"> Ingresá</P></a>
+                            <button class="boton-ingresa" type="submit">Ingresá</button>
                         </article>
+
+                        <% if(locals.errorLogin){ %>
+                            <p> <%= errorLogin %> </p>
+                            <% } %>
+
                         <article class="botones2">
                             <a href=#><p class="forgot-password"> Olvidé la contraseña</P></a>
                         </article>

@@ -1,5 +1,7 @@
 const fs = require("fs");
 const path = require("path");
+const bcryptjs = require("bcryptjs");
+const {validationResult} = require("express-validator")
 
 function findAll() {
     const jsonData = fs.readFileSync(path.join(__dirname, "../data/users.json"));
@@ -17,11 +19,34 @@ const controller = {
     login: function(req, res){
         res.render("login", {style: "login"});
     },
+    processLogin: function(req,res){
+        const error = validationResult(req)
+        if(!error.isEmpty()){
+           return res.render("login", { errors: error.mapped(),style: "login" })
+        }
+
+        const users = findAll();
+
+        const userFound = users.find(function(user){
+           return user.email == req.body.email && bcryptjs.compareSync(req.body.password, user.password)
+        })
+
+        if(!userFound){
+            return res.render("login", { errorLogin: "Credenciales invalidas!",style: "login" })
+        }
+
+    },
 
     register: function(req, res){
         res.render("register", {style: "register"});
     },
     addUser: function(req, res){
+        const error = validationResult(req)
+        if(!error.isEmpty()){
+            console.log(error.mapped())
+           return res.render("register", { errors: error.mapped(),style: "register"})
+        }
+        
         const data = findAll()
 
         const newUser = {
@@ -29,7 +54,7 @@ const controller = {
             nombre: req.body.nombre,
             apellido: req.body.apellido,
             email: req.body.email,
-            contraseña: req.body.password,
+            contraseña: bcryptjs.hashSync(req.body.password,10),
             imagen: req.file.filename
 
         }
@@ -38,7 +63,7 @@ const controller = {
 
         create(data);
 
-        res.redirect("/");
+        res.redirect("/");      //Redirigi a pagina de perfil
     }
 }
 
