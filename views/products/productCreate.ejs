@@ -7,7 +7,7 @@
         <main> 
             <section class = "productCreate-Container">
             <h2 class="titular">Crear nuevo producto</h2>
-            <form action="/products/create" method="POST" class="productCreate-form">
+            <form action="/products/create" enctype="multipart/form-data" method="POST" class="productCreate-form">
                 <div>
                     <label for="album">Nombre del Album:</label>
                     <input type="text" name="album" id="album" class="nombreAlbum">
@@ -34,7 +34,7 @@
                 </div>
                 <div>
                     <label for="cover">Imagen:</label>
-                    <input type="file" name="cover" class="buscar-Imagen">
+                    <input type="file" name="cover" id="cover" class="buscar-Imagen">
                 </div>
                 <div>
                     <button type="submit" class= "boton-crear">Crear</button>

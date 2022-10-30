@@ -8,7 +8,7 @@
             <section class = "productEdit-Container">
             <h2 class="titular">Editar producto: "<%= disco.album %>"</h2>
 
-            <form class="edit" action="/products/edit/<%= disco.id %>?_method=PUT" method="POST" class="productEdit-form">
+            <form class="edit" action="/products/edit/<%= disco.id %>?_method=PUT" enctype="multipart/form-data" method="POST" class="productEdit-form">
                 <div>
                     <label for="album">Nombre del Album:</label>
                     <input type="text" value="<%= disco.album %>" name="album" id="album" class="nombreAlbum">

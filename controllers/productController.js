@@ -48,7 +48,7 @@ const controller = {
             descripcion: req.body.descripcion,
             genero: req.body.genero,
             discografica: req.body.discografica,
-            imagen: req.body.cover
+            imagen: req.file.filename
         }
 
         data.push(newProduct);
@@ -79,7 +79,7 @@ const controller = {
         discoEncontrado.descripcion = req.body.descripcion;
         discoEncontrado.genero = req.body.genero;
         discoEncontrado.discografica = req.body.discografica,
-        discoEncontrado.imagen = req.body.cover;
+        discoEncontrado.imagen = req.file.filename;
 
         create(data);
         res.redirect("/products");
