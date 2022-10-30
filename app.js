@@ -10,6 +10,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var productRouter = require('./routes/products');
 const localsMiddleware = require("./middleware/localsMiddle")
+const recordameMiddle = require("./middleware/recordameMiddle")
 
 var app = express();
 
@@ -29,6 +30,7 @@ app.use(session({
     saveUninitialized: true
 }));
 app.use(localsMiddleware);
+app.use(recordameMiddle);
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
