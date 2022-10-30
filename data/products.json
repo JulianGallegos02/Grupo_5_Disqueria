@@ -88,5 +88,35 @@
         "genero": "Rock alternativo",
         "discografica": "Interscope Records",
         "imagen": "cover1667116180381-.jpg"
+    },
+    {
+        "id": 10,
+        "album": "Unas vacaciones raras",
+        "artista": "Él Mató a un Policía Motorizado",
+        "precio": 2500,
+        "descripcion": "El Mató a un Policía Motorizado estrenó Unas vacaciones raras, un disco de ocho canciones que la banda platense grabó para musicalizar el reestreno de Okupas. La selección de este nuevo álbum fue hecha por el director de la serie Bruno Stagnaro e incluye su último single \"La otra ciudad\", además de reversiones de canciones clásicas del grupo originalmente incluidas en sus discos Un millón de euros (2006), Día de los muertos (2008) y La Dinastía Scorpio (2012).",
+        "genero": "Indie rock",
+        "discografica": "Nacional Records",
+        "imagen": "cover1667116706778-.webp"
+    },
+    {
+        "id": 11,
+        "album": "This Old Dog",
+        "artista": "Mac DeMarco",
+        "precio": 3500,
+        "descripcion": "This Old Dog es el tercer álbum de estudio de larga duración del cantautor y multiinstrumentista Mac DeMarco, lanzado el 5 de mayo de 2017 a través de Captured Tracks. Tras el lanzamiento de Another One, DeMarco se mudó de su aislado hogar de Queens a una casa en Los Ángeles para crear el álbum.",
+        "genero": "Indie rock",
+        "discografica": "Captured Tracks",
+        "imagen": "cover1667116825649-.webp"
+    },
+    {
+        "id": 12,
+        "album": "Hi, how are you",
+        "artista": "Daniel Johnston",
+        "precio": 1312,
+        "descripcion": "Hi, How Are You: The Unfinished Album, comúnmente conocido simplemente como Hi, How Are You, es el sexto álbum de casete autoeditado por el cantautor Daniel Johnston, grabado en septiembre de 1983. Se puede decir que es su álbum más popular. Johnston afirmó que lo grabó durante un ataque de nervios.",
+        "genero": "Lo-fi",
+        "discografica": "Eternal Yip Eye Music",
+        "imagen": "cover1667117170605-.webp"
     }
 ]
