@@ -274,6 +274,23 @@ footer{
     font-size: 11px;
 }
 
+.nombre-usuario{
+    margin-top: 20px;
+    color: white;
+}
+
+.imagen-perfil{
+    width: 50px;
+    border-radius: 50px;
+    margin: 0px 10px;
+    transition: 500ms;
+}
+
+.imagen-perfil:hover{
+    box-shadow: 1px 1px 9px 6px rgb(0 0 0 / 56%);
+    border: 2px solid white;
+}
+
 .boton-cerrar-sesion{
     text-decoration: none;
     border: none;
@@ -281,6 +298,14 @@ footer{
     border-radius: 15px;
     color: white;
     background-color: black;
+    margin-top: 8px;
+    transition: 500ms;
+}
+
+.boton-cerrar-sesion:hover{
+    background-color: white;
+    box-shadow: 1px 1px 9px 6px rgb(0 0 0 / 56%);
+    color: black; 
 }
 
 @media (min-width: 361px){

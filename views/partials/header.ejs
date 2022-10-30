@@ -30,10 +30,10 @@
 
                 <p class="nombre-usuario">Bienvenido <%= usuario.nombre + " " + usuario.apellido     %></p>
 
-                <article> 
-                    <img class="imagen-perfil" src=/images/users/<%= usuario.avatar %> >
+                <a href="/users/perfil"><article> 
+                    <img class="imagen-perfil" src=/images/users/<%= usuario.avatar %>>
                     
-                </article>
+                </article></a>
  
                 <form action="/users/logout" method="POST">
                 <button type="submit" class="boton-cerrar-sesion">Cerrar Sesion</button>

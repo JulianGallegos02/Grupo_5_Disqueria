@@ -99,6 +99,62 @@ header {
     margin-bottom: -5px;
 }
 
+.perfil-box{
+    background-color: #0000002b;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 40px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    width: 340px;
+}
+
+main{
+    display: flex;
+    align-self: center;
+}
+
+.titulo-perfil{
+    margin-top: 7px;
+    font-size: xx-large;
+}
+
+.box-imagen-perfil{
+    width: 50%;
+    margin: 20px;
+}
+
+.box-nombre-usuario{
+    margin-top: -5px;
+    margin-bottom: 15px;
+    font-size: x-large;
+}
+
+.box-texto-email{
+    text-align: center;
+    padding: 3px;
+    margin-bottom: 30px;
+}
+
+.box-boton-cerrar-sesion{
+    text-decoration: none;
+    margin-top: 8px;
+    align-self: center;
+    background-color: #fb8501;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: large;
+
+}
+
+
 
 
 footer {
@@ -121,6 +177,40 @@ footer {
 
 .legal {
     font-size: 11px;
+}
+
+.nombre-usuario{
+    margin-top: 20px;
+    color: white;
+}
+
+.imagen-perfil{
+    width: 50px;
+    border-radius: 50px;
+    margin: 0px 10px;
+    transition: 500ms;
+}
+
+.imagen-perfil:hover{
+    box-shadow: 1px 1px 9px 6px rgb(0 0 0 / 56%);
+    border: 2px solid white;
+}
+
+.boton-cerrar-sesion{
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+    margin-top: 8px;
+    transition: 500ms;
+}
+
+.boton-cerrar-sesion:hover{
+    background-color: white;
+    box-shadow: 1px 1px 9px 6px rgb(0 0 0 / 56%);
+    color: black; 
 }
 
 

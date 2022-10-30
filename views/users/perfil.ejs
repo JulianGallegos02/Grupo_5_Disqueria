@@ -7,8 +7,36 @@
         <main>
             <section class="perfil-box">
                 <article>
-                    <p class="nombre usuario"> </p>
+
+                    <p class="titulo-perfil">Mi perfil</p>   
+                
+                <article> 
+                    
+                    <img class="box-imagen-perfil" src=/images/users/<%= usuario.avatar %>>
+                            
                 </article>
+
+                        <p class="box-nombre-usuario"> <%= usuario.nombre + " " + usuario.apellido     %></p>
+
+                        <article>
+                           <p class="box-texto-email"> Email: <%= usuario.email %></p> 
+                        </article>
+         
+                        <form action="/users/logout" method="POST">
+                        <button type="submit" class="box-boton-cerrar-sesion">Cerrar Sesion</button>
+                        </form>
+
+
+    
+                </article>
+
+
+
+
+
+
+
+
             </section>
         </main>
 
