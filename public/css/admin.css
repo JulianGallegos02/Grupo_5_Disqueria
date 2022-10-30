@@ -228,18 +228,36 @@ footer {
     width: 90%;
     text-align: center;
     margin: 10px;
+    transition: 1000ms;
 }
 
-.lista-productos-boton{
+.boton-1:hover,.boton-2:hover,.boton-3:hover{
+    align-self: center;
+    background-color: white;
+    padding: 10px;
+    border: none;
+    width: 90%;
+    text-align: center;
+    margin: 10px;
+    transition: 1000ms;
+
+}
+
+.boton-admin-p{
 
     color: white;
     background: none;
     border: none;
     padding: 8px;
     font-size: inherit;
+    transition: 600ms;
+}
+.boton-admin-p:hover{
+color: black;
+
 }
 
-.botones-1 a,.boton-2 a,.boton-3 a{
+.boton-1 a,.boton-2 a,.boton-3 a{
     text-decoration: none;
 }
 

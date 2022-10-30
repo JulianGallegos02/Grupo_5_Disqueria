@@ -193,6 +193,50 @@ footer {
     color: #fb8501;
 }
 
+.nombre-usuario{
+    margin-top: 20px;
+    color: white;
+    display: none;
+}
+
+.imagen-perfil{
+    width: 50px;
+    border-radius: 50px;
+    margin: 0px 10px;
+    transition: 500ms;
+    display: none;
+}
+
+.imagen-perfil:hover{
+    box-shadow: 1px 1px 9px 6px rgb(0 0 0 / 56%);
+    border: 2px solid white;
+}
+
+.boton-cerrar-sesion{
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+    margin-top: 8px;
+    transition: 500ms;
+    display: none;
+}
+
+.boton-cerrar-sesion:hover{
+    background-color: white;
+    box-shadow: 1px 1px 9px 6px rgb(0 0 0 / 56%);
+    color: black; 
+}
+
+.icono-gear{
+    color: white;
+    font-size: 12px;
+    margin: 36px 5px 10px -8px;
+    display: none;
+}
+
 @media (min-width: 361px) {}
 
 @media (min-width: 769px) {
