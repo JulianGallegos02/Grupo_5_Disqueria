@@ -1,0 +1,36 @@
+<html>
+
+    <%- include("./partials/head") %>
+
+    <body>
+        <%- include("./partials/header") %>
+        <main>
+            <section class="botones-box">
+                <article class="botones-box-article">
+
+                    <p class="titulo-perfil">Menu Administrador</p>   
+
+                    <article class="boton-1">
+                        <a href="/products"><p class="lista-productos-boton"> Lista de Productos</p></a>
+                    </article>
+
+                    <article class="boton-2">
+                        <a href="/products/create"><p class="lista-productos-boton"> Crear nuevo producto</p></a>
+                    </article>
+
+                    <article class="boton-3">
+                        <a href="/products"><p class="lista-productos-boton"> Editar productos</p></a>
+                    </article>
+
+                        <form action="/users/logout" method="POST">
+                        <button type="submit" class="box-boton-cerrar-sesion">Cerrar Sesion</button>
+                        </form>
+                </article>
+
+            </section>
+        </main>
+
+        <%- include("./partials/footer") %>
+    </body>
+
+</html>

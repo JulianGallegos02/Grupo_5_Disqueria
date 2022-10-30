@@ -236,6 +236,12 @@ footer {
     color: black; 
 }
 
+.icono-gear{
+    color: white;
+    font-size: 12px;
+    margin: 36px 5px 10px -8px;
+}
+
 @media (min-width: 361px) {}
 
 @media (min-width: 769px) {

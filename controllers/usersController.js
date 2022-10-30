@@ -90,6 +90,9 @@ const controller = {
     },
     perfil: function(req,res){        
         res.render("perfil", {style: "perfil"});
+    },
+    admin: function(req,res){        
+        res.render("admin", {style: "admin"});
     }
 }
 

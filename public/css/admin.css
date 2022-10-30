@@ -36,7 +36,7 @@ header {
 .barra-busqueda {
     align-self: center;
     width: 45%;
-    display:flex;
+    display: flex;
 }
 
 .barra-busqueda i {
@@ -99,101 +99,62 @@ header {
     margin-bottom: -5px;
 }
 
-
-main {
-
-    display: flex;
-    justify-content: center
-
-}
-
-
-.titulo-carrito{
-    font-size: 20px;
-}
-
-.carrito-container {
-    background-color: #ffffff87;
-    padding: 20px;
-    margin: 20px;
+.botones-box{
+    background-color: #0000002b;
     border-radius: 10px;
-
-}
-
-.imagen-album{
-    width: 33%;
-}
-
-.descripcion{
-    align-self: end;
-    line-height: 20px;
-    width: 33%;
-}
-
-.fa-trash-alt{
-    color: black;
-    
-}
-.subtotal{
-    align-self: flex-end;
-    text-align: end;
-}
-
-.total{
-    text-align: end;
-    margin-top: 18px;
-}
-
-.cover-carrito{
-    width: 100%;
-}
-
-.carrito-top{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    border-bottom: solid 1px gray;
-    
-}
-
-.subtotal p{
-    text-decoration: none;
-}
-
-.carrito-bottom{
-    display: flex;
-    flex-direction: column;
-    align-items: self-end;
-    margin-top: 10%;
-
-}
-
-.botones, .botones2{
-    align-self: center;
-    background-color: black;
+    margin: 10px;
+    margin-top: 40px;
     padding: 10px;
-    border: none;
-    width: 60%;
     text-align: center;
-}
-
-.botones a, .botones2 a{
-    text-decoration: none;
-}
-
-.boton-compra, .boton-seguir{
     color: white;
-    background: none;
-    border: none;
-    padding: 8px;
-    font-size: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    width: 340px;
 }
 
-.botones2{
-    margin-top: 2px;
-    background-color: #ffb703;
+main{
+    display: flex;
+    align-self: center;
 }
+
+.titulo-perfil{
+    margin-top: 7px;
+    font-size: xx-large;
+}
+
+.box-imagen-perfil{
+    width: 50%;
+    margin: 20px;
+}
+
+.box-nombre-usuario{
+    margin-top: -5px;
+    margin-bottom: 15px;
+    font-size: x-large;
+}
+
+.box-texto-email{
+    text-align: center;
+    padding: 3px;
+    margin-bottom: 30px;
+}
+
+.box-boton-cerrar-sesion{
+    text-decoration: none;
+    margin-top: 8px;
+    align-self: center;
+    background-color: #fb8501;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: large;
+
+}
+
+
 
 
 footer {
@@ -258,6 +219,36 @@ footer {
     margin: 36px 5px 10px -8px;
 }
 
+.boton-1,.boton-2,.boton-3{
+
+    align-self: center;
+    background-color: black;
+    padding: 10px;
+    border: none;
+    width: 90%;
+    text-align: center;
+    margin: 10px;
+}
+
+.lista-productos-boton{
+
+    color: white;
+    background: none;
+    border: none;
+    padding: 8px;
+    font-size: inherit;
+}
+
+.botones-1 a,.boton-2 a,.boton-3 a{
+    text-decoration: none;
+}
+
+.botones-box-article{
+    display: flex;
+    flex-direction: column;
+}
+
+
 @media (min-width: 361px) {}
 
 @media (min-width: 769px) {
@@ -283,84 +274,10 @@ footer {
         display: none;
     }
 
-    .album {
-        width: 45%;
+    .login-container {
+        align-self: center;
+
     }
 
-    .categorias {
-        display: flex;
-        flex-wrap: nowrap;
-        width: 90%;
-        justify-content: space-around;
-        margin: 0 auto;
-    }
-
-    .categorias article {
-        background-color: salmon;
-        text-align: center;
-        padding: 8px;
-        margin: 10px;
-        border-radius: 10px;
-        border: solid 3px salmon;
-        transition: 500ms;
-    }
-
-    .vinilos:hover {
-        background-image: url(../images/gifprueba.gif);
-        background-position: center;
-        background-size: cover;
-        box-shadow: 2px 15px 23px 2px rgba(0, 0, 0, 0.75);
-        border-color: white;
-    }
-
-    .vinilos:hover img {
-        visibility: hidden;
-    }
-
-    .cassettes:hover {
-        background-image: url(../images/rolling-cassette.gif);
-        background-position: center;
-        background-size: cover;
-        box-shadow: 2px 15px 23px 2px rgba(0, 0, 0, 0.75);
-        border-color: white;
-    }
-
-    .cassettes:hover img {
-        visibility: hidden;
-    }
-
-    .discos:hover {
-        background-image: url(../images/cd2.gif);
-        background-position: center;
-        background-size: cover;
-        box-shadow: 2px 15px 23px 2px rgba(0, 0, 0, 0.75);
-        border-color: white;
-    }
-
-    .discos:hover img {
-        visibility: hidden;
-    }
-
-    .digital:hover {
-        background-image: url(../images/sound.gif);
-        background-position: center;
-        background-size: cover;
-        box-shadow: 2px 15px 23px 2px rgba(0, 0, 0, 0.75);
-        border-color: white;
-    }
-
-    .digital:hover img {
-        visibility: hidden;
-    }
-
-
-
-
-}
-
-@media (min-width:1200px) {
-    .album {
-        width: 23%;
-    }
 
 }
