@@ -218,6 +218,15 @@ footer {
     font-size: 11px;
 }
 
+.boton-cerrar-sesion{
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+}
+
 @media (min-width: 361px) {}
 
 @media (min-width: 769px) {

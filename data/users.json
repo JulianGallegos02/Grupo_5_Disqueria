@@ -38,5 +38,13 @@
         "email": "aguscosta@soundbites.com",
         "contraseña": "$2a$10$SiU.gQKrUdUW9ZNjmzdUKOzMKufAgjPI0hC9N3eicUfpf4L9TLMkq",
         "imagen": "avatar1666922669992-.png"
+    },
+    {
+        "id": 6,
+        "nombre": "Julian",
+        "apellido": "Gallegos",
+        "email": "juliangallegos@soundbites.com",
+        "contraseña": "$2a$10$HZeVYRvvd7AasnL/oN622uCqvYsWRW9P0DQAjxgiVW/SVqmKbVTyu",
+        "imagen": "avatar1667088465150-.jpg"
     }
 ]

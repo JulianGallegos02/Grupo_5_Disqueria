@@ -37,8 +37,10 @@ const controller = {
 
             req.session.usuarioLogueado = {
                 id: userFound.id,
-                email: userFound.email
-
+                email: userFound.email,
+                nombre: userFound.nombre,
+                apellido: userFound.apellido,
+                avatar: userFound.imagen
             };
 
             if(req.body.remember){
@@ -85,6 +87,9 @@ const controller = {
         create(data);
 
         res.redirect("/");      //Redirigi a pagina de perfil
+    },
+    perfil: function(req,res){        
+        res.render("perfil", {style: "perfil"});
     }
 }
 

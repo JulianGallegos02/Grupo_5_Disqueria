@@ -11,6 +11,8 @@
         <div class="burger-menu"><i class="fas fa-bars"></i></div>
 
         <div class="login-bar">
+
+            <% if(!locals.usuario){ %>
                 <div class="sign-up">  
                     <a class="registrate" href= "/users/register"><i class="far fa-address-card"></i></a>
                     <a class="registrate" href= "/users/register">Registrate</a>
@@ -23,6 +25,22 @@
                     <a class="carrito" href= "/products/cart"><i class="fas fa-shopping-cart"></i></a>
                     <a class="carrito" href= "/products/cart">Carrito</a>
                 </div>
+
+           <% }else{ %>
+
+                <p class="nombre-usuario">Bienvenido <%= usuario.nombre + " " + usuario.apellido     %></p>
+
+                <article> 
+                    <img class="imagen-perfil" src=/images/users/<%= usuario.avatar %> >
+                    
+                </article>
+ 
+                <form action="/users/logout" method="POST">
+                <button type="submit" class="boton-cerrar-sesion">Cerrar Sesion</button>
+                </form>
+
+            <% } %>
+
         </div> 
     </section>
 </header>

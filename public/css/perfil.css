@@ -99,105 +99,7 @@ header {
     margin-bottom: -5px;
 }
 
-main{
-    display: flex;
-    justify-content: center;
-}
 
-.login-container {
-    background-color: #0000002b;
-    display: inline-block;
-    border-radius: 10px;
-    width: 300px;
-    margin: 30px;
-    padding: 10px;
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.login-container div {
-    margin: 5px;
-}
-
-.login-form {
-    margin-top: 20px;
-    padding: 5px;
-}
-
-form input[type="email"],
-form input[type="password"]{
-	width:250px;
-	padding:8px 15px;
-	border:1px solid grey;
-	border-radius:3px;
-	background-color:#f6f6f6;
-	display:inline-block;
-}
-
-
-form input[type="text"]:focus,
-form input[type="password"]:focus{
-	background-color:coral;
-}
-
-
-
-main section h2 {
-    color: white;
-}
-
-.ingresar-recuperarclave {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.email,
-.password {
-    padding: 10px;
-    border-radius: 0px 5px 5px 0px;
-    
-}
-
-.ingresar-recuperarclave{
-    display: flex;
-    flex-direction: column;
-    align-items: self-end;
-    margin-top: 10%;
-
-}
-
-.botones, .botones2, .botones3{
-    align-self: center;
-    background-color: #fb8501;
-    padding: 10px;
-    border: none;
-    width: 100%;
-    text-align: center;
-}
-
-.botones a, .botones2 a, .botones3 a{
-    text-decoration: none;
-}
-
-.boton-ingresa, .forgot-password, .register2{
-    color: white;
-    background: none;
-    border: none;
-    padding: 8px;
-    font-size: inherit;
-}
-
-.botones2{
-    margin-top: 2px;
-    background-color: black;
-}
-
-.pregunta{
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
 
 footer {
     background-color: #fb8501;
@@ -221,16 +123,6 @@ footer {
     font-size: 11px;
 }
 
-.msg-error{
-    color: #fb8501;
-    margin-top: 7px;
-}
-
-.error-login{ 
-    color: #fb8501;
-    margin: 10px;
-    margin-right: 46px;
-}
 
 @media (min-width: 361px) {}
 
