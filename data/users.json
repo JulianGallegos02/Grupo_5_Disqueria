@@ -1,38 +1,6 @@
 [
     {
         "id": 1,
-        "nombre": "Julian",
-        "apellido": "Gallegos",
-        "email": "julian@soundbites.com",
-        "contraseña": "1234",
-        "imagen": ""
-    },
-    {
-        "id": 2,
-        "nombre": "Julian",
-        "apellido": "Gallegos",
-        "email": "julian@soundbites.com",
-        "contraseña": "1234",
-        "imagen": ""
-    },
-    {
-        "id": 3,
-        "nombre": "Julian",
-        "apellido": "Gallegos",
-        "email": "julian@soundbites.com",
-        "contraseña": "1234",
-        "imagen": ""
-    },
-    {
-        "id": 4,
-        "nombre": "Julian",
-        "apellido": "Gallegos",
-        "email": "julian@soundbites.com",
-        "contraseña": "1234",
-        "imagen": ""
-    },
-    {
-        "id": 5,
         "nombre": "Agustin",
         "apellido": "Costa Ditarcio",
         "email": "aguscosta@soundbites.com",
@@ -40,7 +8,7 @@
         "imagen": "avatar1666922669992-.png"
     },
     {
-        "id": 6,
+        "id": 2,
         "nombre": "Julian",
         "apellido": "Gallegos",
         "email": "juliangallegos@soundbites.com",
@@ -48,7 +16,7 @@
         "imagen": "avatar1667088465150-.jpg"
     },
     {
-        "id": 7,
+        "id": 3,
         "nombre": "Florencia",
         "apellido": "Petronacci",
         "email": "florpetronacci@soundbites.com",
