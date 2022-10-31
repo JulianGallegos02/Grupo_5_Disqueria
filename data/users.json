@@ -14,5 +14,13 @@
         "email": "juliangallegos@soundbites.com",
         "contraseña": "$2a$10$HZeVYRvvd7AasnL/oN622uCqvYsWRW9P0DQAjxgiVW/SVqmKbVTyu",
         "imagen": "avatar1667088465150-.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Florencia",
+        "apellido": "Petronacci",
+        "email": "florpetronacci@soundbites.com",
+        "contraseña": "$2a$10$U2Xi30DPknZa6eq5i171IO.46PKsnJ/EAwalbJLbOZRyrhCylgRY6",
+        "imagen": "avatar1667177588524-.webp"
     }
 ]

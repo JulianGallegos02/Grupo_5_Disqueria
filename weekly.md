@@ -60,7 +60,28 @@ Mientras uno comparte los demas lo ayudan, resolviendo asi los mayores inconveni
 Me gusta mucho esta modalidad de trabajo ya que siento que es muy dificil estancarse al ser varios.
 Mi unico cambio seria dividir aun mas los trabajos mas pequeños asi podemos ser mas eficientes en las weeklys.
   
-   
+# SPRINT V
+
+## 1. Reunion Semanal I
+
+* Implementamos Entidad de usuarios. 
+* Implementamos la registro de usuarios. Falta encriptar la contraseña ingresada por el usuario (con bcrypt.js).
+* Trello actualizado. 
+
+
+## 2. Reunion Semanal II
+
+* Encriptamos la contraseña ingresada por el usuario (con bcrypt.js).
+* Implementamos el login y el registro de usuarios.
+* Arreglamos imagenes de albums. 
+
+## 3. Reunion Semanal III
+
+* Implementamos la función de recordar al usuario.
+* Implementamos rutas de huéspedes y de usuarios.
+
+
+
 
 
 
