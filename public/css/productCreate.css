@@ -228,6 +228,11 @@ footer {
     margin: 36px 5px 10px -8px;
 }
 
+.right-bar-header{
+    display: flex;
+    align-items: center;
+}
+
 @media (min-width: 361px) {}
 
 @media (min-width: 769px) {

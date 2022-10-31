@@ -252,6 +252,7 @@ footer {
     font-size: inherit;
     transition: 600ms;
 }
+
 .boton-admin-p:hover{
 color: black;
 
@@ -264,6 +265,11 @@ color: black;
 .botones-box-article{
     display: flex;
     flex-direction: column;
+}
+
+.right-bar-header{
+    display: flex;
+    align-items: center;
 }
 
 
