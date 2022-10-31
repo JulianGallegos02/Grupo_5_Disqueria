@@ -21,6 +21,7 @@ const controller = {
     },
     processLogin: function(req,res){
         const error = validationResult(req)
+        
         if(!error.isEmpty()){
            return res.render("login", { errors: error.mapped(),style: "login" })
         }

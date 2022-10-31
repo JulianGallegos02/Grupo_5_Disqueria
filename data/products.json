@@ -118,5 +118,15 @@
         "genero": "Lo-fi",
         "discografica": "Eternal Yip Eye Music",
         "imagen": "cover1667117170605-.webp"
+    },
+    {
+        "id": 13,
+        "album": "Return of the Dream Canteen",
+        "artista": "Red Hot Chili Peppers",
+        "precio": 1234,
+        "descripcion": "Return of the Dream Canteen es el decimotercer álbum de estudio de la banda de rock estadounidense Red Hot Chili Peppers, que fue lanzado el 14 de octubre de 2022 a través de Warner Records como un álbum doble y CD",
+        "genero": "Rock",
+        "discografica": "Warner Records",
+        "imagen": "cover1667173909601-.webp"
     }
 ]
