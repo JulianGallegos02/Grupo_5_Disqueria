@@ -28,6 +28,7 @@
 
            <% }else{ %>
 
+            <article class="right-bar-header">
                 <p class="nombre-usuario">Bienvenido <%= usuario.nombre + " " + usuario.apellido     %></p>
 
                 <a href="/users/perfil"><article> 
@@ -36,10 +37,13 @@
                 </article></a>
 
                 <a href="/users/admin"><i class="fas fa-cogs icono-gear" ></i></i></a>
+
+
  
                 <form action="/users/logout" method="POST">
                 <button type="submit" class="boton-cerrar-sesion">Cerrar Sesion</button>
                 </form>
+            </article>    
 
             <% } %>
 
