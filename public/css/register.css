@@ -237,10 +237,6 @@ footer {
     display: none;
 }
 
-.admin{
-    display: none;
-}
-
 .right-bar-header{
     display: flex;
     align-items: center;

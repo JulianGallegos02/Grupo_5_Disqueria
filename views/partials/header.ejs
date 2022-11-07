@@ -35,9 +35,9 @@
                     <img class="imagen-perfil" src=/images/users/<%= usuario.avatar %>>
                     
                 </article></a>
-
+                <% if (locals.usuario.admin == 1) {%>
                 <a href="/users/admin"><i class="fas fa-cogs icono-gear" ></i></i></a>
-
+                    <% } %>
 
  
                 <form action="/users/logout" method="POST">

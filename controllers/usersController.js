@@ -41,7 +41,8 @@ const controller = {
                 email: userFound.email,
                 nombre: userFound.nombre,
                 apellido: userFound.apellido,
-                avatar: userFound.imagen
+                avatar: userFound.imagen,
+                admin: userFound.admin
             };
 
             if(req.body.remember){

@@ -5,7 +5,8 @@
         "apellido": "Costa Ditarcio",
         "email": "aguscosta@soundbites.com",
         "contraseña": "$2a$10$SiU.gQKrUdUW9ZNjmzdUKOzMKufAgjPI0hC9N3eicUfpf4L9TLMkq",
-        "imagen": "avatar1666922669992-.png"
+        "imagen": "avatar1666922669992-.png",
+        "admin": 1
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "apellido": "Gallegos",
         "email": "juliangallegos@soundbites.com",
         "contraseña": "$2a$10$HZeVYRvvd7AasnL/oN622uCqvYsWRW9P0DQAjxgiVW/SVqmKbVTyu",
-        "imagen": "avatar1667088465150-.jpg"
+        "imagen": "avatar1667088465150-.jpg",
+        "admin": 1
     },
     {
         "id": 3,
@@ -21,6 +23,15 @@
         "apellido": "Petronacci",
         "email": "florpetronacci@soundbites.com",
         "contraseña": "$2a$10$U2Xi30DPknZa6eq5i171IO.46PKsnJ/EAwalbJLbOZRyrhCylgRY6",
-        "imagen": "avatar1667177588524-.webp"
+        "imagen": "avatar1667177588524-.webp",
+        "admin": 1
+    },
+    {
+        "id": 4,
+        "nombre": "Bojack",
+        "apellido": "Horseman",
+        "email": "bojack@soundbites.com",
+        "contraseña": "$2a$10$ALUUgQHrxSTdQjGh7gDlje4A39ASrD4TTg93XlGyM27cDBQY7b7pq",
+        "imagen": "avatar1667857674783-.jpg"
     }
 ]
