@@ -31,102 +31,63 @@
             <h2 class="titular">Nuevos Lanzamientos</h2>
 
             <section class="nuevos-lanzamientos">
+   
+                <% for(let i = 0; i <= 3; i++) { %>
 
-                   
-                <article class="album">
-                    <a href="/products/detail/1"> 
-                        <img class="cover-art" src="images\cover-art\arctic-the-car.jpg" alt="cover">
-                        <div class="info-album">
-                            <p class="titulo-album">The Car</p>
-                            <p class="banda-album">Arctic Monkeys</p>
-                        </div>
-                    </a>
-                </article>
-                
-                
-                <article class="album">
-                    <a href="/products/detail/2">
-                        <img class="cover-art" src="images\cover-art\UnlimitedLove.jpg" alt="cover">
-                        <div class="info-album">
-                            <p class="titulo-album">Unlimited Love</p>
-                            <p class="banda-album">Red Hot Chili Peppers</p>
-                        </div>
-                    </a>
-                </article>
-                
-                
-                <article class="album">
-                    <a href="/products/detail/3">
-                        <img class="cover-art" src="images\cover-art\WillofthePeople.jpg" alt="cover">
-                        <div class="info-album">
-                            <p class="titulo-album">Will of The People</p>
-                            <p class="banda-album">Muse</p>
-                        </div>
-                    </a>
-                </article>
-                
-                
-                <article class="album">
-                    <a href="/products/detail/4">
-                        <img class="cover-art" src="images\cover-art\FreakoutRelease.jpg" alt="cover">
-                        <div class="info-album">
-                            <p class="titulo-album">Freakout/Release</p>
-                            <p class="banda-album">Hot Chip</p>
-                        </div>
-                    </a>
-                </article>
+                    <article class="album">
+                        <a href="/products/detail/<%=products[i].id%>"> 
+                            <img class="cover-art" src="/images/cover/<%=products[i].imagen%>" alt="cover">
+                            <div class="info-album">
+                                <p class="titulo-album"><%=products[i].album %></p>
+                                <p class="banda-album"><%=products[i].artista %></p>
+                            </div>
+                        </a>
+                    </article>
+
+                <%} %>   
             
-
                 </section>
 
                 <h2 class="titular">Mas Vendidos</h2>
 
                 <section class="nuevos-lanzamientos">
     
-                    <article class="album">
-                        <a href="/products/detail/5"> 
-                            <img class="cover-art" src="images\cover-art\UnknownPleasures.jpg" alt="cover">
-                            <div class="info-album">
-                                <p class="titulo-album">Unknown Pleasures</p>
-                                <p class="banda-album">Joy Division</p>
-                            </div>
-                        </a>
-                    </article>
-                    
-                    
-                    <article class="album">
-                        <a href="/products/detail/6">
-                            <img class="cover-art" src="images\cover-art\FranzFerdinand.jpg" alt="cover">
-                            <div class="info-album">
-                                <p class="titulo-album">Franz Ferdinand</p>
-                                <p class="banda-album">Franz Ferdinand</p>
-                            </div>
-                        </a>
-                    </article>
-                    
-                    
-                    <article class="album">
-                        <a href="/products/detail/7">
-                            <img class="cover-art" src="images\cover-art\flowerboy.jpg" alt="cover">
-                            <div class="info-album">
-                                <p class="titulo-album">Flower Boy</p>
-                                <p class="banda-album">Tyler, The Creator</p>
-                            </div>
-                        </a>
-                    </article>
-                    
-                    
-                    <article class="album">
-                        <a href="/products/detail/8">
-                            <img class="cover-art" src="images\cover-art\FirstImpressionsofEarth.jpg" alt="cover">
-                            <div class="info-album">
-                                <p class="titulo-album">First Impressions of Earth</p>
-                                <p class="banda-album">The Strokes</p>
-                            </div>
-                        </a>
-                    </article> 
+                    <% for(let i = 4; i <= 7; i++) { %>
+
+                        <article class="album">
+                            <a href="/products/detail/<%=products[i].id%>"> 
+                                <img class="cover-art" src="/images/cover/<%=products[i].imagen%>" alt="cover">
+                                <div class="info-album">
+                                    <p class="titulo-album"><%=products[i].album %></p>
+                                    <p class="banda-album"><%=products[i].artista %></p>
+                                </div>
+                            </a>
+                        </article>
+
+                    <%} %>   
     
                     </section>
+
+                    <h2 class="titular">Clasicos</h2>
+
+                    <section class="nuevos-lanzamientos">
+    
+                        <% for(let i = 8; i <= 15; i++) { %>
+    
+                            <article class="album">
+                                <a href="/products/detail/<%=products[i].id%>"> 
+                                    <img class="cover-art" src="/images/cover/<%=products[i].imagen%>" alt="cover">
+                                    <div class="info-album">
+                                        <p class="titulo-album"><%=products[i].album %></p>
+                                        <p class="banda-album"><%=products[i].artista %></p>
+                                    </div>
+                                </a>
+                            </article>
+    
+                        <%} %>   
+        
+                        </section>
+
         </main>
 
        <%- include("./partials/footer") %>

@@ -128,5 +128,35 @@
         "genero": "Rock",
         "discografica": "Warner Records",
         "imagen": "cover1667173909601-.webp"
+    },
+    {
+        "id": 14,
+        "album": "Random Access Memories",
+        "artista": "Daft Punk",
+        "precio": 3500,
+        "descripcion": "Random Access Memories es el cuarto y último álbum de estudio del dúo francés Daft Punk. Se publicó oficialmente el 17 de mayo en Australia, el 20 de mayo en Reino Unido​ y el 21 de mayo de 2013 en Estados Unidos, ​ bajo licencia de Daft Life.",
+        "genero": "Música electrónica",
+        "discografica": "Columbia Records",
+        "imagen": "cover1667257405107-.jpg"
+    },
+    {
+        "id": 15,
+        "album": "This Is All Yours",
+        "artista": "alt-J",
+        "precio": 4000,
+        "descripcion": "This Is All Yours es el segundo álbum de la banda indie rock inglesa alt-J, lanzado el 22 de septiembre de 2014 a través de Infectious. Fue promocionado con cuatro singles: \"Hunger Of The Pine\", \"Left Hand Free\", \"Every Other Freckle\" y \"Warm Foothills\".",
+        "genero": "Indie rock",
+        "discografica": "Infectious",
+        "imagen": "cover1667258745977-.jpg"
+    },
+    {
+        "id": 16,
+        "album": "Discovery",
+        "artista": "Daft Punk",
+        "precio": 2500,
+        "descripcion": "Discovery es el segundo álbum de estudio del dúo francés de música house Daft Punk, lanzado en marzo de 2001. Marcó un cambio en el sonido desde el Chicago house, género por el que eran conocidos, al disco, post-disco y house inspirado en el synthpop.​",
+        "genero": "French house",
+        "discografica": "Virgin Records",
+        "imagen": "cover1667259787487-.png"
     }
 ]
