@@ -1,38 +1,38 @@
-<% if (!locals.usuario || locals.usuario){%>
-    <h1>
-        <%= message %>
-    </h1>
-    <h2>
-        <%= error.status %>
-    </h2>
-    <pre><%= error.stack %></pre>
-    <%} else if (locals.usuario.admin==1){%>
-      
+<% if (!locals.usuario || locals.usuario.admin !=1){%>
+    <a href="/" class = "boton-error">
+        <html>
+        <%- include("./partials/head") %>
+    
+            <body>
+    
+    
+                <main>
+    
+                    <p class="no-localizar">No pudimos encontrar la página que buscabas</p>
+    
+                    <p class="hacer-click">Hace click (en cualquier parte) para volver al inicio!</p>
+    
+                    <div class="imagen-error"><img src="/images/error/e1IneGq.gif" alt=""></div>
+    
+    
+                </main>
+    
+            </body>
+    </html>
+    </a>
 
-<a href="/" class = "boton-error">
-    <html>
-    <%- include("./partials/head") %>
-
-        <body>
+    <% }else{ %> 
 
 
-            <main>
+        <h1>
+            <%= message %>
+        </h1>
+        <h2>
+            <%= error.status %>
+        </h2>
+        <pre><%= error.stack %></pre>
 
-                <p class="no-localizar">No pudimos encontrar la página que buscabas</p>
-
-                <p class="hacer-click">Hace click (en cualquier parte) para volver al inicio!</p>
-
-                <div class="imagen-error"><img src="/images/error/e1IneGq.gif" alt=""></div>
-
-
-            </main>
-
-        </body>
-</html>
-</a>
-
-<%}%>
-
+    <%}%>
 
 
 

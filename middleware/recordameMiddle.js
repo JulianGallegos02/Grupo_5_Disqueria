@@ -22,7 +22,8 @@ function recordame (req,res,next){
             email: userFound.email,
             nombre: userFound.nombre,
             apellido: userFound.apellido,
-            avatar: userFound.imagen
+            avatar: userFound.imagen,
+            admin: userFound.admin
         };
     }
     next()

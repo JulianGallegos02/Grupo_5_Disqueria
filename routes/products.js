@@ -26,7 +26,7 @@ router.get('/', adminMiddleware, productController.lista);
 router.get('/create', adminMiddleware, productController.create);
 router.post('/create', upload.single('cover'), productController.store);
 router.get('/edit/:id',adminMiddleware, productController.edit);
-router.put('/edit/:id',upload.single('cover'), productController.update);
-router.delete('/edit/:id', productController.delete);
+router.put('/edit/:id', adminMiddleware, upload.single('cover'), productController.update);
+router.delete('/edit/:id', adminMiddleware, productController.delete);
 
 module.exports = router;
