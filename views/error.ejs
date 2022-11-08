@@ -1,46 +1,40 @@
-<html>
+<% if (!locals.usuario || locals.usuario){%>
+    <h1>
+        <%= message %>
+    </h1>
+    <h2>
+        <%= error.status %>
+    </h2>
+    <pre><%= error.stack %></pre>
+    <%} else if (locals.usuario.admin==1){%>
+      
+
+<a href="/" class = "boton-error">
+    <html>
     <%- include("./partials/head") %>
 
-    <body>
+        <body>
 
 
-        <main> 
+            <main>
 
-           <p class="no-existe">Esta página no existe.</p>
+                <p class="no-localizar">No pudimos encontrar la página que buscabas</p>
 
-            <div class="imagen-error"><img src="/images/error/e1IneGq.gif" alt=""></div>
+                <p class="hacer-click">Hace click (en cualquier parte) para volver al inicio!</p>
 
-            <p class="no-localizar">No pudimos encontrar la página que buscabas.</p>
+                <div class="imagen-error"><img src="/images/error/e1IneGq.gif" alt=""></div>
 
-            <p class="hacer-click">Hace click (en cualquier parte) para volver al inicio!</p>                        
-        </main>
 
-    </body>
+            </main>
+
+        </body>
 </html>
+</a>
+
+<%}%>
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
