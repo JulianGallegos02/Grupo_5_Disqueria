@@ -27,7 +27,7 @@ module.exports = (sequelize, dataTypes) => {
     const Artist = sequelize.define(alias, cols, config);
 
     Artist.associate = function(models){
-        Artist.hasMany(models.Album,{
+        Artist.hasMany(models.Album, {
             as: "albums",
             foreignKey: "artist_id"
         })

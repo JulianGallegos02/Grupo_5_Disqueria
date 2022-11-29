@@ -1,12 +1,12 @@
 module.exports = (sequelize, dataTypes) => {
 
-    let alias = 'albums';
+    let alias = 'Album';
+
     let cols = {
         id: {
             type: dataTypes.INTEGER,
             primaryKey: true,
-            autoIncrement: true,
-            allowNull: false
+            autoIncrement: true
         },
         name: {
             type: dataTypes.STRING
@@ -34,26 +34,26 @@ module.exports = (sequelize, dataTypes) => {
         },
     };
     let config = {
-        timestamps: false,
-        tableName: 'albums'
+        tableName: "album",
+        timestamps: false
     };
  
     const Album = sequelize.define(alias, cols, config);
 
-    Album.associate = function(models){
-        Album.belongsTo(models.Artist,{
+    Album.associate = (models) =>{
+        Album.belongsTo(models.artists,{
             as: "artists",
             foreignKey: "artist_id"
         })
-        Album.belongsTo(models.Genre,{
+        Album.belongsTo(models.genre,{
             as: "genre",
             foreignKey: "genre_id"
         })
-        Album.belongsTo(models.Label,{
+        Album.belongsTo(models.label,{
             as: "label",
             foreignKey: "label_id"
         })
-        Album.belongsTo(models.Format,{
+        Album.belongsTo(models.format,{
             as: "format",
             foreignKey: "format_id"
         })

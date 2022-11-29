@@ -1,5 +1,11 @@
 const fs = require("fs");
 const path = require("path");
+const db = require("../database/models");
+const sequelize = db.sequelize;
+const { Op } = require('sequelize');
+
+const Album = db.Album;
+const Genre = db.genre;
 
 function findAll() {
     const jsonData = fs.readFileSync(path.join(__dirname, "../data/products.json"));
@@ -37,35 +43,40 @@ const controller = {
         res.render("productCreate", { style: "productCreate" });
     },
 
-    store: function (req, res) {
-        const data = findAll()
+    store:  (req, res) =>{
+        
 
-        const newProduct = {
-            id: data.length + 1,
-            album: req.body.album,
-            artista: req.body.artista,
-            precio: Number(req.body.precio),
-            descripcion: req.body.descripcion,
-            genero: req.body.genero,
-            discografica: req.body.discografica,
-            imagen: req.file.filename
-        }
+         Album
+         .create(
+            {
+                name: req.body.album,
+                artist_id: req.body.artista,
+                genre_id: req.body.genero,
+                label_id: req.body.discografica,
+                image: req.file.filename,
+                description: req.body.descripcion,
+                price: req.body.precio,
+            }
+        )
 
-        data.push(newProduct);
+        .then(()=> {
+            return res.redirect("/products")
+        })
+        .catch(error => res.send(error))
 
-        create(data);
-
-        res.redirect("/products");
-
-    },
+    }, 
 
     edit: function (req, res) {
-        const data = findAll()
-        const discoEncontrado = data.find(function (disco) {
-            return disco.id == req.params.id
-        })
+        let discoId = req.params.id;
+        let discoEncontrado = Album.findByPk(discoId)
+        let listaGenero = Genre.findAll();
+        Promise
+        .all([discoEncontrado,listaGenero])
+        .then(([disco,generos]) => {
+       
+         return res.render(path.resolve(__dirname, '..',"views",'products', "productEdit"), {style: "productEdit", disco,generos})})
 
-        res.render("productEdit", {style: "productEdit", disco: discoEncontrado});
+         .catch(error => res.send(error))
     },
 
     update: function (req, res) {

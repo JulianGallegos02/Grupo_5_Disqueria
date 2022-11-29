@@ -6,36 +6,44 @@
 
         <main>
             <section class = "productEdit-Container">
-            <h2 class="titular">Editar producto: "<%= disco.album %>"</h2>
+            <h2 class="titular">Editar producto: "<%= disco.name %>"</h2>
 
             <form class="edit" action="/products/edit/<%= disco.id %>?_method=PUT" enctype="multipart/form-data" method="POST" class="productEdit-form">
                 <div>
                     <label for="album">Nombre del Album:</label>
-                    <input type="text" value="<%= disco.album %>" name="album" id="album" class="nombreAlbum">
+                    <input type="text" value="<%= disco.name %>" name="album" id="album" class="nombreAlbum">
                 </div>
                 <div>
                     <label for="artista">Nombre del Artista:</label>
-                    <input type="text" value="<%= disco.artista %>" name="artista" id="artista" class="nombreArtista">
+                    <input type="text" value="<%= disco.artist_id %>" name="artista" id="artista" class="nombreArtista">
                 </div>
                 <div>
                     <label for="precio">Precio:</label>
-                    <input type="text" value="<%= disco.precio %>" name="precio" id="precio" class="precio">
+                    <input type="text" value="<%= disco.price %>" name="precio" id="precio" class="precio">
                 </div>
                 <div>
                     <label for="descripcion">Descripción:</label>
-                    <textarea name="descripcion" id="descripcion" class="campo-descripcion"><%= disco.descripcion %></textarea>
+                    <textarea name="descripcion" id="descripcion" class="campo-descripcion"><%= disco.description %></textarea>
                 </div>
                 <div>
                     <label for="genero">Género:</label>
-                    <input type="text" value="<%= disco.genero %>" name="genero" id="genero" class="genero">
+                    <select name="genero" id="genero">
+                        <option value="" disabled selected>- Seleccione el género -  </option>
+                        <% generos.forEach(genre => { %>
+                            <option value="<%= genre.id %>"><%= genre.genre_name %></option>
+                            <% }); %>
+
+                    </select>
+
+                    <input type="text" value="<%= disco.genre_id %>" name="genero" id="genero" class="genero">
                 </div>
                 <div>
                     <label for="discografica">Discografica:</label>
-                    <input type="text" value="<%= disco.discografica %>" name="discografica" id="discografica" class="discografica">
+                    <input type="text" value="<%= disco.label_id %>" name="discografica" id="discografica" class="discografica">
                 </div>
                 <div>
                     <label for="cover">Imagen:</label>
-                    <input type="file" value="<%= disco.imagen %>" name="cover" class="buscar-Imagen">
+                    <input type="file" value="<%= disco.image %>" name="cover" class="buscar-Imagen">
                 </div>
                 <div>
                     <button type="submit" class= "boton-editar">Editar</button>
