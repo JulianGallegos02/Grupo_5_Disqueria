@@ -2,6 +2,10 @@ const fs = require("fs");
 const path = require("path");
 const bcryptjs = require("bcryptjs");
 const {validationResult} = require("express-validator");
+const db = require("../database/models");
+const sequelize = db.sequelize;
+const { Op } = require('sequelize');
+let Users = db.users;
 
 function findAll() {
     const jsonData = fs.readFileSync(path.join(__dirname, "../data/users.json"));
@@ -65,14 +69,21 @@ const controller = {
     register: function(req, res){
         res.render("register", {style: "register"});
     },
-    addUser: function(req, res){
+    addUser: async function(req, res){
         const error = validationResult(req)
         if(!error.isEmpty()){
             console.log(error.mapped())
            return res.render("register", { errors: error.mapped(),style: "register"})
         }
-        
-        const data = findAll()
+        await Users.create({
+            first_name: req.body.nombre,
+            last_name: req.body.apellido,
+            email: req.body.email,
+            password: bcryptjs.hashSync(req.body.password,10),
+            image: req.file.filename
+        })
+res.redirect ("/");
+       /* const data = findAll()
 
         const newUser = {
             id: data.length + 1,
@@ -88,7 +99,7 @@ const controller = {
 
         create(data);
 
-        res.redirect("/");      //Redirigi a pagina de perfil
+        res.redirect("/");  */    //Redirigi a pagina de perfil
     },
     perfil: function(req,res){        
         res.render("perfil", {style: "perfil"});
