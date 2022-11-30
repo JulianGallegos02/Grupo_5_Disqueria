@@ -29,9 +29,6 @@ module.exports = (sequelize, dataTypes) => {
         price: {
             type: dataTypes.INTEGER
         },
-        format_id: {
-            type: dataTypes.INTEGER
-        },
     };
     let config = {
         tableName: "album",
@@ -53,9 +50,12 @@ module.exports = (sequelize, dataTypes) => {
             as: "label",
             foreignKey: "label_id"
         })
-        Album.belongsTo(models.format,{
+        Album.belongsToMany(models.format, {
             as: "format",
-            foreignKey: "format_id"
+            through: "album_format",
+            foreignKey: "album_id",
+            otherKey: "format_id",
+            timestamps: false
         })
     }
  

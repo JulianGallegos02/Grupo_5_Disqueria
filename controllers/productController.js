@@ -6,6 +6,7 @@ const { Op } = require('sequelize');
 
 const Album = db.Album;
 const Genre = db.genre;
+const Artist = db.artists;
 
 function findAll() {
     const jsonData = fs.readFileSync(path.join(__dirname, "../data/products.json"));
@@ -39,8 +40,22 @@ const controller = {
         res.render("productList", { style: "productList", products: data })
     },
 
-    create: function (req, res) {
-        res.render("productCreate", { style: "productCreate" });
+    create: async function (req, res) {
+        let listaGenero = await Genre.findAll();
+        let listaArtistas = await Artist.findAll();
+
+
+/*            let nombreArtista = function(){
+                if (req.body.artista ==  listaArtistas.forEach(artista => <%= artista.id %>"><%= artista.name %>
+                        <% }); %>) {
+
+
+                }
+            }*/
+
+
+
+        res.render("productCreate", { style: "productCreate", generos: listaGenero, artistas: listaArtistas });
     },
 
     store:  (req, res) =>{
@@ -79,21 +94,30 @@ const controller = {
          .catch(error => res.send(error))
     },
 
-    update: function (req, res) {
-        const data = findAll()
-        const discoEncontrado = data.find(function (disco) {
-            return disco.id == req.params.id
-        })
-        discoEncontrado.album = req.body.album;
-        discoEncontrado.artista = req.body.artista;
-        discoEncontrado.precio = Number(req.body.precio);
-        discoEncontrado.descripcion = req.body.descripcion;
-        discoEncontrado.genero = req.body.genero;
-        discoEncontrado.discografica = req.body.discografica,
-        discoEncontrado.imagen = req.file.filename;
+    update:  async function (req, res) {
+        try{
+            let discoId = req.params.id;
 
-        create(data);
-        res.redirect("/products");
+            await Album
+            .update({
+                name: req.body.album,
+                artist_id: req.body.artista,
+                genre_id: req.body.genero,
+                label_id: req.body.discografica,
+                image: req.file.filename,
+                description: req.body.descripcion,
+                price: req.body.precio,
+            },
+            {
+                where: {id: discoId}
+            })
+            
+            res.redirect("/products");
+
+        } catch {
+            error => res.send(error)
+        }
+
     },
 
     delete: function(req,res){

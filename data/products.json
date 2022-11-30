@@ -13,16 +13,6 @@
         "imagen": "cover1669673527720-.png"
     },
     {
-        "id": 2,
-        "album": "Unlimited Love",
-        "artista": "Red Hot Chili Peppers",
-        "precio": 3500,
-        "descripcion": "Con cuatro décadas de trayectoria musical sobre sus espaldas, los siempre energéticos e irreverentes Red Hot Chili Peppers han lanzado el doceavo álbum de su carrera, el cual ha sido uno de los más esperados de los últimos años por sus aficionados. Eso incluye el regreso, no de uno, sino de dos personas muy importantes en la carrera de la agrupación.\r\n\r\n¿Qué tanto han cambiado durante sus 40 años de trayectoria? ¿Cuánto les habrá afectado el constante cambio de integrantes? ¿Acaso John Frusciante aún mantiene su talento con la guitarra? Estas son sólo algunas interrogantes que surgieron tanto en aficionados como con la crítica especializada cuando se anunció el nuevo disco.\r\n\r\nUnlimited Love se estrenó el primero de abril de 2022 y después de estarlo escuchando constantemente durante varios días, podemos afirmar que es quizá su disco más maduro y uno de los más personales para sus integrantes.",
-        "genero": "Rock, Funk / Soul",
-        "discografica": "Warner Records",
-        "imagen": "cover1667869839299-.jpg"
-    },
-    {
         "id": 3,
         "album": "Will of The People",
         "artista": "Muse",

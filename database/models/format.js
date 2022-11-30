@@ -22,9 +22,12 @@ module.exports = (sequelize, dataTypes) => {
     const Format = sequelize.define(alias, cols, config);
 
     Format.associate = function(models){
-        Format.hasMany(models.Album,{
-            as: "format",
-            foreignKey: "format_id"
+        Format.belongsToMany(models.Album, {
+            as: "album",
+            through: "album_format",
+            foreignKey: "format_id",
+            otherKey: "album_id",
+            timestamps: false
         })
     }
  
