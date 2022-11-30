@@ -27,7 +27,7 @@
                 </div>
                 <div>
                     <label for="genero">Género:</label>
-                    <select name="genero" id="genero">
+                    <select name="genero" id="genero" class="nombreArtista">
                         <option value="" disabled selected>- Seleccione el género -  </option>
                         <% generos.forEach(genre => { %>
                             <option value="<%= genre.id %>"><%= genre.genre_name %></option>
@@ -37,7 +37,13 @@
                 </div>
                 <div>
                     <label for="discografica">Discografica:</label>
-                    <input type="text" value="<%= disco.label_id %>" name="discografica" id="discografica" class="discografica">
+                    <select name="artista" id="artista" class="nombreArtista">
+                        <option selected >- Seleccione la Discografica -  </option>
+                        <% label.forEach(label => { %>
+                            <option value="<%= label.id %>"><%= label.name %></option>
+                            <% }); %>
+                        </select>
+                    
                 </div>
                 <div>
                     <label for="cover">Imagen:</label>

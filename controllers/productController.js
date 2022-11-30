@@ -7,6 +7,7 @@ const { Op } = require('sequelize');
 const Album = db.Album;
 const Genre = db.genre;
 const Artist = db.artists;
+const Label = db.label;
 
 
 function findAll() {
@@ -48,6 +49,7 @@ const controller = {
     create: async function (req, res) {
         let listaGenero = await Genre.findAll();
         let listaArtistas = await Artist.findAll();
+        let listaDiscografica = await Label.findAll();
 
 
 /*            let nombreArtista = function(){
@@ -60,7 +62,7 @@ const controller = {
 
 
 
-        res.render("productCreate", { style: "productCreate", generos: listaGenero, artistas: listaArtistas });
+        res.render("productCreate", { style: "productCreate", generos: listaGenero, artistas: listaArtistas,listaDiscografica });
     },
 
     store:  (req, res) =>{
@@ -90,11 +92,12 @@ const controller = {
         let discoId = req.params.id;
         let discoEncontrado = Album.findByPk(discoId)
         let listaGenero = Genre.findAll();
+        let listaDiscografica = Label.findAll();
         Promise
-        .all([discoEncontrado,listaGenero])
-        .then(([disco,generos]) => {
+        .all([discoEncontrado,listaGenero,listaDiscografica])
+        .then(([disco,generos,label]) => {
        
-         return res.render(path.resolve(__dirname, '..',"views",'products', "productEdit"), {style: "productEdit", disco,generos})})
+         return res.render(path.resolve(__dirname, '..',"views",'products', "productEdit"), {style: "productEdit", disco,generos,label})})
 
          .catch(error => res.send(error))
     },

@@ -70,7 +70,7 @@ const controller = {
     register: function (req, res) {
         res.render("register", { style: "register" });
     },
-
+    
     addUser: async function (req, res) {
         const error = validationResult(req)
         if (!error.isEmpty()) {

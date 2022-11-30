@@ -138,6 +138,7 @@ main {
     background-color: #f6f6f6;
     display: inline-block;
     margin: 8px;
+    text-align: center;
 }
 
 .campo-descripcion {
