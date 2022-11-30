@@ -150,7 +150,44 @@ En esta nueva retrospectiva tuvimos en cuenta nuestros errores y aciertos del Sp
 * No procrastinar.
 
 
+# :star: Sprint VI
 
+En esta nueva retrospectiva tuvimos en cuenta nuestros errores y aciertos del Sprint V.
+
+## 1. Comenzar a hacer (Start doing)
+
+* Cambiar la paleta de Colores.  
+
+* Emprolijar el css.
+
+* Cambiar estilo de los formularios. 
+
+* Trabajar más de forma asincronica. 
+
+
+## 2. Hacer más (More of)
+
+* Mantener el trello actualizado y chequearlo.
+* Utilizar un poco más Discord. 
+
+
+## 3. Continuar haciendo (Keep doing)
+
+* El lindo ambiente del grupo. Nos escuchamos, nos motivamos, nos ayudamos mutuamente. 
+
+* Scrum Weekly Meeting (La reunión semanal). 
+
+* La comunicación por WhatsApp. 
+
+* Mantener el repositorio en Github actualizado.
+
+## 4. Hacer menos (Less of)
+
+* Commits solo con los datos estrictamente necesarios.
+
+## 5. Dejar de hacer (Stop doing)
+
+* No procrastinar.
 
 
 

@@ -1,15 +1,15 @@
-# Reunion Semanal
+# Reunión Semanal
 
-# SPRINT III
+# :cd: SPRINT III
 
-## 1. Reunion Semanal I
+## 1. Reunión Semanal I
 
 * Organizamos el Sprint III
 * Implementamos EJS en el proyecto
 * Separamos las vistas en Carpetas. 
 
 
-## 2. Reunion Semanal II
+## 2. Reunión Semanal II
 
 * Hicimos los partials
 * Terminamos el listado de Productos
@@ -17,22 +17,22 @@
 * Terminamos Retrospectiva
 * Nos falto terminar la pagina de Edicion de Productos.
 
-## 3. Reunion Semanal III
+## 3. Reunión Semanal III
 * Pagina de Edicion de Productos
 * Terminadas las Rutas
 * Falta arreglar la pagina de Edicion de Productos para que funcione correctamente, darle estilo y cambiar la paleta de colores. 
 
 
-# SPRINT IV
+# :cd: SPRINT IV
 
-## 1. Reunion Semanal I
+## 1. Reunión Semanal I
 
 * Definimos los campos necesarios para los productos y generamos archivo JSON.
 * Falta definir los campos necesarios para los usuarios y generar archivo JSON. 
 * Falta terminar de ver CRUD de productos, sobretodo /products/:id (GET) que no funciona, y ver rutas en general. 
 
 
-## 2. Reunion Semanal II
+## 2. Reunión Semanal II
 * Definidos los campos necesarios para usuarios. 
 * Rutas corregidas. 
 * Sección funcional con listado, detalle, alta, modificación y baja de productos.
@@ -60,29 +60,44 @@ Mientras uno comparte los demas lo ayudan, resolviendo asi los mayores inconveni
 Me gusta mucho esta modalidad de trabajo ya que siento que es muy dificil estancarse al ser varios.
 Mi unico cambio seria dividir aun mas los trabajos mas pequeños asi podemos ser mas eficientes en las weeklys.
   
-# SPRINT V
+# :cd: SPRINT V
 
-## 1. Reunion Semanal I
+## 1. Reunión Semanal I
 
 * Implementamos Entidad de usuarios. 
 * Implementamos la registro de usuarios. Falta encriptar la contraseña ingresada por el usuario (con bcrypt.js).
 * Trello actualizado. 
 
 
-## 2. Reunion Semanal II
+## 2. Reunión Semanal II
 
 * Encriptamos la contraseña ingresada por el usuario (con bcrypt.js).
 * Implementamos el login y el registro de usuarios.
 * Arreglamos imagenes de albums. 
 
-## 3. Reunion Semanal III
+## 3. Reunión Semanal III
 
 * Implementamos la función de recordar al usuario.
 * Implementamos rutas de huéspedes y de usuarios.
 
+# :cd: SPRINT VI
 
+## 1. Reunión Semanal I
 
+* Configuración completa de Sequelize. 
+* En database, modelos completos. 
 
+## 2. Reunión Semanal II
 
+* Creación del Diagrama de Base de datos, con relaciones y claves foráneas utilizando draw.io. 
+* Creación de Script de estructura (escribimos las sentencias de SQL que crean las tablas y sus relaciones).
+* Script de Datos (poblamos las tablas con datos random de prueba).
+* Página de crear y editar.
 
+## 3. Reunión Semanal III
 
+* CRUD para productos: Crear y editar álbumes.
+* CRUD para Usuarios: Creación de Usuarios. 
+* Modificamos tablas y relaciones en base de datos.
+* Falta CRUD para productos (eliminar, listar, crear detalle y buscar) y  CRUD para usuarios (editar y ver detalle). 
+* Falta editar los datos de nuestra base de datos para que no queden con nombres random.
