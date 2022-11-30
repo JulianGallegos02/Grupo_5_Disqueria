@@ -8,11 +8,11 @@
             <section class="detalle-compra">
 
                 <article class="imagen-producto">
-                    <img class="imagen-detalle" src="/images/cover/<%=products.imagen%>">
+                    <img class="imagen-detalle" src="/images/cover/<%=discoEncontrado.image%>">
 
                     <div class="titulo-banda">
-                        <p class="titulo"><%=products.album %></p>
-                        <p class="banda"><%=products.artista %></p>
+                        <p class="titulo"><%=discoEncontrado.name %></p>
+                        <p class="banda"><%=discoEncontrado.artists.name %></p>
                     </div>
 
                 </article>
@@ -23,7 +23,7 @@
                     <div class="agregar-carrito">
 
                         <div class="opciones-contenedor"><i class="fas fa-record-vinyl"></i> LP </div>
-                        <div class="precio"> $<%=products.precio %></div>
+                        <div class="precio"> $<%=discoEncontrado.price %></div>
                     </div>
                     
                     <div class="boton-carrito">
@@ -38,22 +38,22 @@
                         
                         <div class="formato-precio">
                             <div class="opciones-contenedor"><i class="fas fa-record-vinyl"></i> LP </div>
-                            <div class="precio"> $<%=products.precio + 200 %></div>
+                            <div class="precio"> $<%=discoEncontrado.price + 200 %></div>
                         </div>
 
                         <div class="formato-precio">
                             <div class="opciones-contenedor"><i class="fas fa-compact-disc"></i> CD</div>
-                            <div class="precio"> $<%=products.precio + 400 %></div>
+                            <div class="precio"> $<%=discoEncontrado.price + 400 %></div>
                         </div>
 
                         <div class="formato-precio">
                             <div class="opciones-contenedor"><img src="/images\iconos-logos\cassete.svg" class="icono-cassette"> Cassette</div>
-                            <div class="precio"> $<%=products.precio + 600 %></div>
+                            <div class="precio"> $<%=discoEncontrado.price + 600 %></div>
                         </div>
 
                         <div class="formato-precio">
                             <div class="opciones-contenedor"><i class="fas fa-play"></i> Digital</div>
-                            <div class="precio"> $<%=products.precio + 800 %></div>
+                            <div class="precio"> $<%=discoEncontrado.price + 800 %></div>
                         </div>
 
                     </div>
@@ -63,15 +63,15 @@
 
                 <article class="descripcion">
                     <p>
-                        <%=products.descripcion %>
+                        <%=discoEncontrado.description %>
                     </p>
                 </article>
 
                 <article class="datos-tecnicos">
                     <ul class="lista-tecnica">
-                        <li>Label: <a href=# class="link-tecnico"> <%=products.discografica %></a></li>
-                        <li>Genre: <a href=# class="link-tecnico">  <%=products.genero %></a></li>
-                        <li>Artist: <a href=# class="link-tecnico"> <%=products.artista %></a></li>
+                        <li>Label: <a href=# class="link-tecnico"> <%=discoEncontrado.label.name %></a></li>
+                        <li>Genre: <a href=# class="link-tecnico">  <%=discoEncontrado.genre.genre_name %></a></li>
+                        <li>Artist: <a href=# class="link-tecnico"> <%=discoEncontrado.artists.name %></a></li>
                     </ul>
                 </article>
 

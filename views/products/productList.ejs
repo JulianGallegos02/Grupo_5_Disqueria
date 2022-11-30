@@ -10,17 +10,17 @@
 
             <section class="nuevos-lanzamientos">
 
-                <% products.forEach(function(disco){ %>
+                <% for(let i = 0; i < disco.length; i++) { %>
                     <article class="album">
-                        <a href="/products/edit/<%=disco.id%>"> 
-                            <img class="cover-art" src="/images/cover/<%=disco.imagen%>" alt="cover">
+                        <a href="/products/edit/<%=disco[i].id%>"> 
+                            <img class="cover-art" src="/images/cover/<%=disco[i].image%>" alt="cover">
                             <div class="info-album">
-                                <p class="titulo-album"><%=disco.album %></p>
-                                <p class="banda-album"><%=disco.artista %></p>
+                                <p class="titulo-album"><%=disco[i].name %></p>
+                                <p class="banda-album"><%=disco[i].artists.name %></p>
                             </div>
                         </a>
                     </article>
-                <% }) %>   
+                <% } %>   
 
             </section>
 

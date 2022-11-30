@@ -8,6 +8,7 @@ const Album = db.Album;
 const Genre = db.genre;
 const Artist = db.artists;
 
+
 function findAll() {
     const jsonData = fs.readFileSync(path.join(__dirname, "../data/products.json"));
     const data = JSON.parse(jsonData);
@@ -20,24 +21,28 @@ function create(data) {
 };
 
 const controller = {
-    detalleProducto: function (req, res) {
-        const data = findAll()
+    detalleProducto: async function (req, res) {
 
-        const discoEncontrado = data.find(function (disco) {
-            return disco.id == req.params.id
-        });
+    /*    let listaArtista = await Artist.findByPk(req.params.id);*/
+        
+        let discoEncontrado = await Album.findByPk(req.params.id, {
+            include: ["artists", "genre","label","format"]
+        })
 
-        res.render("productDetail", { style: "productDetail", products: discoEncontrado });
+        res.render("productDetail", { style: "productDetail",discoEncontrado});
     },
 
     carrito: function (req, res) {
         res.render("productCart", { style: "productCart" });
     },
 
-    lista: function (req, res) {
-        const data = findAll();
+    lista: async function (req, res) {
 
-        res.render("productList", { style: "productList", products: data })
+        let disco = await Album.findAll({
+            include: ["artists", "genre","label","format"]
+        })       
+
+        res.render("productList", { style: "productList",disco})
     },
 
     create: async function (req, res) {
@@ -121,13 +126,12 @@ const controller = {
     },
 
     delete: function(req,res){
-        const data = findAll()
-        const nuevoArray = data.filter(function(disco){
-            return disco.id != req.params.id
-
-        })
-        create(nuevoArray);
-        res.redirect("/products");
+        let albumId = req.params.id;
+        Album
+        .destroy({where: {id: albumId}, force: true})
+        .then(()=>{
+            return res.redirect('/products')})
+        .catch(error => res.send(error)) 
     }
 
 

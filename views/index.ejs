@@ -31,15 +31,16 @@
             <h2 class="titular">Nuevos Lanzamientos</h2>
 
             <section class="nuevos-lanzamientos">
-   
-                <% for(let i = 0; i <= 3; i++) { %>
+
+
+                <% for(let i = 0; i < disco.length; i++) { %>
 
                     <article class="album">
-                        <a href="/products/detail/<%=products[i].id%>"> 
-                            <img class="cover-art" src="/images/cover/<%=products[i].imagen%>" alt="cover">
+                        <a href="/products/detail/<%= disco[i].id%>"> 
+                            <img class="cover-art" src="/images/cover/<%=disco[i].image%>" alt="cover">
                             <div class="info-album">
-                                <p class="titulo-album"><%=products[i].album %></p>
-                                <p class="banda-album"><%=products[i].artista %></p>
+                                <p class="titulo-album"><%=disco[i].name%></p>
+                                <p class="banda-album"> <%= disco[i].artists.name %></p>
                             </div>
                         </a>
                     </article>
@@ -52,14 +53,14 @@
 
                 <section class="nuevos-lanzamientos">
     
-                    <% for(let i = 4; i <= 7; i++) { %>
+                    <% for(let i = 0; i < 2; i++) { %>
 
                         <article class="album">
-                            <a href="/products/detail/<%=products[i].id%>"> 
-                                <img class="cover-art" src="/images/cover/<%=products[i].imagen%>" alt="cover">
+                            <a href="/products/detail/<%= disco[i].id%>"> 
+                                <img class="cover-art" src="/images/cover/<%=disco[i].image%>" alt="cover">
                                 <div class="info-album">
-                                    <p class="titulo-album"><%=products[i].album %></p>
-                                    <p class="banda-album"><%=products[i].artista %></p>
+                                    <p class="titulo-album"><%=disco[i].name %></p>
+                                    <p class="banda-album"><%=disco[i].artists.name %></p>
                                 </div>
                             </a>
                         </article>
@@ -71,20 +72,7 @@
                     <h2 class="titular">Clasicos</h2>
 
                     <section class="nuevos-lanzamientos">
-    
-                        <% for(let i = 8; i <= 15; i++) { %>
-    
-                            <article class="album">
-                                <a href="/products/detail/<%=products[i].id%>"> 
-                                    <img class="cover-art" src="/images/cover/<%=products[i].imagen%>" alt="cover">
-                                    <div class="info-album">
-                                        <p class="titulo-album"><%=products[i].album %></p>
-                                        <p class="banda-album"><%=products[i].artista %></p>
-                                    </div>
-                                </a>
-                            </article>
-    
-                        <%} %>   
+
         
                         </section>
 

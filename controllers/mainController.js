@@ -1,5 +1,12 @@
 const fs = require("fs");
 const path = require("path");
+const db = require("../database/models");
+const sequelize = db.sequelize;
+const { Op } = require('sequelize');
+
+const Album = db.Album;
+const Genre = db.genre;
+const Artist = db.artists;
 
 function findAll() {
     const jsonData = fs.readFileSync(path.join(__dirname, "../data/products.json"));
@@ -15,13 +22,14 @@ function create(data) {
 
 const controller = {
   
-    home: function(req, res) {     
-        const data = findAll();
-      
-      
-        res.render("index", {style: "styles", products: data });
-      },
+    home: async function(req, res) {   
 
-}
+        let disco = await Album.findAll({
+            include: ["artists", "genre","label","format"]
+        })  
+
+        res.render("index", {style: "styles",disco})}
+
+      }
 
 module.exports = controller;
