@@ -51,17 +51,6 @@ const controller = {
         let listaArtistas = await Artist.findAll();
         let listaDiscografica = await Label.findAll();
 
-
-/*            let nombreArtista = function(){
-                if (req.body.artista ==  listaArtistas.forEach(artista => <%= artista.id %>"><%= artista.name %>
-                        <% }); %>) {
-
-
-                }
-            }*/
-
-
-
         res.render("productCreate", { style: "productCreate", generos: listaGenero, artistas: listaArtistas,listaDiscografica });
     },
 
@@ -93,11 +82,12 @@ const controller = {
         let discoEncontrado = Album.findByPk(discoId)
         let listaGenero = Genre.findAll();
         let listaDiscografica = Label.findAll();
+        let listaArtistas =  Artist.findAll();
         Promise
-        .all([discoEncontrado,listaGenero,listaDiscografica])
-        .then(([disco,generos,label]) => {
+        .all([discoEncontrado,listaGenero,listaDiscografica, listaArtistas])
+        .then(([disco,generos,label, artistas]) => {
        
-         return res.render(path.resolve(__dirname, '..',"views",'products', "productEdit"), {style: "productEdit", disco,generos,label})})
+         return res.render(path.resolve(__dirname, '..',"views",'products', "productEdit"), {style: "productEdit", disco,generos,label, artistas})})
 
          .catch(error => res.send(error))
     },
@@ -135,8 +125,21 @@ const controller = {
         .then(()=>{
             return res.redirect('/products')})
         .catch(error => res.send(error)) 
-    }
-
+    },
+    artist: function(req, res){
+      
+        res.render('artistCreate', {style: 'artistCreate'})
+    },
+    artistCreate: async function(req, res){
+        await Artist.create(
+            {
+                name: req.body.name,
+                image: req.file.filename,
+                description: req.body.description
+            }
+        )
+        res.redirect('/products/create')
+     }
 
 }
 

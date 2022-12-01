@@ -9,7 +9,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(0deg, rgba(2, 48, 71, 1) 0%, rgba(33, 158, 188, 1) 100%);
+    background: linear-gradient(0deg, rgba(2,48,71,1) 0%, rgba(33,158,188,1) 100%);
     background-attachment: fixed;
 }
 
@@ -77,11 +77,11 @@ header {
     color: white;
 }
 
-.login-bar div a {
+.login-bar div a{
     transition: 500ms;
 }
 
-.login-bar div:hover a {
+.login-bar div:hover a{
     color: #219ebc;
     text-shadow: 1px 1px 3px black;
 }
@@ -99,38 +99,29 @@ header {
     margin-bottom: -5px;
 }
 
-/*Product-Create */
-
-main {
-    justify-content: center;
-    display: flex;
-}
-
-.productCreate-Container {
+.perfil-box{
     background-color: #0000002b;
     border-radius: 10px;
-    text-align: center;
-    width: 300px;
     margin: 30px;
-    padding: 10px;
-    position: relative;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
     color: white;
+    width: 340px;
 }
+
+main{
+    display: flex;
+    align-self: center;
+}
+/*Body*/
 
 .titular {
     color: white;
+    margin: 10px 0px 15px 0px;
 }
 
-.productCreate-form {
-    margin-top: 20px;
-    padding: 5px;
-}
-
-.nombreAlbum,
-.nombreArtista,
-.precio,
-.genero,
-.discografica {
+.camposArtista{
     width: 250px;
     padding: 8px 15px;
     border: 1px solid grey;
@@ -140,37 +131,44 @@ main {
     margin: 8px;
     text-align: center;
 }
-
-.crearArtistaDiv{
-    padding: 10px;
-    background-color: #fb8501;
-    margin: 10px;
-}
-
-.crearArtista{
-    text-decoration: none;
-    color: white;
-}
-
-.campo-descripcion {
-    width: 95%;
-    margin: 8px;
-}
-
-.buscar-Imagen {
+.imagenArtista{
     width: 250px;
     padding: 8px 0px;
     margin: 8px;
 }
 
-.boton-crear {
+.botonCrear{
     align-self: center;
     background-color: #fb8501;
     padding: 10px;
     border: none;
-    width: 95%;
+    width: 30%;
+    border-radius: 15px;
     text-align: center;
     color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #fb8501;
+    padding: 10px;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    margin-top: auto;
+}
+
+.info-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto-footer{
+    margin-right: 25px;
+}
+
+.legal {
+    font-size: 11px;
 }
 
 .nombre-usuario{
@@ -207,33 +205,6 @@ main {
     color: black; 
 }
 
-/*Fin ProductCreate*/
-
-
-/*Footer */
-
-footer {
-    background-color: #fb8501;
-    padding: 10px;
-    bottom: 0px;
-    width: 100%;
-    color: white;
-    margin-top: auto;
-}
-
-.info-footer {
-    display: flex;
-    justify-content: space-between;
-}
-
-.texto-footer {
-    margin-right: 25px;
-}
-
-.legal {
-    font-size: 11px;
-}
-
 .icono-gear{
     color: white;
     font-size: 12px;
@@ -244,6 +215,7 @@ footer {
     display: flex;
     align-items: center;
 }
+
 
 @media (min-width: 361px) {}
 
@@ -270,84 +242,10 @@ footer {
         display: none;
     }
 
-    .album {
-        width: 45%;
+    .login-container {
+        align-self: center;
+
     }
 
-    .categorias {
-        display: flex;
-        flex-wrap: nowrap;
-        width: 90%;
-        justify-content: space-around;
-        margin: 0 auto;
-    }
-
-    .categorias article {
-        background-color: #fb8501;
-        text-align: center;
-        padding: 8px;
-        margin: 10px;
-        border-radius: 10px;
-        border: solid 3px #fb8501;
-        transition: 500ms;
-    }
-
-    .vinilos:hover {
-        background-image: url(../images/gifs/vinilo-texto.gif);
-        background-position: center;
-        background-size: cover;
-        box-shadow: 2px 15px 23px 2px rgba(0, 0, 0, 0.75);
-        border-color: white;
-    }
-
-    .vinilos:hover img {
-        visibility: hidden;
-    }
-
-    .cassettes:hover {
-        background-image: url(../images/gifs/cassette-texto.gif);
-        background-position: center;
-        background-size: cover;
-        box-shadow: 2px 15px 23px 2px rgba(0, 0, 0, 0.75);
-        border-color: white;
-    }
-
-    .cassettes:hover img {
-        visibility: hidden;
-    }
-
-    .discos:hover {
-        background-image: url(../images/gifs/cd-texto.gif);
-        background-position: center;
-        background-size: cover;
-        box-shadow: 2px 15px 23px 2px rgba(0, 0, 0, 0.75);
-        border-color: white;
-    }
-
-    .discos:hover img {
-        visibility: hidden;
-    }
-
-    .digital:hover {
-        background-image: url(../images/gifs/digital-texto.gif);
-        background-position: center;
-        background-size: cover;
-        box-shadow: 2px 15px 23px 2px rgba(0, 0, 0, 0.75);
-        border-color: white;
-    }
-
-    .digital:hover img {
-        visibility: hidden;
-    }
-
-
-
-
-}
-
-@media (min-width:1200px) {
-    .album {
-        width: 23%;
-    }
 
 }

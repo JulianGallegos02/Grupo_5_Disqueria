@@ -9,12 +9,20 @@
             <h2 class="titular">Crear nuevo producto</h2>
             <form action="/products/create" enctype="multipart/form-data" method="POST" class="productCreate-form">
                 <div>
-                    <label for="album">Nombre del Album:</label>
-                    <input type="text" name="album" id="album" class="nombreAlbum">
+                    <label for="artista">Nombre del Artista:</label>
+                    <select name="artista" id="artista" class="nombreArtista">
+                        <option value="" disabled selected>- Seleccione el género -  </option>
+                        <% artistas.forEach(artista => { %>
+                            <option value="<%= artista.id %>"><%= artista.name %></option>
+                            <% }); %>
+                        </select>
+                </div>
+                <div class="crearArtistaDiv">
+                    <a href="/products/createArtist" class="crearArtista">Crear nuevo artista</a>
                 </div>
                 <div>
-                    <label for="artista">Nombre del Artista:</label>
-                    <input type="text" name="artista" id="artista" class="nombreArtista">
+                    <label for="album">Nombre del Album:</label>
+                    <input type="text" name="album" id="album" class="nombreAlbum">
                 </div>
                 <div>
                     <label for="precio">Precio:</label>
@@ -36,7 +44,7 @@
                 </div>
                 <div>
                     <label for="discografica">Discografica:</label>
-                    <select name="artista" id="artista" class="nombreArtista">
+                    <select name="discografica" id="discografica" class="nombreArtista">
                         <option value="" disabled selected>- Seleccione el género -  </option>
                         <% listaDiscografica.forEach(label => { %>
                             <option value="<%= label.id %>"><%= label.name %></option>

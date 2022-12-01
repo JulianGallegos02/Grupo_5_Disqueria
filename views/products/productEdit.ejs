@@ -15,7 +15,12 @@
                 </div>
                 <div>
                     <label for="artista">Nombre del Artista:</label>
-                    <input type="text" value="<%= disco.artist_id %>" name="artista" id="artista" class="nombreArtista">
+                    <select name="artista" id="artista" class="nombreArtista">
+                        <option value="" disabled selected>- Seleccione el artista -  </option>
+                        <% artistas.forEach(artista => { %>
+                            <option value="<%= artista.id %>"><%= artista.name %></option>
+                            <% }); %>
+                        </select>
                 </div>
                 <div>
                     <label for="precio">Precio:</label>
@@ -37,7 +42,7 @@
                 </div>
                 <div>
                     <label for="discografica">Discografica:</label>
-                    <select name="artista" id="artista" class="nombreArtista">
+                    <select name="discografica" id="discografica" class="nombreArtista">
                         <option selected >- Seleccione la Discografica -  </option>
                         <% label.forEach(label => { %>
                             <option value="<%= label.id %>"><%= label.name %></option>
