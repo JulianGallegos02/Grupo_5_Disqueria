@@ -24,19 +24,19 @@ const controller = {
     login: function (req, res) {
         res.render("login", { style: "login" });
     },
-    processLogin: function (req, res) {
+    processLogin: async function (req, res) {
+
         const error = validationResult(req)
 
         if (!error.isEmpty()) {
             return res.render("login", { errors: error.mapped(), style: "login" })
         }
 
-        const users = findAll();
-
-        const userFound = users.find(function (user) {
-            return user.email == req.body.email && bcryptjs.compareSync(req.body.password, user.contraseña)
+       let userFound = await Users.findOne({
+            where: {
+                email: req.body.email
+            }
         })
-
         if (!userFound) {
             return res.render("login", { errorLogin: "Credenciales invalidas!", style: "login" })
         } else {
@@ -44,20 +44,17 @@ const controller = {
             req.session.usuarioLogueado = {
                 id: userFound.id,
                 email: userFound.email,
-                nombre: userFound.nombre,
-                apellido: userFound.apellido,
-                avatar: userFound.imagen,
+                nombre: userFound.first_name,
+                apellido: userFound.last_name,
+                avatar: userFound.image,
                 admin: userFound.admin
-            };
-
+            }
             if (req.body.remember) {
                 res.cookie("recordame", userFound.id)
             }
 
             res.redirect("/")
-
         }
-
     },
 
     logout: function (req, res) {

@@ -22,6 +22,9 @@ module.exports = (sequelize, dataTypes) => {
         },
         image: {
             type: dataTypes.TEXT
+        },
+        admin: {
+            type: dataTypes.INTEGER
         }
     };
     let config = {
