@@ -11,7 +11,7 @@
                 <div>
                     <label for="artista">Nombre del Artista:</label>
                     <select name="artista" id="artista" class="nombreArtista">
-                        <option value="" disabled selected>- Seleccione el género -  </option>
+                        <option value="" disabled selected>- Seleccione el artista -  </option>
                         <% artistas.forEach(artista => { %>
                             <option value="<%= artista.id %>"><%= artista.name %></option>
                             <% }); %>

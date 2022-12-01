@@ -1,0 +1,27 @@
+<html>
+<%- include("./partials/head") %>
+
+    <body>
+        <%- include("./partials/header") %>
+
+            <main>
+                <section class="artistBox">
+                    <p class="artistName">
+                        <%= artista.name %>
+                    </p>
+                    <img class="artistImage" src="/images/cover/<%=artista.image%>">
+                    <p class="artistDescription">
+                        <%= artista.description %>
+                    </p >
+
+                    <p> <%=artista.albums.name  %> </p> <p>IDEA , AGREGAR LOS DISCOS DEL ARTISTA ABAJO</p>
+                </section>
+
+                
+
+            </main>
+
+            <%- include("./partials/footer") %>
+    </body>
+
+</html>

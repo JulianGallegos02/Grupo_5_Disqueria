@@ -30,5 +30,6 @@ router.put('/edit/:id', adminMiddleware, upload.single('cover'), productControll
 router.delete('/edit/:id', adminMiddleware, productController.delete);
 router.get('/createArtist', adminMiddleware, productController.artist)
 router.post('/createArtist',upload.single('image'), productController.artistCreate )
+router.get("/artistDetail/:id",productController.artistDetail)
 
 module.exports = router;

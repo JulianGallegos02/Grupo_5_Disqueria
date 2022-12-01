@@ -71,7 +71,7 @@
                     <ul class="lista-tecnica">
                         <li>Label: <a href=# class="link-tecnico"> <%=discoEncontrado.label.name %></a></li>
                         <li>Genre: <a href=# class="link-tecnico">  <%=discoEncontrado.genre.genre_name %></a></li>
-                        <li>Artist: <a href=# class="link-tecnico"> <%=discoEncontrado.artists.name %></a></li>
+                        <li>Artist: <a href="/products/artistDetail/<%= discoEncontrado.artists.id%>" class="link-tecnico"> <%=discoEncontrado.artists.name %></a></li>
                     </ul>
                 </article>
 

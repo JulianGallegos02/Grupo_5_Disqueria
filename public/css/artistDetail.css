@@ -1,0 +1,284 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(2,48,71,1) 0%, rgba(33,158,188,1) 100%);
+    background-attachment: fixed;
+}
+
+header{
+    background-color: #fb8501;
+}
+
+.header{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.logo {
+    height: 60px;
+}
+
+.logo-svg {
+    height: 100%;
+    
+}
+
+.barra-busqueda {
+    align-self: center;
+    width: 45%;
+    display: flex;
+}
+
+.barra-busqueda i {
+    align-self: center;
+    color: gray;
+    position: relative;
+    right: 26px;
+}
+
+.barra {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.burger-menu{
+    align-self: center;
+    margin: 10px;
+    color: white;
+    font-size: 35px;
+}
+
+.login-bar {
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+.login-bar div {
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 4px;
+    color: white;
+}
+
+.login-bar div a{
+    transition: 500ms;
+}
+
+.login-bar div:hover a{
+    color: #219ebc;
+    text-shadow: 1px 1px 3px black;
+}
+
+.login-bar div i{
+    font-size: 30px;
+}
+
+.registrate, .ingresa, .carrito {
+    text-decoration: none;
+    color: white;
+    margin-top: 8px;
+    margin-bottom: -5px;
+}
+
+/*Body*/
+
+.artistBox {
+    background-color: #0000002b;
+    border-radius: 10px;
+    text-align: center;
+    width: 95%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    position: relative;
+    color: white;
+}
+
+.artistName{
+    font-size: 50px;
+    margin: 10px;
+}
+
+.artistImage{
+    width: 100%;
+    border-radius: 35px;
+    margin-bottom: 20px;
+
+}
+
+
+
+
+
+/*Footer*/
+
+footer{
+    background-color: #fb8501;
+    padding: 10px;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    margin-top: auto;
+}
+
+.info-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto-footer{
+    margin-right: 25px;
+}
+
+.legal{
+    font-size: 11px;
+}
+
+.nombre-usuario{
+    margin-top: 20px;
+    color: white;
+}
+
+.imagen-perfil{
+    width: 50px;
+    border-radius: 50px;
+    margin: 0px 10px;
+    transition: 500ms;
+}
+
+.imagen-perfil:hover{
+    box-shadow: 1px 1px 9px 6px rgb(0 0 0 / 56%);
+    border: 2px solid white;
+}
+
+.boton-cerrar-sesion{
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+    margin-top: 8px;
+    transition: 500ms;
+}
+
+.boton-cerrar-sesion:hover{
+    background-color: white;
+    box-shadow: 1px 1px 9px 6px rgb(0 0 0 / 56%);
+    color: black; 
+}
+
+.icono-gear{
+    color: white;
+    font-size: 12px;
+    margin: 36px 5px 10px -8px;
+}
+
+.right-bar-header{
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 361px){
+
+}
+
+@media (min-width: 769px){
+    .header{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 4px;
+    }
+
+    .barra-busqueda {
+        align-self: center;
+        width: 20%;
+    }
+
+    .login-bar{
+        align-self: center;
+        display: flex;
+        justify-content: space-between; 
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .info-bar{
+        margin: 10px;
+        color: white;
+        display: flex;
+        font-size: large;
+        justify-content: space-between;
+        width: 31%;
+        align-self: center;
+       
+    }
+    .detalle-compra {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;  
+    }
+
+    .agregar-carrito {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px;
+        margin-bottom: 0px;
+        align-items: baseline;
+        width: 90%;
+        border: solid 3px black;
+        padding: 20px;
+    
+    }
+
+    .boton-opciones{
+        width: 50%;
+    }
+
+    .imagen-producto{
+        width: 50%;
+        align-self: center;
+    }
+
+    .descripcion {
+        width: 82%;
+        margin-left: 31px;
+        margin-top: 20px;
+    }
+
+}
+
+
+
+@media (min-width:1200px){
+
+    .barra-busqueda {
+        align-self: center;
+        width: 30%;
+    }
+
+
+}

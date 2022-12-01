@@ -23,8 +23,6 @@ function create(data) {
 
 const controller = {
     detalleProducto: async function (req, res) {
-
-    /*    let listaArtista = await Artist.findByPk(req.params.id);*/
         
         let discoEncontrado = await Album.findByPk(req.params.id, {
             include: ["artists", "genre","label","format"]
@@ -139,6 +137,14 @@ const controller = {
             }
         )
         res.redirect('/products/create')
+     },
+     artistDetail: async function(req,res){
+        let artistaEncontrado = await Artist.findByPk(req.params.id, {
+            include: ["albums"]
+        });
+        
+        res.render("artistDetail", {style:"artistDetail", artista: artistaEncontrado})
+
      }
 
 }
