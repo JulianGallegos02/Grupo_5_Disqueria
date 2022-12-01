@@ -16,10 +16,13 @@
                 <div>
                     <label for="artista">Nombre del Artista:</label>
                     <select name="artista" id="artista" class="nombreArtista">
-                        <option value="" disabled selected>- Seleccione el artista -  </option>
-                        <% artistas.forEach(artista => { %>
-                            <option value="<%= artista.id %>"><%= artista.name %></option>
-                            <% }); %>
+                        <% for (artista of artistas) { %>
+                            <option value="<%= artista.id %>" 
+                                <% if (artista.id == disco.artist_id){ %>
+                                    selected> <% } else { %> >
+                                        <% } %>
+                                    <%= artista.name %></option>
+                        <% } %>
                         </select>
                 </div>
                 <div>
@@ -33,20 +36,26 @@
                 <div>
                     <label for="genero">Género:</label>
                     <select name="genero" id="genero" class="nombreArtista">
-                        <option value="" disabled selected>- Seleccione el género -  </option>
-                        <% generos.forEach(genre => { %>
-                            <option value="<%= genre.id %>"><%= genre.genre_name %></option>
-                            <% }); %>
+                        <% for (genero of generos) { %>
+                            <option value="<%= genero.id %>" 
+                                <% if (genero.id == disco.genre_id){ %>
+                                    selected> <% } else { %> >
+                                        <% } %>
+                                    <%= genero.genre_name %></option>
+                        <% } %>
 
                     </select>
                 </div>
                 <div>
                     <label for="discografica">Discografica:</label>
                     <select name="discografica" id="discografica" class="nombreArtista">
-                        <option selected >- Seleccione la Discografica -  </option>
-                        <% label.forEach(label => { %>
-                            <option value="<%= label.id %>"><%= label.name %></option>
-                            <% }); %>
+                        <% for (label of label) { %>
+                            <option value="<%= label.id %>" 
+                                <% if (label.id == disco.label_id){ %>
+                                    selected> <% } else { %> >
+                                        <% } %>
+                                    <%= label.name %></option>
+                        <% } %>
                         </select>
                     
                 </div>
