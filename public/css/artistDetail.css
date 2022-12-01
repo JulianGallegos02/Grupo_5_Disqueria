@@ -125,6 +125,44 @@ header{
 
 }
 
+.albumesArtista{
+    width: 80%;
+    display: flex;
+}
+
+.album{
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+    transition: 500ms;
+    
+}
+.albumBoton{
+    text-decoration: none;
+    color: black;
+    transition: 300ms;
+}
+.cover-art{
+    width: 100%;
+}
+.album:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 2px 6px 21px 7px rgba(0,0,0,0.56);
+    padding: 12px;
+}
+.albumBoton:hover{
+    color: white;
+}
+
+.tituloOtrosDiscos{
+    margin: 20px;
+}
+
+.info-album{
+    margin-top: 10px;
+}
 
 
 

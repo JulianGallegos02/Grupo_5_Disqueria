@@ -65,6 +65,7 @@ const controller = {
                 image: req.file.filename,
                 description: req.body.descripcion,
                 price: req.body.precio,
+                format: req.body.format
             }
         )
 
@@ -142,8 +143,16 @@ const controller = {
         let artistaEncontrado = await Artist.findByPk(req.params.id, {
             include: ["albums"]
         });
+
+        let discos = await Album.findAll({
+            where: {
+                artist_id: {
+                    [Op.like]: req.params.id 
+                }
+            }
+        })
         
-        res.render("artistDetail", {style:"artistDetail", artista: artistaEncontrado})
+        res.render("artistDetail", {style:"artistDetail", artista: artistaEncontrado,discos})
 
      }
 
