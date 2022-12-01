@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-12-2022 a las 09:19:32
+-- Tiempo de generación: 02-12-2022 a las 00:25:40
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -20,6 +20,7 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `sound_bites`
 --
+
 DROP DATABASE IF EXISTS sound_bites;
 CREATE DATABASE sound_bites;
 USE sound_bites;
@@ -55,7 +56,9 @@ INSERT INTO `album` (`id`, `name`, `artist_id`, `genre_id`, `label_id`, `image`,
 (44, 'This Old Dog', 41, 9, 10, 'cover1669877400045-.jfif', 'This Old Dog es el tercer álbum de estudio de larga duración del cantautor y multiinstrumentista Mac DeMarco, lanzado el 5 de mayo de 2017 a través de Captured Tracks. Tras el lanzamiento de Another One, DeMarco se mudó de su aislado hogar de Queens a una casa en Los Ángeles para crear el álbum.', 3450),
 (45, 'Hi, How Are You', 42, 9, 10, 'cover1669877544766-.jfif', 'Hi, How Are You: The Unfinished Album, comúnmente conocido simplemente como Hi, How Are You, es el sexto álbum de casete autoeditado por el cantautor Daniel Johnston, grabado en septiembre de 1983. Se puede decir que es su álbum más popular. Johnston afirmó que lo grabó durante un ataque de nervios.', 3333),
 (46, 'Random Access Memories', 43, 4, 5, 'cover1669877690679-.jfif', 'Random Access Memories es el cuarto y último álbum de estudio del dúo francés Daft Punk. Se publicó oficialmente el 17 de mayo en Australia, el 20 de mayo en Reino Unido​ y el 21 de mayo de 2013 en Estados Unidos, ​ bajo licencia de Daft Life.', 3550),
-(47, 'Alive 2007', 43, 4, 10, 'cover1669877760132-.jfif', 'Alive 2007 es un álbum en vivo de Daft Punk, fue lanzado por primera vez el 19 de noviembre de 2007. Es el segundo álbum grabado en vivo por el dúo, desde Alive 1997. Alive 2007 fue grabado durante una actuación en el Bercy de París, el 14 de junio de 2007, durante la gira Alive 2006/2007.', 5500);
+(47, 'Alive 2007', 43, 4, 10, 'cover1669877760132-.jfif', 'Alive 2007 es un álbum en vivo de Daft Punk, fue lanzado por primera vez el 19 de noviembre de 2007. Es el segundo álbum grabado en vivo por el dúo, desde Alive 1997. Alive 2007 fue grabado durante una actuación en el Bercy de París, el 14 de junio de 2007, durante la gira Alive 2006/2007.', 5500),
+(48, 'IGOR', 35, 7, 5, 'cover1669933455924-.jfif', 'Igor es el quinto álbum de estudio del rapero estadounidense Tyler The Creator. Fue lanzado el 17 de mayo de 2019 bajo la discográfica Sony Music.', 2600),
+(49, 'Is This It', 39, 2, 7, 'cover1669936913558-.jfif', 'Is This It —en español: ¿Esto es todo?— es el álbum debut de la banda de rock estadounidense The Strokes. Grabado en el estudio Transporterraum de Nueva York con el productor Gordon Raphael, el álbum se publicó por primera vez el 30 de julio de 2001 en Australia, con RCA Records como compañía discográfica.', 3500);
 
 -- --------------------------------------------------------
 
@@ -256,7 +259,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `album`
 --
 ALTER TABLE `album`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
 -- AUTO_INCREMENT de la tabla `album_format`
