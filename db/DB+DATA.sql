@@ -199,6 +199,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `first_name`, `last_name`, `email`, `password`, `image`, `admin`) VALUES
 (31, 'Julian', 'Gallegos', 'juliangallegos@soundbites.com', '$2a$10$ucAPa3G63Onav.pe.v/uMOR9PoLmHgrQjSJJYYxzPGxnbwJjLemzG', 'avatar1669830875919-.webp', 1),
 (33, 'Agustin', 'Costa Ditarcio', 'aguscosta@soundbites.com', '$2a$10$Zj0CxIfzeAvtu..hOpkgeukORM0mbaWbdgEALWdy7VByDdnisQocO', 'avatar1669855134018-.JPG', 1);
+(34, 'Florencia', 'Petronacci', 'florpetronacci@soundbites.com', '$2a$10$uEZd1zwXz.mnnBxg3Ao2GOn79BdZyjj2wVlXT/RtsOS2hCF/9F1Ni', 'avatar1670012906675-.jpg', 1);
 
 --
 -- Índices para tablas volcadas
