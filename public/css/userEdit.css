@@ -108,19 +108,20 @@ main {
 }
 
 .usersEdit-Container {
-    background-color: #0000002b;
+    width: 100%;
+    max-width: 400px;
     border-radius: 10px;
     text-align: center;
-    width: 50%;
-    max-width: 1200px;
     margin: 30px;
     padding: 10px;
-    position: relative;
     color: white;
+    background-color: #0000002b;
 }
 
 .titular {
     color: white;
+    margin: 10px;
+    margin-bottom: 30px;
 }
 
 .usersEdit-form {
@@ -144,6 +145,7 @@ main {
 
 .usersInfo {
     text-align: center;
+    margin: 10px;
 }
 
 

@@ -21,10 +21,13 @@
                         <article>
                            <p class="box-texto-email"> Email: <%= usuarioEncontrado.email %></p> 
                         </article>
-         
+
+                        <a href="/users/edit/<%=usuarioEncontrado.id%>" class="boton2"><p class="box-boton-cerrar-sesion boton2">Editar Usuario</p>
+                        </a>
                         <form action="/users/logout" method="POST">
                         <button type="submit" class="box-boton-cerrar-sesion">Cerrar Sesion</button>
                         </form>
+
                 </article>
 
             </section>
