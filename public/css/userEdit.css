@@ -111,7 +111,8 @@ main {
     background-color: #0000002b;
     border-radius: 10px;
     text-align: center;
-    width: 300px;
+    width: 50%;
+    max-width: 1200px;
     margin: 30px;
     padding: 10px;
     position: relative;
@@ -125,12 +126,12 @@ main {
 .usersEdit-form {
     margin-top: 20px;
     padding: 5px;
+    
 }
 
-.nombre,
-.apellido,
-.email,
-.password {
+.nombreUsuario,
+.apellidoUsuario,
+.email {
     width: 250px;
     padding: 8px 15px;
     border: 1px solid grey;
@@ -138,7 +139,14 @@ main {
     background-color: #f6f6f6;
     display: inline-block;
     margin: 8px;
+    
 }
+
+.usersInfo {
+    text-align: center;
+}
+
+
 
 .buscar-Imagen {
     width: 250px;
@@ -155,21 +163,6 @@ main {
     text-align: center;
     color: white;
 }
-
-.boton-borrar {
-
-     align-self: center;
-     background-color: black;
-     padding: 10px;
-     border: none;
-     width: 95%;
-     text-align: center;
-     color: white;
-     margin-top: 10px;
-
-
-}
-
 
 /*Fin usersEdit*/
 

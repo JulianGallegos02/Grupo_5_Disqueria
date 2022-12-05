@@ -31,6 +31,6 @@ router.post('/register', upload.single('avatar'), validation.registerValidation,
 
 //Edit
 router.get('/edit', usersController.userEdit);
-router.post('/edit', usersController.userUpdate);
+router.put('/edit', usersController.userUpdate);
 
 module.exports = router;

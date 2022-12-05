@@ -8,24 +8,24 @@
             <section class = "usersEdit-Container">
             <h2 class="titular">Editar usuario: "<%= usuarioEncontrado.first_name + " " + usuarioEncontrado.last_name %>"</h2>
 
-            <form class="edit" action="/users/edit/" enctype="multipart/form-data" method="POST" class="usersEdit-form">
-                <div>
+            <form class="edit" action="/users/edit/?_method=PUT" enctype="multipart/form-data" method="POST" class="usersEdit-form">
+                <div class = "usersInfo">
                     <label for="nombre">Nombre:</label>
                     <input type="text" value="<%= usuarioEncontrado.first_name %>" name="nombre" id="nombre" class="nombreUsuario">
                 </div>
-                <div>
+                <div class = "usersInfo">
                     <label for="apellido">Apellido:</label>
                     <input type="text" value="<%= usuarioEncontrado.last_name %>" name="apellido" id="apellido" class="apellidoUsuario">
                 </div>
-                <div>
+                <div class = "usersInfo">
                     <label for="email">Email:</label>
                     <input type="text" value="<%= usuarioEncontrado.email %>" name="email" id="email" class="email">
                 </div>
-                <div>
+                <div class = "usersInfo">
                     <label for="avatar">Imagen:</label>
                     <input type="file" name="cover" class="buscar-Imagen">
                 </div>
-                <div>
+                <div class = "usersInfo">
                     <button type="submit" class= "boton-editar">Editar Cuenta</button>
                 </div>
             </form>
