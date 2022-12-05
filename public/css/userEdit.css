@@ -1,0 +1,349 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(2, 48, 71, 1) 0%, rgba(33, 158, 188, 1) 100%);
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #fb8501;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.logo {
+    height: 60px;
+}
+
+.logo-svg {
+    height: 100%;
+
+}
+
+.barra-busqueda {
+    align-self: center;
+    width: 45%;
+    display: flex;
+}
+
+.barra-busqueda i {
+    align-self: center;
+    color: gray;
+    position: relative;
+    right: 26px;
+}
+
+.barra {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.burger-menu {
+    align-self: center;
+    margin: 10px;
+    color: white;
+    font-size: 35px;
+}
+
+.login-bar {
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+.login-bar div {
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 4px;
+    color: white;
+}
+
+.login-bar div a {
+    transition: 500ms;
+}
+
+.login-bar div:hover a {
+    color: #219ebc;
+    text-shadow: 1px 1px 3px black;
+}
+
+.login-bar div i {
+    font-size: 30px;
+}
+
+.registrate,
+.ingresa,
+.carrito {
+    text-decoration: none;
+    color: white;
+    margin-top: 8px;
+    margin-bottom: -5px;
+}
+
+
+/*Users-Edit*/
+
+main {
+    justify-content: center;
+    display: flex;
+}
+
+.usersEdit-Container {
+    background-color: #0000002b;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    margin: 30px;
+    padding: 10px;
+    position: relative;
+    color: white;
+}
+
+.titular {
+    color: white;
+}
+
+.usersEdit-form {
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.nombre,
+.apellido,
+.email,
+.password {
+    width: 250px;
+    padding: 8px 15px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    display: inline-block;
+    margin: 8px;
+}
+
+.buscar-Imagen {
+    width: 250px;
+    padding: 8px 0px;
+    margin: 8px;
+}
+
+.boton-editar {
+    align-self: center;
+    background-color: #fb8501;
+    padding: 10px;
+    border: none;
+    width: 95%;
+    text-align: center;
+    color: white;
+}
+
+.boton-borrar {
+
+     align-self: center;
+     background-color: black;
+     padding: 10px;
+     border: none;
+     width: 95%;
+     text-align: center;
+     color: white;
+     margin-top: 10px;
+
+
+}
+
+
+/*Fin usersEdit*/
+
+
+footer {
+    background-color: #fb8501;
+    padding: 10px;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    margin-top: auto;
+}
+
+.info-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto-footer {
+    margin-right: 25px;
+}
+
+.legal {
+    font-size: 11px;
+}
+
+.nombre-usuario{
+    margin-top: 20px;
+    color: white;
+}
+
+.imagen-perfil{
+    width: 50px;
+    border-radius: 50px;
+    margin: 0px 10px;
+    transition: 500ms;
+}
+
+.imagen-perfil:hover{
+    box-shadow: 1px 1px 9px 6px rgb(0 0 0 / 56%);
+    border: 2px solid white;
+}
+
+.boton-cerrar-sesion{
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+    margin-top: 8px;
+    transition: 500ms;
+}
+
+.boton-cerrar-sesion:hover{
+    background-color: white;
+    box-shadow: 1px 1px 9px 6px rgb(0 0 0 / 56%);
+    color: black; 
+}
+
+.icono-gear{
+    color: white;
+    font-size: 12px;
+    margin: 36px 5px 10px -8px;
+}
+
+.right-bar-header{
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 361px) {}
+
+@media (min-width: 769px) {
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 4px;
+    }
+
+    .barra-busqueda {
+        align-self: center;
+        width: 30%;
+    }
+
+    .login-bar {
+        align-self: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .album {
+        width: 45%;
+    }
+
+    .categorias {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 90%;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .categorias article {
+        background-color: #fb8501;
+        text-align: center;
+        padding: 8px;
+        margin: 10px;
+        border-radius: 10px;
+        border: solid 3px #fb8501;
+        transition: 500ms;
+    }
+
+    .vinilos:hover {
+        background-image: url(../images/gifs/vinilo-texto.gif);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 2px 15px 23px 2px rgba(0, 0, 0, 0.75);
+        border-color: white;
+    }
+
+    .vinilos:hover img {
+        visibility: hidden;
+    }
+
+    .cassettes:hover {
+        background-image: url(../images/gifs/cassette-texto.gif);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 2px 15px 23px 2px rgba(0, 0, 0, 0.75);
+        border-color: white;
+    }
+
+    .cassettes:hover img {
+        visibility: hidden;
+    }
+
+    .discos:hover {
+        background-image: url(../images/gifs/cd-texto.gif);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 2px 15px 23px 2px rgba(0, 0, 0, 0.75);
+        border-color: white;
+    }
+
+    .discos:hover img {
+        visibility: hidden;
+    }
+
+    .digital:hover {
+        background-image: url(../images/gifs/digital-texto.gif);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 2px 15px 23px 2px rgba(0, 0, 0, 0.75);
+        border-color: white;
+    }
+
+    .digital:hover img {
+        visibility: hidden;
+    }
+
+
+
+
+}
+
+@media (min-width:1200px) {
+    .album {
+        width: 23%;
+    }
+
+}

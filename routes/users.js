@@ -29,4 +29,8 @@ router.get("/admin", usersController.admin);
 router.get('/register', logueadoMiddleware, usersController.register);
 router.post('/register', upload.single('avatar'), validation.registerValidation, usersController.addUser)
 
+//Edit
+router.get('/edit', usersController.userEdit);
+router.post('/edit', usersController.userUpdate);
+
 module.exports = router;

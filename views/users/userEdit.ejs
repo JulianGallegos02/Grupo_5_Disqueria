@@ -1,0 +1,37 @@
+<html>
+    <%- include("./partials/head") %>
+
+    <body>
+    <%- include("./partials/header") %>
+
+        <main>
+            <section class = "usersEdit-Container">
+            <h2 class="titular">Editar usuario: "<%= usuarioEncontrado.first_name + " " + usuarioEncontrado.last_name %>"</h2>
+
+            <form class="edit" action="/users/edit/" enctype="multipart/form-data" method="POST" class="usersEdit-form">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" value="<%= usuarioEncontrado.first_name %>" name="nombre" id="nombre" class="nombreUsuario">
+                </div>
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" value="<%= usuarioEncontrado.last_name %>" name="apellido" id="apellido" class="apellidoUsuario">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" value="<%= usuarioEncontrado.email %>" name="email" id="email" class="email">
+                </div>
+                <div>
+                    <label for="avatar">Imagen:</label>
+                    <input type="file" name="cover" class="buscar-Imagen">
+                </div>
+                <div>
+                    <button type="submit" class= "boton-editar">Editar Cuenta</button>
+                </div>
+            </form>
+        </section>
+        </main>
+
+       <%- include("./partials/footer") %>
+    </body>
+</html>

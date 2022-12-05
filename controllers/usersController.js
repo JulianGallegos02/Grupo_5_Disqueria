@@ -32,7 +32,7 @@ const controller = {
             return res.render("login", { errors: error.mapped(), style: "login" })
         }
 
-       let userFound = await Users.findOne({
+        let userFound = await Users.findOne({
             where: {
                 email: req.body.email
             }
@@ -67,7 +67,7 @@ const controller = {
     register: function (req, res) {
         res.render("register", { style: "register" });
     },
-    
+
     addUser: async function (req, res) {
         const error = validationResult(req)
         if (!error.isEmpty()) {
@@ -89,6 +89,35 @@ const controller = {
     },
     admin: function (req, res) {
         res.render("admin", { style: "admin" });
+    },
+    userEdit: async function (req, res) {
+
+        let usuarioEncontrado = await Users.findOne({
+            where: { email: res.locals.usuario.email }
+        })
+        res.render("userEdit", { style: "userEdit", usuarioEncontrado });
+    },
+    userUpdate: async function (req, res) {
+        try {
+            let usuarioEncontrado = await Users.findOne({
+                where: { email: res.locals.usuario.email }
+            })
+            await Users
+                .update({
+                    first_name: req.body.nombre,
+                    last_name: req.body.apellido,
+                    email: req.body.email,
+                    image: req.file.filename,
+                },
+                    {
+                        where: { id: usuarioEncontrado.id}
+                    })
+
+            res.redirect("/users/perfil")
+
+        } catch {
+            error => res.send(error)
+        }
     }
 }
 
