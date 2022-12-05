@@ -22,7 +22,7 @@ const upload = multer({storage: storage})
 router.get('/login', logueadoMiddleware, usersController.login);
 router.post('/login',validation.loginValidation,usersController.processLogin);
 router.post("/logout", usersController.logout);
-router.get("/perfil", usersController.perfil);
+router.get("/perfil/:id", usersController.perfil);
 router.get("/admin", usersController.admin);
 
 //register
@@ -30,7 +30,10 @@ router.get('/register', logueadoMiddleware, usersController.register);
 router.post('/register', upload.single('avatar'), validation.registerValidation, usersController.addUser)
 
 //Edit
-router.get('/edit', usersController.userEdit);
-router.put('/edit', usersController.userUpdate);
+router.get('/edit/:id', usersController.userEdit);
+router.put('/edit/:id',upload.single('avatar'), usersController.userUpdate);
+
+//Delete
+router.delete('/edit/:id', usersController.delete);
 
 module.exports = router;

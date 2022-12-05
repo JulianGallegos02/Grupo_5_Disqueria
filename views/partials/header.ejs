@@ -31,7 +31,7 @@
             <article class="right-bar-header">
                 <p class="nombre-usuario">Bienvenido <%= usuario.nombre + " " + usuario.apellido     %></p>
 
-                <a href="/users/perfil"><article> 
+                <a href="/users/perfil/<%= usuario.id  %> "><article> 
                     <img class="imagen-perfil" src=/images/users/<%= usuario.avatar %>>
                     
                 </article></a>

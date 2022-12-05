@@ -12,14 +12,14 @@
                 
                 <article> 
                     
-                    <img class="box-imagen-perfil" src=/images/users/<%= usuario.avatar %>>
+                    <img class="box-imagen-perfil" src=/images/users/<%= usuarioEncontrado.image %>>
                             
                 </article>
 
-                        <p class="box-nombre-usuario"> <%= usuario.nombre + " " + usuario.apellido     %></p>
+                        <p class="box-nombre-usuario"> <%= usuarioEncontrado.first_name + " " + usuarioEncontrado.last_name    %></p>
 
                         <article>
-                           <p class="box-texto-email"> Email: <%= usuario.email %></p> 
+                           <p class="box-texto-email"> Email: <%= usuarioEncontrado.email %></p> 
                         </article>
          
                         <form action="/users/logout" method="POST">
