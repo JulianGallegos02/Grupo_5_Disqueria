@@ -84,24 +84,26 @@ const controller = {
         res.redirect("/");
 
     },
-    perfil: function (req, res) {
-        res.render("perfil", { style: "perfil" });
+    perfil: async function (req, res) {
+        let userId = req.params.id;
+        let usuarioEncontrado = await Users.findByPk(userId);
+
+        res.render("perfil", { style: "perfil", usuarioEncontrado });
     },
     admin: function (req, res) {
         res.render("admin", { style: "admin" });
     },
     userEdit: async function (req, res) {
 
-        let usuarioEncontrado = await Users.findOne({
-            where: { email: res.locals.usuario.email }
-        })
+        let userId = req.params.id;
+        let usuarioEncontrado = await Users.findByPk(userId);
+
         res.render("userEdit", { style: "userEdit", usuarioEncontrado });
     },
     userUpdate: async function (req, res) {
         try {
-            let usuarioEncontrado = await Users.findOne({
-                where: { email: res.locals.usuario.email }
-            })
+            let userId = req.params.id;
+
             await Users
                 .update({
                     first_name: req.body.nombre,
@@ -110,14 +112,23 @@ const controller = {
                     image: req.file.filename,
                 },
                     {
-                        where: { id: usuarioEncontrado.id}
+                        where: { id: userId }
                     })
 
-            res.redirect("/users/perfil")
+            res.redirect("/users/perfil/" + userId)
 
         } catch {
             error => res.send(error)
         }
+    },
+    delete: function (req, res) {
+        let userId = req.params.id;
+        Users
+            .destroy({ where: { id: userId }, force: true })
+            .then(() => {
+                return res.redirect('/')
+            })
+            .catch(error => res.send(error))
     }
 }
 
