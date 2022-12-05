@@ -12,7 +12,7 @@
 
                     <div class="titulo-banda">
                         <p class="titulo"><%=discoEncontrado.name %></p>
-                        <p class="banda"><%=discoEncontrado.artists.name %></p>
+                        <a href="/products/artistDetail/<%= discoEncontrado.artists.id%>" class="link-nombre"><p class="banda"><%=discoEncontrado.artists.name %></p></a>
                     </div>
 
                 </article>

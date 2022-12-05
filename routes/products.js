@@ -28,8 +28,9 @@ router.post('/create', upload.single('cover'), productController.store);
 router.get('/edit/:id',adminMiddleware, productController.edit);
 router.put('/edit/:id', adminMiddleware, upload.single('cover'), productController.update);
 router.delete('/edit/:id', adminMiddleware, productController.delete);
-router.get('/createArtist', adminMiddleware, productController.artist)
-router.post('/createArtist',upload.single('image'), productController.artistCreate )
-router.get("/artistDetail/:id",productController.artistDetail)
+router.get('/createArtist', adminMiddleware, productController.artist);
+router.post('/createArtist',upload.single('image'), productController.artistCreate );
+router.get("/artistDetail/:id",productController.artistDetail);
+router.post("/search/", productController.search);
 
 module.exports = router;

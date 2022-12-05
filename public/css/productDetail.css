@@ -33,6 +33,39 @@ header{
     
 }
 
+/* busqueda*/
+
+.busqueda {
+    border: none;
+    border-radius: 15px;
+    padding: 8px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.boton-busqueda {
+    border: none;
+    padding: 8px;
+    background-color: #00ffff00;
+    position: relative;
+    right: 28px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    width: 52%;
+}
+
+.nombre-usuario {
+    margin-top: 20px;
+    color: white;
+    display: none;
+    
+}
+
+/* fin busqeuda nueva*/
+
 .barra-busqueda {
     align-self: center;
     width: 45%;
@@ -251,6 +284,10 @@ header{
     font-weight: 600;
 }
 
+.link-nombre{
+    text-decoration: none;
+}
+
 
 footer{
     background-color: #fb8501;
@@ -400,6 +437,11 @@ footer{
         align-self: center;
         width: 30%;
     }
+    
+    .nombre-usuario{
+        display: block;
+    }
+
 
 
 }

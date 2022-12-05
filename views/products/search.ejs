@@ -1,0 +1,57 @@
+<html>
+<%- include("./partials/head") %>
+
+    <body>
+        <%- include("./partials/header") %>
+
+            <main>
+
+                <h2 class="titular">Albumes</h2>
+
+                <section class="resultados-busqueda">
+
+                    <div class="nuevos-lanzamientos">
+                        <% if(search){ %>
+                            <% for(let i=0; i < search.length; i++) { %>
+                                <article class="album">
+                                    <a href="/products/detail/<%=search[i].id%>">
+                                        <img class="cover-art" src="/images/cover/<%=search[i].image%>" alt="cover">
+                                        <div class="info-album">
+                                            <p class="titulo-album">
+                                                <%=search[i].name %>
+                                            </p>
+
+                                        </div>
+                                    </a>
+                                </article>
+                                <% } %>
+                                    <% } %>
+
+                    </div>
+
+                    <h2 class="titular">Artistas</h2>
+                    <div class="nuevos-lanzamientos">
+
+                        <% if(searchArtista){ %>
+                            <% for(let i=0; i < searchArtista.length; i++) { %>
+                                <article class="album2">
+                                    <a href="/products/artistDetail/<%=searchArtista[i].id%>">
+                                        <p class="titulo-artista"><%=searchArtista[i].name %></p>
+                                        <img class="cover-art" src="/images/cover/<%=searchArtista[i].image%>"alt="cover">
+                                        
+                                    </a>
+                                </article>
+                                <% } %>
+                                    <% } %>
+
+                    </div>
+
+                </section>
+
+
+            </main>
+
+            <%- include("./partials/footer") %>
+    </body>
+
+</html>

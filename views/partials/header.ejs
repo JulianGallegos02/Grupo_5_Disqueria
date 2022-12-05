@@ -1,12 +1,15 @@
 <header>
     <section class="header">
         <div class="logo">
-            <a href="/"><img class="logo-svg" src="/images\iconos-logos\sinblanco.svg" alt="Logo"></a>
+            <a href="/"><img class="logo-svg" src="/images\iconos-logos\logo-prueba.svg" style="filter: invert(100%) ;" alt="Logo"></a>
         </div>
-         <div class="barra-busqueda">
-            <input class="barra" type="text" name="barra-de-busqueda" placeholder="Busca..." >
-            <i class="fas fa-search"></i>
-        </div>
+
+        <form action="/products/search" method="POST" class="search-form">
+            <label for="search"></label>
+            <input class="busqueda" type="text" name="search" id="search" placeholder="Buscar...">
+            <button type="submit" id="myBtn" class="boton-busqueda"><i class="fas fa-search"></i></button>
+        </form>
+
 
         <div class="burger-menu"><i class="fas fa-bars"></i></div>
 

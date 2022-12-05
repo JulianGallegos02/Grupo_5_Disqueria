@@ -20,12 +20,12 @@ header {
 .header {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding: 4px;
 }
 
 .logo {
     height: 60px;
+    width: 22%;
 }
 
 .logo-svg {
@@ -72,6 +72,8 @@ header {
     display: flex;
 }
 
+
+
 .barra-busqueda i {
     align-self: center;
     color: gray;
@@ -91,6 +93,8 @@ header {
     margin: 10px;
     color: white;
     font-size: 35px;
+    position: absolute;
+    right: 0;
 }
 
 .login-bar {
@@ -98,6 +102,8 @@ header {
     display: flex;
     justify-content: space-between;
     display: none;
+    position: absolute;
+    right: 10px;;
 }
 
 .login-bar div {
@@ -132,118 +138,131 @@ header {
     margin-bottom: -5px;
 }
 
-/*Product-Create */
 
-main {
-    justify-content: center;
+.carrusel {
     display: flex;
+    justify-content: center;
 }
 
-.productCreate-Container {
-    background-color: #0000002b;
-    border-radius: 10px;
+.banner {
+    width: 90%;
+    margin: 10px;
+    border-radius: 40px;
+}
+
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.categorias article {
+    background-color: #fb8501;
     text-align: center;
-    width: 300px;
-    margin: 30px;
-    padding: 10px;
-    position: relative;
-    color: white;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 10px;
+    border: #fb8501;
+    transition: 500ms;
+}
+
+.categorias a {
+    width: 40%;
+}
+
+.icono-categoria {
+    width: 60%;
 }
 
 .titular {
-    color: white;
-}
-
-.productCreate-form {
-    margin-top: 20px;
-    padding: 5px;
-}
-
-.nombreAlbum,
-.nombreArtista,
-.precio,
-.genero,
-.discografica {
-    width: 250px;
-    padding: 8px 15px;
-    border: 1px solid grey;
-    border-radius: 3px;
-    background-color: #f6f6f6;
-    display: inline-block;
-    margin: 8px;
+    font-family: 'Rubik Mono One', sans-serif;
+    margin: 50px;
     text-align: center;
+    color: #ffb703;
+    font-size: xx-large;
 }
 
-.crearArtistaDiv{
-    padding: 10px;
-    background-color: #fb8501;
+.nuevos-lanzamientos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.cover-art {
+    width: 100%;
+}
+
+.album {
+    width: 44%;
     margin: 10px;
-}
-
-.crearArtista{
-    text-decoration: none;
-    color: white;
-}
-
-.campo-descripcion {
-    width: 95%;
-    margin: 8px;
-}
-
-.buscar-Imagen {
-    width: 250px;
-    padding: 8px 0px;
-    margin: 8px;
-}
-
-.boton-crear {
-    align-self: center;
-    background-color: #fb8501;
-    padding: 10px;
-    border: none;
-    width: 95%;
-    text-align: center;
-    color: white;
-}
-
-.nombre-usuario{
-    margin-top: 20px;
-    color: white;
-}
-
-.imagen-perfil{
-    width: 50px;
-    border-radius: 50px;
-    margin: 0px 10px;
-    transition: 500ms;
-}
-
-.imagen-perfil:hover{
-    box-shadow: 1px 1px 9px 6px rgb(0 0 0 / 56%);
-    border: 2px solid white;
-}
-
-.boton-cerrar-sesion{
-    text-decoration: none;
-    border: none;
-    padding: 10px;
-    border-radius: 15px;
-    color: white;
-    background-color: black;
-    margin-top: 8px;
-    transition: 500ms;
-}
-
-.boton-cerrar-sesion:hover{
+    padding: 15px;
     background-color: white;
-    box-shadow: 1px 1px 9px 6px rgb(0 0 0 / 56%);
-    color: black; 
+    transition: 500ms;
 }
 
-/*Fin ProductCreate*/
+.nuevos-lanzamientos a {
+    text-decoration: none;
+}
+
+.info-album {
+    margin-top: 10px;
+}
+
+.titulo-album {
+    margin-bottom: 5px;
+    color: #fb8501;
+}
+
+.banda-album {
+    font-weight: bold;
+    color: #023047;
+}
+
+.album:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 2px 6px 21px 7px rgba(0, 0, 0, 0.56);
+    padding: 12px;
+}
+
+.album:hover .titulo-album,
+.album:hover .banda-album {
+    color: white;
+}
+
+.album2{
+    width: 44%;
+    margin: 10px;
+    padding: 15px;
+    background-color: black;
+    transition: 500ms;
+    color: white;
+}
+
+.titulo-artista {
+    margin-bottom: 5px;
+    color: white;
+    transition: 500ms;
+    font-size: 30px;
+}
+
+.album2:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 6px 21px 7px rgba(0, 0, 0, 0.56);
+    padding: 12px;
+}
+
+.album2:hover .titulo-artista {
+    color: black;
+}
 
 
-/*Footer */
+
+
 
 footer {
     background-color: #fb8501;
@@ -267,24 +286,53 @@ footer {
     font-size: 11px;
 }
 
-.icono-gear{
+
+.imagen-perfil {
+    width: 50px;
+    border-radius: 50px;
+    margin: 0px 10px;
+    transition: 500ms;
+}
+
+.imagen-perfil:hover {
+    box-shadow: 1px 1px 9px 6px rgb(0 0 0 / 56%);
+    border: 2px solid white;
+}
+
+.boton-cerrar-sesion {
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+    margin-top: 8px;
+    transition: 500ms;
+}
+
+.boton-cerrar-sesion:hover {
+    background-color: white;
+    box-shadow: 1px 1px 9px 6px rgb(0 0 0 / 56%);
+    color: black;
+}
+
+.icono-gear {
     color: white;
     font-size: 12px;
     margin: 36px 5px 10px -8px;
 }
 
-.right-bar-header{
+.right-bar-header {
     display: flex;
     align-items: center;
+
 }
 
 @media (min-width: 361px) {}
 
 @media (min-width: 769px) {
     .header {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+
         padding: 4px;
     }
 
@@ -297,13 +345,14 @@ footer {
         align-self: center;
         display: flex;
         justify-content: space-between;
+
     }
 
     .burger-menu {
         display: none;
     }
 
-    .album {
+    .album,.album2 {
         width: 45%;
     }
 
@@ -379,13 +428,19 @@ footer {
 }
 
 @media (min-width:1200px) {
-    .album {
-        width: 23%;
+    .album,.album2 {
+        width: 30%;
+    }
+    .login-bar {
+        align-self: center;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        right: 10px;;
     }
     
     .nombre-usuario{
         display: block;
     }
-
 
 }

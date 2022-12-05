@@ -33,6 +33,39 @@ header {
 
 }
 
+/* busqueda*/
+
+.busqueda {
+    border: none;
+    border-radius: 15px;
+    padding: 8px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.boton-busqueda {
+    border: none;
+    padding: 8px;
+    background-color: #00ffff00;
+    position: relative;
+    right: 28px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    width: 52%;
+}
+
+.nombre-usuario {
+    margin-top: 20px;
+    color: white;
+    display: none;
+    
+}
+
+/* fin busqeuda nueva*/
+
 .barra-busqueda {
     align-self: center;
     width: 45%;
@@ -132,13 +165,12 @@ main {
 
 .nombreUsuario,
 .apellidoUsuario,
-.email {
-    width: 250px;
-    padding: 8px 15px;
-    border: 1px solid grey;
-    border-radius: 3px;
+.emailUsuario {
+    width: 90%;
+    padding: 10;
+    border: none;
+    border-radius: 7px;
     background-color: #f6f6f6;
-    display: inline-block;
     margin: 8px;
     
 }
@@ -157,13 +189,37 @@ main {
 }
 
 .boton-editar {
+    text-decoration: none;
+    margin-top: 8px;
     align-self: center;
     background-color: #fb8501;
-    padding: 10px;
-    border: none;
-    width: 95%;
-    text-align: center;
     color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: large;
+    
+
+}  
+
+.boton-borrar{
+    text-decoration: none;
+    margin-top: 8px;
+    align-self: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: large;
+    
+
 }
 
 /*Fin usersEdit*/
@@ -339,6 +395,10 @@ footer {
 @media (min-width:1200px) {
     .album {
         width: 23%;
+    }
+
+    .nombre-usuario{
+        display: block;
     }
 
 }
