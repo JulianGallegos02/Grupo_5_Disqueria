@@ -240,6 +240,11 @@ main {
     color: black; 
 }
 
+.msg-error{
+    color: #fb8501;
+    margin: 10px;
+}
+
 /*Fin ProductCreate*/
 
 

@@ -3,23 +3,13 @@ const path = require("path");
 const db = require("../database/models");
 const sequelize = db.sequelize;
 const { Op } = require('sequelize');
+const { validationResult } = require("express-validator");
 
 const Album = db.Album;
 const Genre = db.genre;
 const Artist = db.artists;
 const Label = db.label;
 
-
-function findAll() {
-    const jsonData = fs.readFileSync(path.join(__dirname, "../data/products.json"));
-    const data = JSON.parse(jsonData);
-    return data
-};
-
-function create(data) {
-    const dataString = JSON.stringify(data, null, 4);
-    fs.writeFileSync(path.join(__dirname, "../data/products.json"), dataString)
-};
 
 const controller = {
     detalleProducto: async function (req, res) {
@@ -52,8 +42,16 @@ const controller = {
         res.render("productCreate", { style: "productCreate", generos: listaGenero, artistas: listaArtistas, listaDiscografica });
     },
 
-    store: (req, res) => {
+    store: async (req, res) => {
+        let listaGenero = await Genre.findAll();
+        let listaArtistas = await Artist.findAll();
+        let listaDiscografica = await Label.findAll();
+        
+        const error = validationResult(req)
 
+        if (!error.isEmpty()) {
+            return res.render("productCreate", { errors: error.mapped(), style: "productCreate",  generos: listaGenero, artistas: listaArtistas, listaDiscografica })
+        }
 
         Album
             .create(

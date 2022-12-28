@@ -286,6 +286,16 @@ footer{
     
 }
 
+.volver-a-inicio-div{
+    margin-top: 8px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    display: inline-block;
+}
+
 
 
 @media (min-width: 361px){

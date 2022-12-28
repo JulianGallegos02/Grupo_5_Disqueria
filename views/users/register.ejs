@@ -10,26 +10,30 @@
             <section class="register-container">
                 <h2> Registrate</h2>
                 <form action="/users/register" enctype="multipart/form-data" method="POST" class="register-form">
-                    <div class="nombre-apellido">
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" >
+                    <div class="nombre-apellido-div">
+                        <input class="nombre-apellido" type="text" name="nombre" id="nombre" placeholder="Nombre" >
                         <% if(locals.errors && locals.errors.nombre){ %>
                             <p class="msg-error"> <%= errors.nombre.msg %> </p>
                             <% } %>
                     </div>
-                    <div class="nombre-apellido">
-                        <input type="text" name="apellido" id="apellido" placeholder="Apellido" >
+                    <div class="nombre-apellido-div">
+                        <input class="nombre-apellido" type="text" name="apellido" id="apellido" placeholder="Apellido" >
                         <% if(locals.errors && locals.errors.apellido){ %>
                             <p class="msg-error"> <%= errors.apellido.msg %> </p>
                             <% } %>
                     </div>
-                    <div class="email">
-                        <input type="email" name="email" id="email" placeholder="E-Mail" >
+                    <div class="email-div">
+                        <input class="email" type="email" name="email" id="email" placeholder="E-Mail" >
                         <% if(locals.errors && locals.errors.email){ %>
                             <p class="msg-error"> <%= errors.email.msg %> </p>
                             <% } %>
+
+                            <% if(locals.errorRegister){ %>
+                                <p class="error-register"> <%= errorRegister %> </p>
+                                <% } %>
                     </div>
-                    <div class="password">
-                        <input type="password" name="password" id="password" placeholder="Contraseña" >
+                    <div class="password-div">
+                        <input class="password" type="password" name="password" id="password" placeholder="Contraseña" >
                         <% if(locals.errors && locals.errors.password){ %>
                             <p class="msg-error"> <%= errors.password.msg %> </p>
                             <% } %>
@@ -37,6 +41,9 @@
                     <div class="avatar">
                         <label for="avatar">Foto de perfil:</label>
                         <input class="avatar-button" type="file" name="avatar" id="avatar">
+                        <% if(locals.errors && locals.errors.avatar){ %>
+                            <p class="msg-error"> <%= errors.avatar.msg %> </p>
+                            <% } %>
                     </div>           
                         <article class="botones">
                             <button class="boton-registro" type="submit">Registrate</button>

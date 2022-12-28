@@ -12,30 +12,37 @@
                     <img class="artistImage" src="/images/cover/<%=artista.image%>">
                     <p class="artistDescription">
                         <%= artista.description %>
-                    </p >
+                    </p>
 
-                    <p> <%=artista.albums.name  %> </p> 
+                    <p>
+                        <%=artista.albums.name %>
+                    </p>
 
 
-                <h2 class="tituloOtrosDiscos">Otros discos de <%= artista.name  %> </h2>
-                <div class="albumesArtista" >
-                    <% for(let i = 0; i < discos.length; i++) { %>
-                        <article class="album">
-                            <a href="/products/detail/<%=discos[i].id%>" class="albumBoton"> 
-                                <img class="cover-art" src="/images/cover/<%=discos[i].image%>" alt="cover">
-                                <div class="info-album">
-                                    <p class="titulo-album"><%=discos[i].name %></p>
-                                </div>
-                            </a>
-                        </article>
-                    <% } %>  
-                     
+                    <h2 class="tituloOtrosDiscos">Otros discos de <%= artista.name %>
+                    </h2>
+                    <div class="albumesArtista">
+                        <% for(let i=0; i < discos.length; i++) { %>
+                            <article class="album">
+                                <a href="/products/detail/<%=discos[i].id%>" class="albumBoton">
+                                    <img class="cover-art" src="/images/cover/<%=discos[i].image%>" alt="cover">
+                                    <div class="info-album">
+                                        <p class="titulo-album">
+                                            <%=discos[i].name %>
+                                        </p>
+                                    </div>
+                                </a>
+                            </article>
+                            <% } %>
+
                     </div>
-                <form action="/">
-                <button class="volver-a-inicio">Volver al Inicio</button>
-                </form>
+
+                    <div class="volver-a-inicio-div">
+                        <a class="volver-a-inicio" href="/" >Volver al Inicio</a>
+                    </div>
+
                 </section>
-                
+
 
             </main>
 

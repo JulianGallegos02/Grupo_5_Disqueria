@@ -16,6 +16,7 @@
                             <option value="<%= artista.id %>"><%= artista.name %></option>
                             <% }); %>
                         </select>
+                        
                 </div>
                 <div class="crearArtistaDiv">
                     <a href="/products/createArtist" class="crearArtista">Crear nuevo artista</a>
@@ -23,14 +24,23 @@
                 <div>
                     <label for="album">Nombre del Album:</label>
                     <input type="text" name="album" id="album" class="nombreAlbum">
+                    <% if(locals.errors && locals.errors.album){ %>
+                        <p class="msg-error"> <%= errors.album.msg %> </p>
+                        <% } %>
                 </div>
                 <div>
                     <label for="precio">Precio:</label>
                     <input type="text" name="precio" id="precio" class="precio">
+                    <% if(locals.errors && locals.errors.precio){ %>
+                        <p class="msg-error"> <%= errors.precio.msg %> </p>
+                        <% } %>
                 </div>
                 <div>
                     <label for="descripcion">Descripción:</label>
                     <textarea name="descripcion" id="descripcion" class="campo-descripcion"></textarea>
+                    <% if(locals.errors && locals.errors.descripcion){ %>
+                        <p class="msg-error"> <%= errors.descripcion.msg %> </p>
+                        <% } %>
                 </div>
                 <div>
                     <label for="genero">Género:</label>
@@ -45,7 +55,7 @@
                 <div>
                     <label for="discografica">Discografica:</label>
                     <select name="discografica" id="discografica" class="nombreArtista">
-                        <option value="" disabled selected>- Seleccione el género -  </option>
+                        <option value="" disabled selected>- Seleccione la discográfica -  </option>
                         <% listaDiscografica.forEach(label => { %>
                             <option value="<%= label.id %>"><%= label.name %></option>
                             <% }); %>
@@ -54,6 +64,9 @@
                 <div>
                     <label for="cover">Imagen:</label>
                     <input type="file" name="cover" id="cover" class="buscar-Imagen">
+                    <% if(locals.errors && locals.errors.cover){ %>
+                        <p class="msg-error"> <%= errors.cover.msg %> </p>
+                        <% } %>
                 </div>
                 <div>
                 <%# 

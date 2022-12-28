@@ -8,17 +8,6 @@ const { Op } = require('sequelize');
 
 let Users = db.users;
 
-function findAll() {
-    const jsonData = fs.readFileSync(path.join(__dirname, "../data/users.json"));
-    const data = JSON.parse(jsonData);
-    return data
-};
-
-function create(data) {
-    const dataString = JSON.stringify(data, null, 4);
-    fs.writeFileSync(path.join(__dirname, "../data/users.json"), dataString)
-};
-
 const controller = {
 
     login: function (req, res) {
@@ -74,14 +63,24 @@ const controller = {
             console.log(error.mapped())
             return res.render("register", { errors: error.mapped(), style: "register" })
         }
-        await Users.create({
-            first_name: req.body.nombre,
-            last_name: req.body.apellido,
-            email: req.body.email,
-            password: bcryptjs.hashSync(req.body.password, 10),
-            image: req.file.filename
+
+        let userFound = await Users.findOne({
+            where: {
+                email: req.body.email
+            }
         })
-        res.redirect("/");
+        if (userFound) {
+            return res.render("register", { errorRegister: "Este mail ya está registrado!", style: "register" })
+        } else {
+            await Users.create({
+                first_name: req.body.nombre,
+                last_name: req.body.apellido,
+                email: req.body.email,
+                password: bcryptjs.hashSync(req.body.password, 10),
+                image: req.file.filename
+            })
+            res.redirect("/");
+        }
 
     },
     perfil: async function (req, res) {

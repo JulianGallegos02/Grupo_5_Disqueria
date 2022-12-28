@@ -154,7 +154,9 @@ main{
     padding: 5px;
 }
 
-.register-form div input{
+.nombre-apellido,
+.email,
+.password{
 	width:250px;
 	padding:8px 15px;
 	border:1px solid grey;
@@ -163,6 +165,15 @@ main{
 	display:inline-block;
     margin: 5px;
 }
+
+.avatar-button{
+    width:250px;
+	padding:8px 15px;
+	border-radius:3px;
+	display:inline-block;
+    margin: 5px;  
+}
+
 
 main section h2 {
     color: white;
@@ -198,6 +209,12 @@ main section h2 {
 .pregunta{
     margin-top: 20px;
     margin-bottom: 10px;
+}
+
+.error-register{ 
+    color: #fb8501;
+    margin: 10px;
+    margin-right: 46px;
 }
 
 footer {
