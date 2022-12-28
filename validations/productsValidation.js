@@ -3,6 +3,9 @@ const { body } = require("express-validator");
 
 module.exports = {
     createValidation: [
+        body("artista")
+            .notEmpty()
+            .withMessage("Debes elegir un artista"),
         body("album")
             .notEmpty()
             .withMessage("Nombre incompleto")
@@ -16,6 +19,12 @@ module.exports = {
         body("precio")
             .notEmpty()
             .withMessage("Precio no puede estar vacío"),
+        body("genero")
+            .notEmpty()
+            .withMessage("Debes elegir un género"),
+        body("discografica")
+            .notEmpty()
+            .withMessage("Debes elegir una discográfica"),
         body('cover').custom((value, { req }) => {
             let file = req.file;
             let acceptedExtensions = ['.jpg', '.png', '.gif', '.jfif', '.webp', '.svg'];

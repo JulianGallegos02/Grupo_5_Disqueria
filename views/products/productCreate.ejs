@@ -16,6 +16,9 @@
                             <option value="<%= artista.id %>"><%= artista.name %></option>
                             <% }); %>
                         </select>
+                        <% if(locals.errors && locals.errors.artista){ %>
+                            <p class="msg-error"> <%= errors.artista.msg %> </p>
+                            <% } %>
                         
                 </div>
                 <div class="crearArtistaDiv">
@@ -51,6 +54,9 @@
                             <% }); %>
 
                     </select>
+                    <% if(locals.errors && locals.errors.genero){ %>
+                        <p class="msg-error"> <%= errors.genero.msg %> </p>
+                        <% } %>
                 </div>
                 <div>
                     <label for="discografica">Discografica:</label>
@@ -60,6 +66,9 @@
                             <option value="<%= label.id %>"><%= label.name %></option>
                             <% }); %>
                         </select>
+                        <% if(locals.errors && locals.errors.discografica){ %>
+                            <p class="msg-error"> <%= errors.discografica.msg %> </p>
+                            <% } %>
                 </div>
                 <div>
                     <label for="cover">Imagen:</label>
