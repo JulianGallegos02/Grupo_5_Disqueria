@@ -29,7 +29,8 @@ header {
 }
 
 .logo-svg {
-    height: 100%;
+    width: 118px;
+    margin-top: 8px;
 
 }
 
@@ -207,6 +208,36 @@ main {
      margin-top: 10px;
 
 
+}
+
+.msg-error{
+    color: #fb8501;
+    margin: 10px;
+}
+
+.error-box{
+    position: absolute;
+    background-color: #fb8501;
+    padding: 40px;
+    top: 225px;
+    border-radius: 20px;
+    border: 3px solid white;
+    color: white;
+    text-align: inherit;
+    width: 350px;
+    display: none;
+}
+
+.ok-button{
+    text-align: center;
+    margin-top: 20px;
+    background-color: black;
+    width: 65px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    margin-left: 35%;
+    cursor: pointer;
 }
 
 

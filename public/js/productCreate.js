@@ -2,7 +2,9 @@ window.onload = function () {
 
 
     let form = document.querySelector(".productCreate-form");
+    form.album.focus();
 
+    
     form.addEventListener("submit", (event) => {
         let errores = [];
 
@@ -85,7 +87,7 @@ window.onload = function () {
         } else {
             if (cover.value) {
                 if (!allowedExtensions.exec(cover.value)) {
-                    errores.push('Extensión de imagen no permitida');
+                    errores.push('Las extensiones de archivo permitidas son: .jpg, .png, .gif, .jfif, .webp y .svg');
                 }
             }
         }

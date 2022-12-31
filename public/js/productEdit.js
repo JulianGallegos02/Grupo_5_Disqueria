@@ -1,18 +1,19 @@
 window.onload = function () {
 
 
-    let form = document.querySelector(".productEdit-form");
+    let form = document.querySelector(".edit");
+    form.album.focus();
+
 
     form.addEventListener("submit", (event) => {
         let errores = [];
 
-        let artista = document.getElementById("artista");
         let album = document.getElementById("album");
         let precio = document.getElementById("precio");
         let descripcion = document.getElementById("descripcion");
-        let genero = document.getElementById("genero");
-        let discografica = document.getElementById("discografica");
         let cover = document.getElementById("cover");
+        let errorBox = document.querySelector(".error-box");
+        let okButton = document.querySelector(".ok-button");
 
 
 
@@ -58,7 +59,7 @@ window.onload = function () {
         } else {
             if (cover.value) {
                 if (!allowedExtensions.exec(cover.value)) {
-                    errores.push('Extensión de imagen no permitida');
+                    errores.push('Las extensiones de archivo permitidas son: .jpg, .png, .gif, .jfif, .webp y .svg');
                 }
             }
         }
@@ -71,6 +72,13 @@ window.onload = function () {
             for (let i = 0; i < errores.length; i++) {
                 listaErrores.innerHTML += "<li>" + errores[i] + "</li>"
             }
+
+            errorBox.style.display = "inline-block"
+
+            okButton.addEventListener("click", function () {
+                errorBox.style.display = "none"
+
+            })
         }
 
 

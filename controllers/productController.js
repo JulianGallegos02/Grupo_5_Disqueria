@@ -93,6 +93,16 @@ const controller = {
     update: async function (req, res) {
         try {
             let discoId = req.params.id;
+            let disco = await Album.findByPk(discoId)
+            let generos = await Genre.findAll();
+            let label = await Label.findAll();
+            let artistas = await Artist.findAll();
+
+            const error = validationResult(req)
+
+            if (!error.isEmpty()) {
+                 res.render(path.resolve(__dirname, '..', "views", 'products', "productEdit"), { errors: error.mapped(), style: "productEdit", disco, generos, label, artistas })
+            }
 
             await Album
                 .update({
