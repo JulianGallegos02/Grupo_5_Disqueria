@@ -27,7 +27,7 @@ router.get('/', adminMiddleware, productController.lista);
 router.get('/create', adminMiddleware, productController.create);
 router.post('/create', upload.single('cover'), validation.createValidation, productController.store);
 router.get('/edit/:id',adminMiddleware, productController.edit);
-router.put('/edit/:id', adminMiddleware, upload.single('cover'), productController.update);
+router.put('/edit/:id', adminMiddleware, upload.single('cover'),validation.editValidation, productController.update);
 router.delete('/edit/:id', adminMiddleware, productController.delete);
 router.get('/createArtist', adminMiddleware, productController.artist);
 router.post('/createArtist',upload.single('image'), productController.artistCreate );

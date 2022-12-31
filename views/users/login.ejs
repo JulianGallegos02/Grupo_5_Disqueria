@@ -1,60 +1,75 @@
 <html>
 
-    <%- include("./partials/head") %>
-
-<body>
+<%- include("./partials/head") %>
 
     <body>
-        <%- include("./partials/header") %>
-        <main>
-            <section class="login-container">
-                <h2> Iniciar Sesión</h2>
-                <form action="/users/login" method="POST" class="login-form">
 
-                    <div class="email">
-                            <input type="email" name="email" id="email" placeholder="E-Mail" >
-                            <% if(locals.errors && locals.errors.email){ %>
-                                <p class="msg-error"> <%= locals.errors.email.msg %> </p>
-                                <% } %>
-                    </div>
+        <body>
+            <%- include("./partials/header") %>
+                <main>
+                    <section class="login-container">
+                        <h2> Iniciar Sesión</h2>
+                        <form action="/users/login" method="POST" class="login-form">
 
-                    <div class="password">
-                        <input  type="password" name="password" id="password" placeholder="Contraseña" >
-                        <% if(locals.errors && locals.errors.password){ %>
-                            <p class="msg-error"> <%= locals.errors.password.msg %> </p>
-                            <% } %>
-                    </div>
+                            <div class="email">
+                                <input type="email" name="email" id="email" placeholder="E-Mail">
+                                <% if(locals.errors && locals.errors.email){ %>
+                                    <p class="msg-error">
+                                        <%= locals.errors.email.msg %>
+                                    </p>
+                                    <% } %>
+                            </div>
 
-                    <div>
-                        <input type="checkbox" name="remember" class="recordar-contraseña" id="remember">
-                        <label for="remember" class="recordar-contraseña-texto">Recuérdame</label>
-                    </div>
+                            <div class="password">
+                                <input type="password" name="password" id="password" placeholder="Contraseña">
+                                <% if(locals.errors && locals.errors.password){ %>
+                                    <p class="msg-error">
+                                        <%= locals.errors.password.msg %>
+                                    </p>
+                                    <% } %>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="remember" class="recordar-contraseña" id="remember">
+                                <label for="remember" class="recordar-contraseña-texto">Recuérdame</label>
+                            </div>
 
 
-                    <div class="ingresar-recuperarclave">
-                        <article class="botones">
-                            <button class="boton-ingresa" type="submit">Ingresá</button>
-                        </article>
+                            <div class="ingresar-recuperarclave">
+                                <article class="botones">
+                                    <button class="boton-ingresa" type="submit">Ingresá</button>
+                                </article>
 
-                        <% if(locals.errorLogin){ %>
-                            <p class="error-login"> <%= errorLogin %> </p>
-                            <% } %>
+                                <% if(locals.errorLogin){ %>
+                                    <p class="error-login">
+                                        <%= errorLogin %>
+                                    </p>
+                                    <% } %>
 
-                        <article class="botones2">
-                            <a href=#><p class="forgot-password"> Olvidé la contraseña</P></a>
-                        </article>
-                    </div>
-                    <article class="registrarse">
-                        <p class="pregunta">¿No tenés cuenta?</p>
-                        <article class="botones3">
-                            <a href= /users/register><p class="register2"> Registrate</p></a>
-                        </article>
+                                        <article class="botones2">
+                                            <a href=#>
+                                                <p class="forgot-password"> Olvidé la contraseña</P>
+                                            </a>
+                                        </article>
+                            </div>
+                            <article class="registrarse">
+                                <p class="pregunta">¿No tenés cuenta?</p>
+                                <article class="botones3">
+                                    <a href=/users/register>
+                                        <p class="register2"> Registrate</p>
+                                    </a>
+                                </article>
+                            </article>
+                        </form>
+                    </section>
+                    <article class="error-box">
+                        <ul class="errores"></ul>
+                        <p class="ok-button">OK</p>
                     </article>
-                </form>
-            </section>
-        </main>
-
-        <%- include("./partials/footer") %>
-    </body>
+                </main>
+                
+                <%- include("./partials/footer") %>
+                    <script src="/js/login.js"></script>
+        </body>
 
 </html>

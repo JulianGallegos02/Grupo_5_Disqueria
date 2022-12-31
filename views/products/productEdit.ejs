@@ -1,80 +1,99 @@
 <html>
-    <%- include("./partials/head") %>
+<%- include("./partials/head") %>
 
     <body>
-    <%- include("./partials/header") %>
+        <%- include("./partials/header") %>
 
-        <main>
-            <section class = "productEdit-Container">
-            <h2 class="titular">Editar producto: "<%= disco.name %>"</h2>
+            <main>
+                <section class="productEdit-Container">
+                    <h2 class="titular">Editar producto: "<%= disco.name %>"</h2>
 
-            <form class="edit" action="/products/edit/<%= disco.id %>?_method=PUT" enctype="multipart/form-data" method="POST" class="productEdit-form">
-                <div>
-                    <label for="album">Nombre del Album:</label>
-                    <input type="text" value="<%= disco.name %>" name="album" id="album" class="nombreAlbum">
-                </div>
-                <div>
-                    <label for="artista">Nombre del Artista:</label>
-                    <select name="artista" id="artista" class="nombreArtista">
-                        <% for (artista of artistas) { %>
-                            <option value="<%= artista.id %>" 
-                                <% if (artista.id == disco.artist_id){ %>
-                                    selected> <% } else { %> >
-                                        <% } %>
-                                    <%= artista.name %></option>
-                        <% } %>
-                        </select>
-                </div>
-                <div>
-                    <label for="precio">Precio:</label>
-                    <input type="text" value="<%= disco.price %>" name="precio" id="precio" class="precio">
-                </div>
-                <div>
-                    <label for="descripcion">Descripción:</label>
-                    <textarea name="descripcion" id="descripcion" class="campo-descripcion"><%= disco.description %></textarea>
-                </div>
-                <div>
-                    <label for="genero">Género:</label>
-                    <select name="genero" id="genero" class="nombreArtista">
-                        <% for (genero of generos) { %>
-                            <option value="<%= genero.id %>" 
-                                <% if (genero.id == disco.genre_id){ %>
-                                    selected> <% } else { %> >
-                                        <% } %>
-                                    <%= genero.genre_name %></option>
-                        <% } %>
+                    <form class="edit" action="/products/edit/<%= disco.id %>?_method=PUT" enctype="multipart/form-data"
+                        method="POST" class="productEdit-form">
+                        <div>
+                            <label for="album">Nombre del Album:</label>
+                            <input type="text" value="<%= disco.name %>" name="album" id="album" class="nombreAlbum">
+                            <% if(locals.errors && locals.errors.album){ %>
+                                <p class="msg-error">
+                                    <%= errors.album.msg %>
+                                </p>
+                                <% } %>
+                        </div>
+                        <div>
+                            <label for="artista">Nombre del Artista:</label>
+                            <select name="artista" id="artista" class="nombreArtista">
+                                <% for (artista of artistas) { %>
+                                    <option value="<%= artista.id %>" <% if (artista.id==disco.artist_id){ %>
+                                        selected> <% } else { %> >
+                                            <% } %>
+                                                <%= artista.name %>
+                                    </option>
+                                    <% } %>
+                            </select>
+                            <% if(locals.errors && locals.errors.artista){ %>
+                                <p class="msg-error">
+                                    <%= errors.artista.msg %>
+                                </p>
+                                <% } %>
+                        </div>
+                        <div>
+                            <label for="precio">Precio:</label>
+                            <input type="text" value="<%= disco.price %>" name="precio" id="precio" class="precio">
+                        </div>
+                        <div>
+                            <label for="descripcion">Descripción:</label>
+                            <textarea name="descripcion" id="descripcion"
+                                class="campo-descripcion"><%= disco.description %></textarea>
+                        </div>
+                        <div>
+                            <label for="genero">Género:</label>
+                            <select name="genero" id="genero" class="nombreArtista">
+                                <% for (genero of generos) { %>
+                                    <option value="<%= genero.id %>" <% if (genero.id==disco.genre_id){ %>
+                                        selected> <% } else { %> >
+                                            <% } %>
+                                                <%= genero.genre_name %>
+                                    </option>
+                                    <% } %>
 
-                    </select>
-                </div>
-                <div>
-                    <label for="discografica">Discografica:</label>
-                    <select name="discografica" id="discografica" class="nombreArtista">
-                        <% for (label of label) { %>
-                            <option value="<%= label.id %>" 
-                                <% if (label.id == disco.label_id){ %>
-                                    selected> <% } else { %> >
-                                        <% } %>
-                                    <%= label.name %></option>
-                        <% } %>
-                        </select>
-                    
-                </div>
-                <div>
-                    <label for="cover">Imagen:</label>
-                    <input type="file" value="<%= disco.image %>" name="cover" class="buscar-Imagen">
-                </div>
-                <div>
-                    <button type="submit" class= "boton-editar">Editar</button>
-                </div>
-            </form>
-            <form class="delete" action="/products/edit/<%= disco.id %>?_method=DELETE" method="POST" class="productEdit-form">
-                <div>
-                    <button type="" class= "boton-borrar">Eliminar producto</button>
-                </div>
-            </form>
-        </section>
-        </main>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="discografica">Discografica:</label>
+                            <select name="discografica" id="discografica" class="nombreArtista">
+                                <% for (label of label) { %>
+                                    <option value="<%= label.id %>" <% if (label.id==disco.label_id){ %>
+                                        selected> <% } else { %> >
+                                            <% } %>
+                                                <%= label.name %>
+                                    </option>
+                                    <% } %>
+                            </select>
 
-       <%- include("./partials/footer") %>
+                        </div>
+                        <div>
+                            <label for="cover">Imagen:</label>
+                            <input type="file" value="<%= disco.image %>" name="cover" class="buscar-Imagen" id="cover">
+                        </div>
+                        <div>
+                            <button type="submit" class="boton-editar">Editar</button>
+                        </div>
+                    </form>
+                    <form class="delete" action="/products/edit/<%= disco.id %>?_method=DELETE" method="POST"
+                        class="productEditDelete-form">
+                        <div>
+                            <button type="" class="boton-borrar">Eliminar producto</button>
+                        </div>
+                    </form>
+                    <article>
+                        <ul style="list-style:none" class="errores"></ul>
+                    </article>
+                </section>
+            </main>
+
+            <%- include("./partials/footer") %>
+                <script src="/js/productEdit.js"></script>
+
     </body>
+
 </html>

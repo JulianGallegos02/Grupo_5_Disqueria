@@ -1,108 +1,136 @@
 <html>
-    <%- include("./partials/head") %>
+<%- include("./partials/head") %>
 
     <body>
-    <%- include("./partials/header") %>
+        <%- include("./partials/header") %>
 
-        <main> 
-            <section class = "productCreate-Container">
-            <h2 class="titular">Crear nuevo producto</h2>
-            <form action="/products/create" enctype="multipart/form-data" method="POST" class="productCreate-form">
-                <div>
-                    <label for="artista">Nombre del Artista:</label>
-                    <select name="artista" id="artista" class="nombreArtista">
-                        <option value="" disabled selected>- Seleccione el artista -  </option>
-                        <% artistas.forEach(artista => { %>
-                            <option value="<%= artista.id %>"><%= artista.name %></option>
-                            <% }); %>
-                        </select>
-                        <% if(locals.errors && locals.errors.artista){ %>
-                            <p class="msg-error"> <%= errors.artista.msg %> </p>
-                            <% } %>
-                        
-                </div>
-                <div class="crearArtistaDiv">
-                    <a href="/products/createArtist" class="crearArtista">Crear nuevo artista</a>
-                </div>
-                <div>
-                    <label for="album">Nombre del Album:</label>
-                    <input type="text" name="album" id="album" class="nombreAlbum">
-                    <% if(locals.errors && locals.errors.album){ %>
-                        <p class="msg-error"> <%= errors.album.msg %> </p>
-                        <% } %>
-                </div>
-                <div>
-                    <label for="precio">Precio:</label>
-                    <input type="text" name="precio" id="precio" class="precio">
-                    <% if(locals.errors && locals.errors.precio){ %>
-                        <p class="msg-error"> <%= errors.precio.msg %> </p>
-                        <% } %>
-                </div>
-                <div>
-                    <label for="descripcion">Descripción:</label>
-                    <textarea name="descripcion" id="descripcion" class="campo-descripcion"></textarea>
-                    <% if(locals.errors && locals.errors.descripcion){ %>
-                        <p class="msg-error"> <%= errors.descripcion.msg %> </p>
-                        <% } %>
-                </div>
-                <div>
-                    <label for="genero">Género:</label>
-                    <select name="genero" id="genero" class="nombreArtista">
-                        <option value="" disabled selected>- Seleccione el género -  </option>
-                        <% generos.forEach(genre => { %>
-                            <option value="<%= genre.id %>"><%= genre.genre_name %></option>
-                            <% }); %>
+            <main>
+                <section class="productCreate-Container">
+                    <h2 class="titular">Crear nuevo producto</h2>
+                    <form action="/products/create" enctype="multipart/form-data" method="POST"
+                        class="productCreate-form">
+                        <div>
+                            <label for="artista">Nombre del Artista:</label>
+                            <select name="artista" id="artista" class="nombreArtista">
+                                <option value="" disabled selected>- Seleccione el artista - </option>
+                                <% artistas.forEach(artista=> { %>
+                                    <option value="<%= artista.id %>">
+                                        <%= artista.name %>
+                                    </option>
+                                    <% }); %>
+                            </select>
+                            <% if(locals.errors && locals.errors.artista){ %>
+                                <p class="msg-error">
+                                    <%= errors.artista.msg %>
+                                </p>
+                                <% } %>
 
-                    </select>
-                    <% if(locals.errors && locals.errors.genero){ %>
-                        <p class="msg-error"> <%= errors.genero.msg %> </p>
-                        <% } %>
-                </div>
-                <div>
-                    <label for="discografica">Discografica:</label>
-                    <select name="discografica" id="discografica" class="nombreArtista">
-                        <option value="" disabled selected>- Seleccione la discográfica -  </option>
-                        <% listaDiscografica.forEach(label => { %>
-                            <option value="<%= label.id %>"><%= label.name %></option>
-                            <% }); %>
-                        </select>
-                        <% if(locals.errors && locals.errors.discografica){ %>
-                            <p class="msg-error"> <%= errors.discografica.msg %> </p>
-                            <% } %>
-                </div>
-                <div>
-                    <label for="cover">Imagen:</label>
-                    <input type="file" name="cover" id="cover" class="buscar-Imagen">
-                    <% if(locals.errors && locals.errors.cover){ %>
-                        <p class="msg-error"> <%= errors.cover.msg %> </p>
-                        <% } %>
-                </div>
-                <div>
-                <%# 
-                 <label for="vinilo">Vinilo</label>
-                    <input type="checkbox" name="format" value="1" id="vinilo" >
-                </div>
-                <div>
-                    <label for="cassete">Cassete</label>
-                    <input type="checkbox" name="format" value="2" id="cassete" >
-                </div>
-                <div>
-                    <label for="cd">CD</label>
-                    <input type="checkbox" name="format" value="3" id="cd" >
-                </div>
-                <div>
-                    <label for="digital">Digital</label>
-                    <input type="checkbox" name="format" value="4" id="Digital" >
-                </div>
-                %>
-                <div>
-                    <button type="submit" class= "boton-crear">Crear</button>
-                </div>
+                        </div>
+                        <div class="crearArtistaDiv">
+                            <a href="/products/createArtist" class="crearArtista">Crear nuevo artista</a>
+                        </div>
+                        <div>
+                            <label for="album">Nombre del Album:</label>
+                            <input type="text" name="album" id="album" class="nombreAlbum">
+                            <% if(locals.errors && locals.errors.album){ %>
+                                <p class="msg-error">
+                                    <%= errors.album.msg %>
+                                </p>
+                                <% } %>
+                        </div>
+                        <div>
+                            <label for="precio">Precio:</label>
+                            <input type="text" name="precio" id="precio" class="precio">
+                            <% if(locals.errors && locals.errors.precio){ %>
+                                <p class="msg-error">
+                                    <%= errors.precio.msg %>
+                                </p>
+                                <% } %>
+                        </div>
+                        <div>
+                            <label for="descripcion">Descripción:</label>
+                            <textarea name="descripcion" id="descripcion" class="campo-descripcion"></textarea>
+                            <% if(locals.errors && locals.errors.descripcion){ %>
+                                <p class="msg-error">
+                                    <%= errors.descripcion.msg %>
+                                </p>
+                                <% } %>
+                        </div>
+                        <div>
+                            <label for="genero">Género:</label>
+                            <select name="genero" id="genero" class="nombreArtista">
+                                <option value="" disabled selected>- Seleccione el género - </option>
+                                <% generos.forEach(genre=> { %>
+                                    <option value="<%= genre.id %>">
+                                        <%= genre.genre_name %>
+                                    </option>
+                                    <% }); %>
 
-            </form>
-        </section>
-        </main>
+                            </select>
+                            <% if(locals.errors && locals.errors.genero){ %>
+                                <p class="msg-error">
+                                    <%= errors.genero.msg %>
+                                </p>
+                                <% } %>
+                        </div>
+                        <div>
+                            <label for="discografica">Discografica:</label>
+                            <select name="discografica" id="discografica" class="nombreArtista">
+                                <option value="" disabled selected>- Seleccione la discográfica - </option>
+                                <% listaDiscografica.forEach(label=> { %>
+                                    <option value="<%= label.id %>">
+                                        <%= label.name %>
+                                    </option>
+                                    <% }); %>
+                            </select>
+                            <% if(locals.errors && locals.errors.discografica){ %>
+                                <p class="msg-error">
+                                    <%= errors.discografica.msg %>
+                                </p>
+                                <% } %>
+                        </div>
+                        <div>
+                            <label for="cover">Imagen:</label>
+                            <input type="file" name="cover" id="cover" class="buscar-Imagen">
+                            <% if(locals.errors && locals.errors.cover){ %>
+                                <p class="msg-error">
+                                    <%= errors.cover.msg %>
+                                </p>
+                                <% } %>
+                        </div>
+                        <div>
+                            <%# <label for="vinilo">Vinilo</label>
+                                <input type="checkbox" name="format" value="1" id="vinilo">
+                        </div>
+                        <div>
+                            <label for="cassete">Cassete</label>
+                            <input type="checkbox" name="format" value="2" id="cassete">
+                        </div>
+                        <div>
+                            <label for="cd">CD</label>
+                            <input type="checkbox" name="format" value="3" id="cd">
+                        </div>
+                        <div>
+                            <label for="digital">Digital</label>
+                            <input type="checkbox" name="format" value="4" id="Digital">
+                        </div>
+                        %>
+                        <div>
+                            <button type="submit" class="boton-crear">Crear</button>
+                        </div>
 
-       <%- include("./partials/footer") %>
+                    </form>
+
+                </section>
+                <article class="error-box">
+                    <ul class="errores"></ul>
+                    <p class="ok-button">OK</p>
+                </article>
+            </main>
+
+            <%- include("./partials/footer") %>
+                <script src="/js/productCreate.js"></script>
+
     </body>
+
 </html>

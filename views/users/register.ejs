@@ -1,64 +1,88 @@
 <html>
 
-    <%- include("./partials/head") %>
-
-<body>
+<%- include("./partials/head") %>
 
     <body>
-        <%- include("./partials/header") %>
-        <main>
-            <section class="register-container">
-                <h2> Registrate</h2>
-                <form action="/users/register" enctype="multipart/form-data" method="POST" class="register-form">
-                    <div class="nombre-apellido-div">
-                        <input class="nombre-apellido" type="text" name="nombre" id="nombre" placeholder="Nombre" >
-                        <% if(locals.errors && locals.errors.nombre){ %>
-                            <p class="msg-error"> <%= errors.nombre.msg %> </p>
-                            <% } %>
-                    </div>
-                    <div class="nombre-apellido-div">
-                        <input class="nombre-apellido" type="text" name="apellido" id="apellido" placeholder="Apellido" >
-                        <% if(locals.errors && locals.errors.apellido){ %>
-                            <p class="msg-error"> <%= errors.apellido.msg %> </p>
-                            <% } %>
-                    </div>
-                    <div class="email-div">
-                        <input class="email" type="email" name="email" id="email" placeholder="E-Mail" >
-                        <% if(locals.errors && locals.errors.email){ %>
-                            <p class="msg-error"> <%= errors.email.msg %> </p>
-                            <% } %>
 
-                            <% if(locals.errorRegister){ %>
-                                <p class="error-register"> <%= errorRegister %> </p>
-                                <% } %>
-                    </div>
-                    <div class="password-div">
-                        <input class="password" type="password" name="password" id="password" placeholder="Contraseña" >
-                        <% if(locals.errors && locals.errors.password){ %>
-                            <p class="msg-error"> <%= errors.password.msg %> </p>
-                            <% } %>
-                    </div> 
-                    <div class="avatar">
-                        <label for="avatar">Foto de perfil:</label>
-                        <input class="avatar-button" type="file" name="avatar" id="avatar">
-                        <% if(locals.errors && locals.errors.avatar){ %>
-                            <p class="msg-error"> <%= errors.avatar.msg %> </p>
-                            <% } %>
-                    </div>           
-                        <article class="botones">
-                            <button class="boton-registro" type="submit">Registrate</button>
-                        </article>
-                    <article>
-                        <p class="pregunta">¿Ya tenés cuenta?</p>
-                        <article class="botones2">
-                            <a href= /users/login><p class="login-button"> Inicia sesión</p></a>
-                        </article>
+        <body>
+            <%- include("./partials/header") %>
+                <main>
+                    <section class="register-container">
+                        <h2> Registrate</h2>
+                        <form action="/users/register" enctype="multipart/form-data" method="POST"
+                            class="register-form">
+                            <div class="nombre-apellido-div">
+                                <input class="nombre-apellido" type="text" name="nombre" id="nombre"
+                                    placeholder="Nombre">
+                                <% if(locals.errors && locals.errors.nombre){ %>
+                                    <p class="msg-error">
+                                        <%= errors.nombre.msg %>
+                                    </p>
+                                    <% } %>
+                            </div>
+                            <div class="nombre-apellido-div">
+                                <input class="nombre-apellido" type="text" name="apellido" id="apellido"
+                                    placeholder="Apellido">
+                                <% if(locals.errors && locals.errors.apellido){ %>
+                                    <p class="msg-error">
+                                        <%= errors.apellido.msg %>
+                                    </p>
+                                    <% } %>
+                            </div>
+                            <div class="email-div">
+                                <input class="email" type="email" name="email" id="email" placeholder="E-Mail">
+                                <% if(locals.errors && locals.errors.email){ %>
+                                    <p class="msg-error">
+                                        <%= errors.email.msg %>
+                                    </p>
+                                    <% } %>
+
+                                        <% if(locals.errorRegister){ %>
+                                            <p class="error-register">
+                                                <%= errorRegister %>
+                                            </p>
+                                            <% } %>
+                            </div>
+                            <div class="password-div">
+                                <input class="password" type="password" name="password" id="password"
+                                    placeholder="Contraseña">
+                                <% if(locals.errors && locals.errors.password){ %>
+                                    <p class="msg-error">
+                                        <%= errors.password.msg %>
+                                    </p>
+                                    <% } %>
+                            </div>
+                            <div class="avatar">
+                                <label for="avatar">Foto de perfil:</label>
+                                <input class="avatar-button" type="file" name="avatar" id="avatar">
+                                <% if(locals.errors && locals.errors.avatar){ %>
+                                    <p class="msg-error">
+                                        <%= errors.avatar.msg %>
+                                    </p>
+                                    <% } %>
+                            </div>
+                            <article class="botones">
+                                <button class="boton-registro" type="submit">Registrate</button>
+                            </article>
+                            <article>
+                                <p class="pregunta">¿Ya tenés cuenta?</p>
+                                <article class="botones2">
+                                    <a href=/users/login>
+                                        <p class="login-button"> Inicia sesión</p>
+                                    </a>
+                                </article>
+                            </article>
+                        </form>
+
+                    </section>
+                    <article class="error-box">
+                        <ul  class="errores"></ul>
+                        <p class="ok-button">OK</p>
                     </article>
-                </form>
-            </section>
-        </main>
+                </main>
 
-        <%- include("./partials/footer") %>
-    </body>
+                <%- include("./partials/footer") %>
+                    <script src="/js/register.js"></script>
+        </body>
 
 </html>
