@@ -26,16 +26,24 @@ const apiUsersController = {
             .catch(error => res.send(error))
     },
     detail: (req, res) => {
-        db.user.findByPk(req.params.id)
+        db.users.findByPk(req.params.id, {
+            attributes: [
+                "id",
+                "first_name",
+                "last_name",
+                "email",
+                "image"
+            ]
+        })
             .then(
                 user => {
                     let response = {
                         meta: {
                             status: 200,
-                            total: users.length,
-                            url: 'api/users/:id'
+                            total: user.length,
+                            url: `http://localhost:3000/api/users/`
                         },
-                        data: users
+                        data: user
                     }
                     res.json(response);
                 }
