@@ -13,7 +13,8 @@ const apiUsersController = {
                         id: element.dataValues.id,
                         name: element.dataValues.first_name + " " + element.dataValues.last_name,
                         email: element.dataValues.email,
-                        detail: `http://localhost:3000/api/users/${element.dataValues.id}`
+                        detail: `http://localhost:3000/api/users/${element.dataValues.id}`,
+                        image: `http://localhost:3000/images/users/${element.dataValues.image}`
                     });
                 });
 
@@ -33,6 +34,7 @@ const apiUsersController = {
                 "last_name",
                 "email",
                 "image"
+                //`http://localhost:3000/images/users/${element.dataValues.image}`//
             ]
         })
             .then(
