@@ -1,12 +1,17 @@
 import React from 'react';
 
 function Footer(){
+
+	var fondoColor = {
+		background: 'rgba(2, 48, 71, 1)'
+        }
+
     return (
         <React.Fragment>
-			<footer className="sticky-footer bg-white">
+			<footer style={fondoColor}  className="sticky-footer ">
 				<div className="container my-auto">
 					<div className="copyright text-center my-auto">
-						<span>Copyright &copy; Dashboard 2021</span>
+						<span>Copyright &copy; Dashboard 2023</span>
 					</div>
 				</div>
 			</footer>

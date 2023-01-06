@@ -20,6 +20,8 @@ class GenresInDb extends Component {
   }
 
     render() {
+
+
     return (
     <div className="col-lg-6 mb-4">
       <div className="card shadow mb-4">
@@ -28,7 +30,7 @@ class GenresInDb extends Component {
             Generos
           </h5>
         </div>
-        <div className="card-body">
+        <div  className="card-body">
           <div className="row">
           {this.state.genresList.map((genres, index) => {
                   return <Genres {...genres} key={index} />;
