@@ -101,3 +101,22 @@ Mi unico cambio seria dividir aun mas los trabajos mas pequeños asi podemos ser
 * Modificamos tablas y relaciones en base de datos.
 * Falta CRUD para productos (eliminar, listar, crear detalle y buscar) y  CRUD para usuarios (editar y ver detalle). 
 * Falta editar los datos de nuestra base de datos para que no queden con nombres random.
+
+
+# :cd: SPRINT VII
+
+## 1. Reunión Semanal I
+
+* Implementación de Express Validator en rutas que reciben formularios.
+* Cambios en formularios de css.
+* Validaciones del back-end terminadas. 
+ 
+
+# :cd: SPRINT VIII
+
+## 1. Reunión Semanal I
+
+* Corrección en detail e image de la api de usuarios. Api de usuarios terminada. 
+* Uso del include en api de productos, y algunos cambios. 
+* Falta en la api de productos: countByCategory (objeto literal con una propiedad por categoría con el total de productos).  
+
