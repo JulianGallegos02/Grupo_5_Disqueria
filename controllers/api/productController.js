@@ -67,7 +67,40 @@ const apiProductController = {
                 }
                 res.json(response);
             })
-    }
-}
+    },
+    lastAlbum: (req, res) => {
+        db.Album.findAll({
+            include: { all: true, nested: true },
+            limit: 1,
+            order: [["id", "DESC"]]
+
+        })
+            .then((album) => {
+                let infoAlbum = [];
+
+                album.forEach((element) => {
+
+                    infoAlbum.push({
+                        id: element.dataValues.id,
+                        name: element.dataValues.name,
+                        artist: element.dataValues.artists.name,
+                        genre: element.dataValues.genre.genre_name,
+                        description: element.dataValues.description,
+                        label: element.dataValues.label.name,
+                        image: `http://localhost:3000/images/cover/${element.dataValues.image}`
+                    });
+                });
+
+                let response = {
+                    meta: {
+                        status: 200,
+                        url: "http://localhost:3000/api/products/lastAlbum/",
+                    },
+                    data: infoAlbum,
+                };
+                res.json(response);
+            });
+    },
+};
 
 module.exports = apiProductController;

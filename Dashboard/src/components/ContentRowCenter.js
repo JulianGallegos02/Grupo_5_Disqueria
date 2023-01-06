@@ -1,20 +1,42 @@
-import React from 'react';
-import LastMovieInDb from './LastMovieInDb';
+import React, { Component } from "react";
+import LastProductInDb from './LastProductInDb';
 import GenresInDb from './GenresInDb';
 
-function ContentRowCenter(){
-    return (
-        <div className="row">
-            
-            {/*<!-- Last Movie in DB -->*/}
-            <LastMovieInDb />
-            {/*<!-- End content row last movie in Data Base -->*/}
+class ContentRowCenter extends Component {
+    constructor() {
+        super();
+        this.state = {
+        lastAlbum: [],
+        };
+    }
 
-            {/*<!-- Genres in DB -->*/}
-            <GenresInDb />
+    componentDidMount() {
+        fetch("http://localhost:3000/api/products/lastAlbum")
+        .then((response) => { 
+          return response.json(); })
+        .then((album) => { this.setState({ lastAlbum: album.data }); })
+    
+        .catch((error) => console.log(error));
+    
+      }
 
-        </div>
-    )
+
+    render() {
+        return (
+            <div className="row">
+
+                {/*<!-- Last Movie in DB -->*/}
+                 {this.state.lastAlbum.map((album, index) => {
+                  return <LastProductInDb {...album} key={index} />;
+              })}
+                {/*<!-- End content row last movie in Data Base -->*/}
+
+                {/*<!-- Genres in DB -->*/}
+                <GenresInDb />
+
+            </div>
+        )
+    }
 }
 
 export default ContentRowCenter;

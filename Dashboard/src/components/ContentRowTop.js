@@ -1,7 +1,6 @@
 import React from 'react';
 import ContentRowCenter from './ContentRowCenter';
 import ContentTable from './ContentTable';
-import Chart from './Chart';
 
 function ContentRowTop(){
     return(
@@ -15,7 +14,7 @@ function ContentRowTop(){
 					{/*<!-- Content Row Movies-->*/}
 					<ContentTable />
 					<ContentRowCenter />
-					<Chart />
+					
 	
 				</div>
 				{/*<!--End Content Row Top-->*/}
