@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const methodOverride = require('method-override');
 const session = require("express-session");
+const cors = require("cors")
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -35,6 +36,7 @@ app.use(session({
 }));
 app.use(localsMiddleware);
 app.use(recordameMiddle);
+app.use(cors())
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
