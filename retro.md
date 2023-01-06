@@ -110,7 +110,6 @@ En esta nueva retrospectiva tuvimos en cuenta nuestros errores y aciertos del Sp
 * No procrastinar.
 
 
-
 # :star: Sprint V
 
 En esta nueva retrospectiva tuvimos en cuenta nuestros errores y aciertos del Sprint IV.
@@ -168,6 +167,7 @@ En esta nueva retrospectiva tuvimos en cuenta nuestros errores y aciertos del Sp
 ## 2. Hacer más (More of)
 
 * Mantener el trello actualizado y chequearlo.
+
 * Utilizar un poco más Discord. 
 
 
@@ -190,4 +190,81 @@ En esta nueva retrospectiva tuvimos en cuenta nuestros errores y aciertos del Sp
 * No procrastinar.
 
 
+# :star: Sprint VII
 
+En esta nueva retrospectiva tuvimos en cuenta nuestros errores y aciertos del Sprint VI.
+
+## 1. Comenzar a hacer (Start doing)
+  
+* Emprolijar el css de formularios.
+
+
+## 2. Hacer más (More of)
+
+* Mantener el trello actualizado y chequearlo.
+
+* Utilizar un poco más Discord. 
+
+* Comunicar cambios.
+
+
+## 3. Continuar haciendo (Keep doing)
+
+* El lindo ambiente del grupo. Nos escuchamos, nos motivamos, nos ayudamos mutuamente. 
+
+* Scrum Weekly Meeting (La reunión semanal). 
+
+* La comunicación por WhatsApp. 
+
+* Mantener el repositorio en Github actualizado.
+
+* Commits solo con los datos estrictamente necesarios.
+
+## 4. Hacer menos (Less of)
+
+* No colgar para que despues no se nos junte todo para el print. 
+
+
+## 5. Dejar de hacer (Stop doing)
+
+* No procrastinar.
+
+
+# :star: Sprint VIII
+
+En esta nueva retrospectiva tuvimos en cuenta nuestros errores y aciertos del Sprint VII.
+
+## 1. Comenzar a hacer (Start doing)
+  
+* Emprolijar el css de formularios.
+
+* Probar ideas que tenemos para aplicar en el proyecto. 
+
+
+## 2. Hacer más (More of)
+
+* Utilizar un poco más Discord. 
+
+
+## 3. Continuar haciendo (Keep doing)
+
+* Mantener el trello actualizado y chequearlo.
+
+* El lindo ambiente del grupo. Nos escuchamos, nos motivamos, nos ayudamos mutuamente. 
+
+* Scrum Weekly Meeting (La reunión semanal), o en un futuro otras reuniones para mejorar el proyecto o para otros proyectos. 
+
+* La comunicación por WhatsApp. 
+
+* Mantener el repositorio en Github actualizado.
+
+* Commits solo con los datos estrictamente necesarios.
+
+## 4. Hacer menos (Less of)
+
+* No colgar para que despues no se nos junte todo. 
+
+
+## 5. Dejar de hacer (Stop doing)
+
+* No procrastinar.
