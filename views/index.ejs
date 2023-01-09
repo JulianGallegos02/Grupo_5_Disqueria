@@ -1,97 +1,113 @@
 <html>
-    <%- include("./partials/head") %> 
-
+    <%- include("./partials/head") %>
+    
     <body>
         <%- include("./partials/header") %>
-
+        
         <main>
+
             <section class="carrusel">
-                <img class="banner" src="images\carrusel\banner-gorillaz.png" alt="Carrusel">
+                <div class="w3-content w3-section" style="max-width:90%">
+                  <img class="mySlides banner" src="/images/carrusel/banner-gorillaz.png" style="width:100%">
+                  <img class="mySlides banner" src="/images/carrusel/banner-kendrick.png" style="width:100%">
+                  <img class="mySlides banner" src="/images/carrusel/banner-rosalia.png" style="width:100%">
+                </div>
             </section>
             
-            <section class="categorias">
-                <a href= # ><article class="vinilos">
-                    <img src="images\iconos-logos\vinilo.svg" class="icono-categoria" alt="Vinilo">
-                </article></a>
-
-                <a href= # ><article class="cassettes">
-                    <img src="images\iconos-logos\cassete.svg" class="icono-categoria" alt="Cassete">   
-                    </article></a>
-
-                <a href= # ><article class="discos">
-                    <img src="images\iconos-logos\cd.svg" class="icono-categoria" alt="cd">                    
-                    </article></a>
-
-                <a href=#><article class="digital">
-                    <img src="images\iconos-logos\wave.svg"class="icono-categoria" alt="Onda de Sonido">
-                </article></a>
-
-            </section>
-
+            
+            
             <h2 class="titular">Recomendados</h2>
-
+            
             <section class="nuevos-lanzamientos">
-
-
-                <% for(let i = 0; i < 4; i++) { %>
-
+                
+                
+                <% for(let i=0; i < 4; i++) { %>
+                    
                     <article class="album">
-                        <a href="/products/detail/<%= discoRandom[i].id%>"> 
+                        <a href="/products/detail/<%= discoRandom[i].id%>">
                             <img class="cover-art" src="/images/cover/<%=discoRandom[i].image%>" alt="cover">
                             <div class="info-album">
-                                <p class="titulo-album"><%=discoRandom[i].name%></p>
-                                <p class="banda-album"> <%= discoRandom[i].artists.name %></p>
+                                <p class="titulo-album">
+                                    <%=discoRandom[i].name%>
+                                </p>
+                                <p class="banda-album">
+                                    <%= discoRandom[i].artists.name %>
+                                </p>
                             </div>
                         </a>
                     </article>
-
-                <%} %>   
-            
+                    
+                    <%} %>
+                    
                 </section>
-
+                
+                <article class="P1">
+                    <img class="pruebaMagica2" src="/images/cover/pruebamagicasinfondo.png" alt="">
+                </article>
                 <h2 class="titular">Últimos Agregados</h2>
-
+                
                 <section class="nuevos-lanzamientos">
-    
-                    <% for(let i = 0; i < 4; i++) { %>
-
+                    
+                    <% for(let i=0; i < 4; i++) { %>
+                        
                         <article class="album">
-                            <a href="/products/detail/<%= ultimoDisco[i].id%>"> 
+                            <a href="/products/detail/<%= ultimoDisco[i].id%>">
                                 <img class="cover-art" src="/images/cover/<%=ultimoDisco[i].image%>" alt="cover">
                                 <div class="info-album">
-                                    <p class="titulo-album"><%=ultimoDisco[i].name %></p>
-                                    <p class="banda-album"><%=ultimoDisco[i].artists.name %></p>
+                                    <p class="titulo-album">
+                                        <%=ultimoDisco[i].name %>
+                                    </p>
+                                    <p class="banda-album">
+                                        <%=ultimoDisco[i].artists.name %>
+                                    </p>
                                 </div>
                             </a>
                         </article>
 
-                    <%} %>   
-    
-                    </section>
+                        <%} %>
 
-                    <h2 class="titular">Clasicos</h2>
+                </section>
 
-                    <section class="nuevos-lanzamientos">
+                <article class="promo-container">
+                    <div class="texto-promo">
+                        <p class="titulo-promo">Conoce los Mejores Discos del 2022</p>
+                        <p class="descripcion-promo">Esta es nuestra seleccion de los mejores albumes publicados este año</p>
+                    </div>
+                    <div class="container-foto-promo"> <img src="/images/carrusel/promo.webp" class="foto-promo" alt=""></div>
+                </article>
 
-                        <% for(let i = 8; i < 12; i++) { %>
 
-                            <article class="album">
-                                <a href="/products/detail/<%= disco[i].id%>"> 
-                                    <img class="cover-art" src="/images/cover/<%=disco[i].image%>" alt="cover">
-                                    <div class="info-album">
-                                        <p class="titulo-album"><%=disco[i].name %></p>
-                                        <p class="banda-album"><%=disco[i].artists.name %></p>
-                                    </div>
-                                </a>
-                            </article>
-    
-                        <%} %>   
+                <section class="nuevos-lanzamientos">
 
-        
-                    </section>
+                    <% for(let i=8; i < 12; i++) { %>
 
-        </main>
+                        <article class="album">
+                            <a href="/products/detail/<%= disco[i].id%>">
+                                <img class="cover-art" src="/images/cover/<%=disco[i].image%>" alt="cover">
+                                <div class="info-album">
+                                    <p class="titulo-album">
+                                        <%=disco[i].name %>
+                                    </p>
+                                    <p class="banda-album">
+                                        <%=disco[i].artists.name %>
+                                    </p>
+                                </div>
+                            </a>
+                        </article>
 
-       <%- include("./partials/footer") %>
+                        <%} %>
+
+
+                </section>
+
+
+
+
+
+
+            </main>
+            <script src="/js/index.js"></script>
+            <%- include("./partials/footer") %>
     </body>
+
 </html>

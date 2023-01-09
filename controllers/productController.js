@@ -194,13 +194,14 @@ const controller = {
                 name: {
                     [Op.like]: '%' + busquedaAlbum + '%'
                 }
+                
             }
         })
         let searchArtista = await Artist.findAll({
             where: {
 
                 name: {
-                    [Op.like]: '%' + busquedaAlbum + '%'
+                    [Op.like]: '%' + busquedaAlbum + '%',
                 }
 
             }

@@ -3,9 +3,10 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 /*Menu del perfil*/
 
-.menuPerfil{
+.menuPerfil {
     background-color: #fb8501;
     border: solid 1px white;
     width: 261px;
@@ -16,25 +17,25 @@
     border-radius: 5px;
     animation: menuAnim 0.2s ease 0s 1 normal forwards;
     display: none;
-    
+
 }
 
-.menuList{
+.menuList {
     margin: 10px;
     padding: 8px;
     border-radius: 5px;
 }
 
-.menuList:hover{
-    background-color:#f7a13f ; 
+.menuList:hover {
+    background-color: #f7a13f;
 }
 
-.menuTexto{
+.menuTexto {
     text-decoration: none;
     color: white;
 }
 
-.boton-cerrar-sesion{
+.boton-cerrar-sesion {
     text-decoration: none;
     border: none;
     padding: 10px;
@@ -47,31 +48,31 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.boton-cerrar-sesion:hover{
+.boton-cerrar-sesion:hover {
     background-color: white;
     box-shadow: 1px 1px 9px 6px rgb(0 0 0 / 56%);
-    color: black; 
+    color: black;
 }
 
-.showMenu{
+.showMenu {
     display: inline-block;
-    
+
 }
 
-.animCerrar{
+.animCerrar {
     animation: animCerrar 0.2s ease 0s 1 normal forwards;
 }
 
 @keyframes menuAnim {
-	0% {
-		transform: scaleY(0.4);
-		transform-origin: 100% 0%;
-	}
+    0% {
+        transform: scaleY(0.4);
+        transform-origin: 100% 0%;
+    }
 
-	100% {
-		transform: scaleY(1);
-		transform-origin: 100% 0%;
-	}
+    100% {
+        transform: scaleY(1);
+        transform-origin: 100% 0%;
+    }
 }
 
 
@@ -82,16 +83,16 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(0deg, rgba(2,48,71,1) 0%, rgba(33,158,188,1) 100%);
+    background: linear-gradient(0deg, rgba(2, 48, 71, 1) 0%, rgba(33, 158, 188, 1) 100%);
     background-attachment: fixed;
 }
 
-header{
+header {
     background-color: #fb8501;
 }
 
-.header{
-    display:flex;
+.header {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 4px;
@@ -135,7 +136,7 @@ header{
     margin-top: 20px;
     color: white;
     display: none;
-    
+
 }
 
 /* fin busqeuda nueva*/
@@ -160,7 +161,7 @@ header{
     width: 100%;
 }
 
-.burger-menu{
+.burger-menu {
     align-self: center;
     margin: 10px;
     color: white;
@@ -184,20 +185,22 @@ header{
     color: white;
 }
 
-.login-bar div a{
+.login-bar div a {
     transition: 500ms;
 }
 
-.login-bar div:hover a{
+.login-bar div:hover a {
     color: #219ebc;
     text-shadow: 1px 1px 3px black;
 }
 
-.login-bar div i{
+.login-bar div i {
     font-size: 30px;
 }
 
-.registrate, .ingresa, .carrito {
+.registrate,
+.ingresa,
+.carrito {
     text-decoration: none;
     color: white;
     margin-top: 8px;
@@ -205,7 +208,7 @@ header{
 }
 
 
-.carrusel{
+.carrusel {
     display: flex;
     justify-content: center;
 }
@@ -217,7 +220,7 @@ header{
     border-radius: 40px;
 }
 
-.categorias{
+.categorias {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -225,7 +228,7 @@ header{
     margin: 0 auto;
 }
 
-.categorias article{
+.categorias article {
     background-color: #fb8501;
     text-align: center;
     padding: 8px;
@@ -235,11 +238,11 @@ header{
     transition: 500ms;
 }
 
-.categorias a{
+.categorias a {
     width: 40%;
 }
 
-.icono-categoria{
+.icono-categoria {
     width: 60%;
 }
 
@@ -251,18 +254,18 @@ header{
     font-size: xx-large;
 }
 
-.nuevos-lanzamientos{
+.nuevos-lanzamientos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 
 }
 
-.cover-art{
+.cover-art {
     width: 100%;
 }
 
-.album{
+.album {
     width: 40%;
     margin: 10px;
     padding: 15px;
@@ -270,32 +273,32 @@ header{
     transition: 500ms;
 }
 
-.nuevos-lanzamientos a{
+.nuevos-lanzamientos a {
     text-decoration: none;
 }
 
-.info-album{
+.info-album {
     margin-top: 10px;
 }
 
-.titulo-album{
+.titulo-album {
     margin-bottom: 5px;
     color: #fb8501;
 }
 
-.banda-album{
+.banda-album {
     font-weight: bold;
     color: #023047;
 }
 
-.album:hover{
+.album:hover {
     background-color: black;
     color: white;
-    box-shadow: 2px 6px 21px 7px rgba(0,0,0,0.56);
+    box-shadow: 2px 6px 21px 7px rgba(0, 0, 0, 0.56);
     padding: 12px;
 }
 
- .album:hover .banda-album {
+.album:hover .banda-album {
     color: white;
 }
 
@@ -303,7 +306,7 @@ header{
     color: #fb8501;
 }
 
-footer{
+footer {
     background-color: #fb8501;
     padding: 10px;
     bottom: 0px;
@@ -313,54 +316,103 @@ footer{
     margin-top: 20px;
 }
 
-.info-footer{
+.info-footer {
     display: flex;
     justify-content: space-between;
 }
 
-.texto-footer{
+.texto-footer {
     margin-right: 25px;
 }
 
-.legal{
+.legal {
     font-size: 11px;
 }
 
-.nombre-usuario{
+.nombre-usuario {
     margin-top: 20px;
     color: white;
 }
 
-.imagen-perfil{
+.imagen-perfil {
     width: 50px;
     border-radius: 50px;
     margin: 0px 10px;
     transition: 500ms;
 }
 
-.imagen-perfil:hover{
+.imagen-perfil:hover {
     box-shadow: 1px 1px 9px 6px rgb(0 0 0 / 56%);
     border: 2px solid white;
 }
 
-.icono-gear{
+.icono-gear {
     color: white;
     font-size: 12px;
     margin: 36px 5px 10px -8px;
 }
 
-.right-bar-header{
+.right-bar-header {
     display: flex;
     align-items: center;
 }
 
-@media (min-width: 361px){
-
+.P1 {
+    overflow: hidden;
 }
 
-@media (min-width: 769px){
-    .header{
-        display:flex;
+.pruebaMagica2 {
+
+    max-height: 150px;
+
+    animation: slide 10s linear infinite;
+}
+
+.promo-container {
+    color: white;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.foto-promo {
+    width: 65%;
+    margin-left: 20%;
+    margin-top: -40px;
+    filter: invert(68%) sepia(62%) saturate(666%) hue-rotate(355deg) brightness(99%) contrast(105%);
+}
+
+.texto-promo {
+    margin-bottom: 5px;
+    text-align: center;
+    margin-top: -45px;
+}
+
+.titulo-promo {
+    font-family: 'Rubik Mono One', sans-serif;
+    margin: 12px;
+    color: #ffb703;
+}
+
+.mySlides {
+    display: none
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translate3d(400px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-1100px, 0, 0);
+    }
+}
+
+@media (min-width: 361px) {}
+
+@media (min-width: 769px) {
+    .header {
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 4px;
@@ -371,29 +423,29 @@ footer{
         width: 30%;
     }
 
-    .login-bar{
+    .login-bar {
         align-self: center;
         display: flex;
-        justify-content: space-between; 
+        justify-content: space-between;
     }
 
-    .burger-menu{
+    .burger-menu {
         display: none;
     }
 
-    .album{
+    .album {
         width: 45%;
     }
 
-    .categorias{
-        display:flex;
+    .categorias {
+        display: flex;
         flex-wrap: nowrap;
         width: 90%;
         justify-content: space-around;
         margin: 0 auto;
     }
-    
-    .categorias article{
+
+    .categorias article {
         background-color: #fb8501;
         text-align: center;
         padding: 8px;
@@ -403,66 +455,194 @@ footer{
         transition: 500ms;
     }
 
-    .vinilos:hover{
+    .vinilos:hover {
         background-image: url(../images/gifs/vinilo-texto.gif);
         background-position: center;
         background-size: cover;
-        box-shadow: 2px 15px 23px 2px rgba(0,0,0,0.75);
+        box-shadow: 2px 15px 23px 2px rgba(0, 0, 0, 0.75);
         border-color: white;
     }
-    
-    .vinilos:hover img{
+
+    .vinilos:hover img {
         visibility: hidden;
     }
-    
-    .cassettes:hover{
+
+    .cassettes:hover {
         background-image: url(../images/gifs/cassette-texto.gif);
         background-position: center;
         background-size: cover;
-        box-shadow: 2px 15px 23px 2px rgba(0,0,0,0.75);
+        box-shadow: 2px 15px 23px 2px rgba(0, 0, 0, 0.75);
         border-color: white;
     }
-    
-    .cassettes:hover img{
+
+    .cassettes:hover img {
         visibility: hidden;
     }
-    
-    .discos:hover{
+
+    .discos:hover {
         background-image: url(../images/gifs/cd-texto.gif);
         background-position: center;
         background-size: cover;
-        box-shadow: 2px 15px 23px 2px rgba(0,0,0,0.75);
+        box-shadow: 2px 15px 23px 2px rgba(0, 0, 0, 0.75);
         border-color: white;
     }
-    
-    .discos:hover img{
+
+    .discos:hover img {
         visibility: hidden;
     }
-    
-    .digital:hover{
+
+    .digital:hover {
         background-image: url(../images/gifs/digital-texto.gif);
         background-position: center;
         background-size: cover;
-        box-shadow: 2px 15px 23px 2px rgba(0,0,0,0.75);
+        box-shadow: 2px 15px 23px 2px rgba(0, 0, 0, 0.75);
         border-color: white;
     }
-    
-    .digital:hover img{
+
+    .digital:hover img {
         visibility: hidden;
     }
-    
+
+    .P1 {
+        overflow: hidden;
+    }
+
+    .pruebaMagica2 {
+        max-height: 220px;
+        animation: slide 10s linear infinite;
+    }
+
+    .promo-container {
+        color: white;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .foto-promo {
+        width: 65%;
+        margin-left: 20%;
+        margin-top: -100px;
+        margin-bottom: -85px;
+        filter: invert(68%) sepia(62%) saturate(666%) hue-rotate(355deg) brightness(99%) contrast(105%);
+    }
+
+    .texto-promo {
+        margin-bottom: 5px;
+        text-align: center;
+        margin-top: -45px;
+        font-size: 20px;
+    }
+
+    .titulo-promo {
+        font-family: 'Rubik Mono One', sans-serif;
+        margin: 12px;
+        color: #ffb703;
+    }
+
+
+
+    @keyframes slide {
+        0% {
+            transform: translate3d(800px, 0, 0);
+        }
+
+        100% {
+            transform: translate3d(-1600px, 0, 0);
+        }
+    }
+
+
+
 
 
 
 }
 
-@media (min-width:1200px){
-    .album{
+@media (min-width:1200px) {
+    .album {
         width: 23%;
     }
 
-    .nombre-usuario{
+    .nombre-usuario {
         display: block;
+    }
+
+    .P1 {
+        overflow: hidden;
+    }
+
+    .pruebaMagica2 {
+
+        animation: slide 15s linear infinite;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translate3d(1200px, 0, 0);
+        }
+
+        100% {
+            transform: translate3d(-2400px, 0, 0);
+        }
+    }
+
+
+    .promo-container {
+        color: white;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .foto-promo {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: -156px;
+        margin-bottom: -115px;
+        filter: invert(68%) sepia(62%) saturate(666%) hue-rotate(355deg) brightness(99%) contrast(105%);
+    }
+
+    .texto-promo {
+        margin-bottom: 5px;
+        text-align: center;
+        margin-top: -45px;
+        font-size: 20px;
+    }
+
+    .titulo-promo {
+        font-family: 'Rubik Mono One', sans-serif;
+        margin: 12px;
+        color: #ffb703;
+    }
+
+
+}
+
+@media (min-width:1900px) {
+    .album {
+        width: 23%;
+    }
+
+    .nombre-usuario {
+        display: block;
+    }
+
+    .P1 {
+        overflow: hidden;
+    }
+
+    .pruebaMagica2 {
+
+        animation: slide 15s linear infinite;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translate3d(1920px, 0, 0);
+        }
+
+        100% {
+            transform: translate3d(-2840px, 0, 0);
+        }
     }
 
 

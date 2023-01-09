@@ -11,57 +11,87 @@
             <button type="submit" id="myBtn" class="boton-busqueda"><i class="fas fa-search"></i></button>
         </form>
 
+        <% if(!locals.usuario){ %>
+            <div class="burger-menu"><i class="fas fa-bars burger"></i></div>
+            <% }else{ %>
+                <article class="avatarPhone">
+                    <img class="imagen-perfilPhone" src=/images/users/<%=usuario.avatar %>>
+                </article>
+                <% } %>
 
-        <div class="burger-menu"><i class="fas fa-bars"></i></div>
+                    <div class="login-bar">
 
-        <div class="login-bar">
+                        <% if(!locals.usuario){ %>
+                            <div class="sign-up">
+                                <a class="registrate" href="/users/register"><i class="far fa-address-card"></i></a>
+                                <a class="registrate" href="/users/register">Registrate</a>
+                            </div>
+                            <div class="login">
+                                <a class="ingresa" href="/users/login"><i class="fas fa-user-circle"></i></a>
+                                <a class="ingresa" href="/users/login"> Ingresá</a>
+                            </div>
+                            <div class="cart">
+                                <a class="carrito" href="/products/cart"><i class="fas fa-shopping-cart"></i></a>
+                                <a class="carrito" href="/products/cart">Carrito</a>
+                            </div>
 
-            <% if(!locals.usuario){ %>
-                <div class="sign-up">
-                    <a class="registrate" href="/users/register"><i class="far fa-address-card"></i></a>
-                    <a class="registrate" href="/users/register">Registrate</a>
+                            <% }else{ %>
+
+                                <article class="right-bar-header">
+                                    <p class="nombre-usuario">Bienvenido <%= usuario.nombre + " " + usuario.apellido %>
+                                    </p>
+
+
+                                    <article class="avatar">
+                                        <img class="imagen-perfil" src=/images/users/<%=usuario.avatar %>>
+                                    </article>
+
+                                </article>
+
+                                <% } %>
+
+                    </div>
+    </section>
+    <script src="/js/menuPerfil.js"></script>
+</header>
+
+<% if(locals.usuario){ %>
+    <div class="menuPerfil">
+        <ul style="list-style: none">
+            <a class="menuTexto" href="/users/perfil/<%= usuario.id  %> ">
+                <li class="menuList">Ver Perfil</li>
+            </a>
+            <a class="menuTexto" href="/users/edit/<%=usuario.id%>">
+                <li class="menuList">Editar Perfil</li>
+            </a>
+            <a class="menuTexto" href="/products/cart">
+                <li class="menuList">Carrito</li>
+            </a>
+            <% if (locals.usuario.admin==1) {%>
+                <a class="menuTexto" href="/users/admin">
+                    <li class="menuList">Menu Administrador</li>
+                </a>
+                <% } %>
+                    <form action="/users/logout" method="POST">
+                        <li><button type="submit" class="boton-cerrar-sesion">Cerrar Sesion</button>
+                        </li>
+                    </form>
+        </ul>
+    </div>
+    <% } %>
+        <% if(!locals.usuario){ %>
+            <div class="menuLogin">
+                <div class="signUpBurger">
+                    <a class="registrateBurger" href="/users/register"><i class="far fa-address-card"></i></a>
+                    <a class="registrateBurger" href="/users/register">Registrate</a>
                 </div>
-                <div class="login">
-                    <a class="ingresa" href="/users/login"><i class="fas fa-user-circle"></i></a>
-                    <a class="ingresa" href="/users/login"> Ingresá</a>
+                <div class="loginBurger">
+                    <a class="ingresaBurger" href="/users/login"><i class="fas fa-user-circle"></i></a>
+                    <a class="ingresaBurger" href="/users/login"> Ingresá</a>
                 </div>
-                <div class="cart">
-                    <a class="carrito" href="/products/cart"><i class="fas fa-shopping-cart"></i></a>
-                    <a class="carrito" href="/products/cart">Carrito</a>
+                <div class="cartBurger">
+                    <a class="carritoBurger" href="/products/cart"><i class="fas fa-shopping-cart"></i></a>
+                    <a class="carritoBurger" href="/products/cart">Carrito</a>
                 </div>
-
-                <% }else{ %>
-
-                    <article class="right-bar-header">
-                        <p class="nombre-usuario">Bienvenido <%= usuario.nombre + " " + usuario.apellido %>
-                        </p>
-
-                        
-                        <article class="avatar">
-                            <img class="imagen-perfil" src=/images/users/<%=usuario.avatar %>>
-                        </article>
-                        
-                    </article>
-                    
-                    <% } %>
-                    
-                </div>
-            </section>
-            <script src="/js/menuPerfil.js"></script>
-        </header>
-        <% if(locals.usuario){ %>
-            <div class="menuPerfil">
-                <ul style="list-style: none">
-                    <a class="menuTexto" href="/users/perfil/<%= usuario.id  %> "><li class="menuList">Ver Perfil</li></a>
-                    <a class="menuTexto" href="/users/edit/<%=usuario.id%>"><li class="menuList">Editar Perfil</li></a>
-                   <a class="menuTexto" href="/products/cart"> <li class="menuList">Carrito</li></a>
-                    <% if (locals.usuario.admin==1) {%>
-                        <a class="menuTexto" href="/users/admin"><li class="menuList">Menu Administrador</li></a>
-                        <% } %>
-                        <form action="/users/logout" method="POST">
-                            <li><button type="submit" class="boton-cerrar-sesion">Cerrar Sesion</button>
-                            </li>
-                        </form>
-            </ul>
-        </div>
-        <% } %>
+            </div>
+            <% } %>
