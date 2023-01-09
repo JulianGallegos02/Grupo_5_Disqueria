@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+.menuPerfil{
+    background-color: #fb8501;
+    border: solid 1px white;
+    width: fit-content;
+    position: absolute;
+    top: 62px;
+    right: 12px;
+    padding: 10px;
+    display: none
+}
+
+.showMenu{
+    display: inline-block
+}
+
 body {
     font-family: 'Josefin Sans', sans-serif;
     height: 100vh;
@@ -141,12 +156,6 @@ header{
     display: none;
 }
 
-.imagen-detalle{
-    width: 90%;
-    margin-left: 22px;
-    margin-top: 20px;
-}
-
 .titulo-banda{
     width: 90%;
     margin-left: 32px;
@@ -161,7 +170,69 @@ header{
 .banda{
     color: white;
     font-size: x-large;
-    margin-top: 10px;    
+    margin-top: 10px;
+}
+
+.artistBox {
+    background-color: #0000002b;
+    border-radius: 10px;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    position: relative;
+    color: white;
+}
+
+.album{
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+    transition: 500ms;
+    
+}
+
+.cover-art{
+    width: 100%;
+}
+.album:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 2px 6px 21px 7px rgba(0,0,0,0.56);
+    padding: 12px;
+}
+
+.tituloOtrosDiscos{
+    margin: 20px;
+}
+
+.info-album{
+    margin-top: 10px;
+}
+
+.imagen-detalle{
+    width: 90%;
+    margin-left: 22px;
+    margin-top: 20px;
+}
+
+.albumBoton{
+    text-decoration: none;
+    color: black;
+    transition: 300ms;
+}
+
+.albumBoton:hover{
+    color: white;
+}
+
+.albumesArtista{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .opcion-agregar-carrito{

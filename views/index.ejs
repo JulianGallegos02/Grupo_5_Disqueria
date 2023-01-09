@@ -28,7 +28,7 @@
 
             </section>
 
-            <h2 class="titular">Nuevos Lanzamientos</h2>
+            <h2 class="titular">Recomendados</h2>
 
             <section class="nuevos-lanzamientos">
 
@@ -36,11 +36,11 @@
                 <% for(let i = 0; i < 4; i++) { %>
 
                     <article class="album">
-                        <a href="/products/detail/<%= disco[i].id%>"> 
-                            <img class="cover-art" src="/images/cover/<%=disco[i].image%>" alt="cover">
+                        <a href="/products/detail/<%= discoRandom[i].id%>"> 
+                            <img class="cover-art" src="/images/cover/<%=discoRandom[i].image%>" alt="cover">
                             <div class="info-album">
-                                <p class="titulo-album"><%=disco[i].name%></p>
-                                <p class="banda-album"> <%= disco[i].artists.name %></p>
+                                <p class="titulo-album"><%=discoRandom[i].name%></p>
+                                <p class="banda-album"> <%= discoRandom[i].artists.name %></p>
                             </div>
                         </a>
                     </article>
@@ -49,18 +49,18 @@
             
                 </section>
 
-                <h2 class="titular">Mas Vendidos</h2>
+                <h2 class="titular">Últimos Agregados</h2>
 
                 <section class="nuevos-lanzamientos">
     
-                    <% for(let i = 4; i < 8; i++) { %>
+                    <% for(let i = 0; i < 4; i++) { %>
 
                         <article class="album">
-                            <a href="/products/detail/<%= disco[i].id%>"> 
-                                <img class="cover-art" src="/images/cover/<%=disco[i].image%>" alt="cover">
+                            <a href="/products/detail/<%= ultimoDisco[i].id%>"> 
+                                <img class="cover-art" src="/images/cover/<%=ultimoDisco[i].image%>" alt="cover">
                                 <div class="info-album">
-                                    <p class="titulo-album"><%=disco[i].name %></p>
-                                    <p class="banda-album"><%=disco[i].artists.name %></p>
+                                    <p class="titulo-album"><%=ultimoDisco[i].name %></p>
+                                    <p class="banda-album"><%=ultimoDisco[i].artists.name %></p>
                                 </div>
                             </a>
                         </article>

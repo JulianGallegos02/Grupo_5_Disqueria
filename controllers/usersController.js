@@ -79,7 +79,7 @@ const controller = {
                 password: bcryptjs.hashSync(req.body.password, 10),
                 image: req.file.filename
             })
-            res.redirect("/");
+            res.redirect("/users/login");
         }
 
     },
@@ -125,6 +125,8 @@ const controller = {
         Users
             .destroy({ where: { id: userId }, force: true })
             .then(() => {
+                req.session.destroy()
+                res.clearCookie("recordame");
                 return res.redirect('/')
             })
             .catch(error => res.send(error))

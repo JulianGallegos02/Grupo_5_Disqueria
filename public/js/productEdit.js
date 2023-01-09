@@ -51,7 +51,7 @@ window.onload = function () {
 
 
         //----VALIDACION COVER -------
-        let allowedExtensions = /(.jpg|.png|.jgif|.gif|.webp|.svg)$/i;
+        let allowedExtensions = /(.jpg|.png|.jfif|.gif|.webp|.svg)$/i;
 
         if (cover.value == "") {
             errores.push("Tenes que subir una imagen")

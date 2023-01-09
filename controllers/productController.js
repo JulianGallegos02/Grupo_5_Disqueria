@@ -18,7 +18,14 @@ const controller = {
             include: ["artists", "genre", "label", "format"]
         })
 
-        res.render("productDetail", { style: "productDetail", discoEncontrado });
+        let discosSimilares = await Album.findAll({
+            include: ["artists", "genre", "label", "format"],
+             where: { genre_id: discoEncontrado.genre_id },
+             limit: 5,
+             order: sequelize.random()
+            })
+
+        res.render("productDetail", { style: "productDetail", discoEncontrado, discosSimilares });
     },
 
     carrito: function (req, res) {
