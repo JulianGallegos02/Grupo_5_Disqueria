@@ -53,15 +53,11 @@ window.onload = function () {
         //----VALIDACION COVER -------
         let allowedExtensions = /(.jpg|.png|.jfif|.gif|.webp|.svg)$/i;
 
-        if (cover.value == "") {
-            errores.push("Tenes que subir una imagen")
-            cover.classList.add('is-invalid')
-        } else {
             if (cover.value) {
                 if (!allowedExtensions.exec(cover.value)) {
                     errores.push('Las extensiones de archivo permitidas son: .jpg, .png, .gif, .jfif, .webp y .svg');
                 }
-            }
+            
         }
 
 

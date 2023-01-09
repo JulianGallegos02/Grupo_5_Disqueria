@@ -20,10 +20,10 @@ const controller = {
 
         let discosSimilares = await Album.findAll({
             include: ["artists", "genre", "label", "format"],
-             where: { genre_id: discoEncontrado.genre_id },
-             limit: 5,
-             order: sequelize.random()
-            })
+            where: { genre_id: discoEncontrado.genre_id },
+            limit: 5,
+            order: sequelize.random()
+        })
 
         res.render("productDetail", { style: "productDetail", discoEncontrado, discosSimilares });
     },
@@ -43,10 +43,10 @@ const controller = {
 
     create: async function (req, res) {
         let listaGenero = await Genre.findAll({
-            order: [['genre_name','ASC']]
+            order: [['genre_name', 'ASC']]
         });
         let listaArtistas = await Artist.findAll({
-            order: [['name','ASC']]
+            order: [['name', 'ASC']]
         });
         let listaDiscografica = await Label.findAll();
 
@@ -57,11 +57,11 @@ const controller = {
         let listaGenero = await Genre.findAll();
         let listaArtistas = await Artist.findAll();
         let listaDiscografica = await Label.findAll();
-        
+
         const error = validationResult(req)
 
         if (!error.isEmpty()) {
-            return res.render("productCreate", { errors: error.mapped(), style: "productCreate",  generos: listaGenero, artistas: listaArtistas, listaDiscografica })
+            return res.render("productCreate", { errors: error.mapped(), style: "productCreate", generos: listaGenero, artistas: listaArtistas, listaDiscografica })
         }
 
         Album
@@ -74,7 +74,8 @@ const controller = {
                     image: req.file.filename,
                     description: req.body.descripcion,
                     price: req.body.precio,
-                    format: req.body.format
+                    format: req.body.format,
+                    player: req.body.player
                 }
             )
 
@@ -88,13 +89,13 @@ const controller = {
     edit: function (req, res) {
         let discoId = req.params.id;
         let discoEncontrado = Album.findByPk(discoId)
-        let listaGenero =  Genre.findAll({
-            order: [['genre_name','ASC']]
+        let listaGenero = Genre.findAll({
+            order: [['genre_name', 'ASC']]
         });
-        let listaArtistas =  Artist.findAll({
-            order: [['name','ASC']]
+        let listaArtistas = Artist.findAll({
+            order: [['name', 'ASC']]
         });
-        let listaDiscografica =  Label.findAll();
+        let listaDiscografica = Label.findAll();
         Promise
             .all([discoEncontrado, listaGenero, listaDiscografica, listaArtistas])
             .then(([disco, generos, label, artistas]) => {
@@ -116,7 +117,7 @@ const controller = {
             const error = validationResult(req)
 
             if (!error.isEmpty()) {
-                 res.render(path.resolve(__dirname, '..', "views", 'products', "productEdit"), { errors: error.mapped(), style: "productEdit", disco, generos, label, artistas })
+                res.render(path.resolve(__dirname, '..', "views", 'products', "productEdit"), { errors: error.mapped(), style: "productEdit", disco, generos, label, artistas })
             }
 
             await Album
@@ -125,9 +126,10 @@ const controller = {
                     artist_id: req.body.artista,
                     genre_id: req.body.genero,
                     label_id: req.body.discografica,
-                    image: req.file.filename,
+                    image: req.file ? req.file.filename: disco.cover ,
                     description: req.body.descripcion,
                     price: req.body.precio,
+                    player: req.body.player
                 },
                     {
                         where: { id: discoId }
@@ -184,26 +186,27 @@ const controller = {
     search: async (req, res) => {
         let busquedaAlbum = req.body.search;
 
-       let search = await Album.findAll({
+
+        let search = await Album.findAll({
+            include: ["artists"],
             where: {
 
-                    name: {
-                            [Op.like]: '%' + busquedaAlbum + '%'
-                           }                   
-                    
-                    }
+                name: {
+                    [Op.like]: '%' + busquedaAlbum + '%'
+                }
+            }
         })
         let searchArtista = await Artist.findAll({
             where: {
 
-                    name: {
-                            [Op.like]: '%' + busquedaAlbum + '%'
-                           }                   
-                    
-                    }
-        })
-            
-        res.render('products/search', {style: "search", search, searchArtista })
+                name: {
+                    [Op.like]: '%' + busquedaAlbum + '%'
+                }
+
+            }
+        })        
+
+        res.render('products/search', { style: "search", search, searchArtista })
     }
 
 }

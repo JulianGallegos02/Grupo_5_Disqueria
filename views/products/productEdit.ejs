@@ -82,6 +82,15 @@
 
                         </div>
                         <div>
+                            <label for="player">Spotify Player:</label>
+                            <textarea name="player" id="player" class="campo-player"><%= disco.player %></textarea>
+                            <% if(locals.errors && locals.errors.player){ %>
+                                <p class="msg-error">
+                                    <%= errors.player.msg %>
+                                </p>
+                                <% } %>
+                        </div>
+                        <div>
                             <label for="cover">Imagen:</label>
                             <input type="file" value="<%= disco.image %>" name="cover" class="buscar-Imagen" id="cover">
                             <% if(locals.errors && locals.errors.cover){ %>

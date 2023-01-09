@@ -29,6 +29,9 @@ module.exports = (sequelize, dataTypes) => {
         price: {
             type: dataTypes.INTEGER
         },
+        player: {
+            type: dataTypes.TEXT
+        },
     };
     let config = {
         tableName: "album",

@@ -314,6 +314,12 @@ main {
     cursor: pointer;
 }
 
+.campo-player {
+    width: 95%;
+    margin: 8px;
+}
+
+
 
 /*Fin ProductEdit*/
 
