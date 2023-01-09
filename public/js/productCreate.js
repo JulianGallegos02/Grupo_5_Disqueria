@@ -4,7 +4,7 @@ window.onload = function () {
     let form = document.querySelector(".productCreate-form");
     form.album.focus();
 
-    
+
     form.addEventListener("submit", (event) => {
         let errores = [];
 
@@ -15,6 +15,7 @@ window.onload = function () {
         let genero = document.getElementById("genero");
         let discografica = document.getElementById("discografica");
         let cover = document.getElementById("cover");
+        let player = document.getElementById("player");
         let errorBox = document.querySelector(".error-box");
         let okButton = document.querySelector(".ok-button");
 
@@ -77,6 +78,19 @@ window.onload = function () {
             discografica.classList.remove('is-invalid')
         }
 
+        //-----VALIDACION player -------
+        if (player.value == "") {
+            errores.push("El reproductor no puede quedar vacio")
+            player.classList.add('is-invalid')
+        }
+        else if (player.value.length < 20) {
+            errores.push("El reproductor tiene que tener al menos 20 caracteres!")
+            player.classList.add('is-invalid')
+        } else {
+            player.classList.add('is-valid')
+            player.classList.remove('is-invalid')
+        }
+
 
         //----VALIDACION COVER -------
         let allowedExtensions = /(.jpg|.png|.jfif|.gif|.webp|.svg)$/i;
@@ -103,12 +117,12 @@ window.onload = function () {
             }
             errorBox.style.display = "inline-block"
 
-            okButton.addEventListener("click", function(){
-             errorBox.style.display = "none"
- 
+            okButton.addEventListener("click", function () {
+                errorBox.style.display = "none"
+
             })
         }
-        
+
 
 
     })

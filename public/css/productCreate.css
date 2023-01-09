@@ -191,6 +191,11 @@ main {
     margin: 8px;
 }
 
+.campo-player {
+    width: 95%;
+    margin: 8px;
+}
+
 .buscar-Imagen {
     width: 250px;
     padding: 8px 0px;
@@ -259,6 +264,7 @@ main {
 .msg-error{
     color: #fb8501;
     margin: 10px;
+    
 }
 
 /*Fin ProductCreate*/
@@ -310,6 +316,7 @@ footer {
     text-align: inherit;
     width: 350px;
     display: none;
+    animation: errorExit 1s ease-out 0s 1 normal forwards;
 }
 
 .ok-button{
@@ -322,6 +329,19 @@ footer {
     display: flex;
     margin-left: 35%;
     cursor: pointer;
+}
+
+@keyframes errorExit {
+	0% {
+		opacity: 0;
+		transform: rotate(-540deg) scale(0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotate(0) scale(1);
+	}
+
 }
 
 @media (min-width: 361px) {}

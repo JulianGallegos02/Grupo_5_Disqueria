@@ -9,7 +9,7 @@ module.exports = {
         body("album")
             .notEmpty()
             .withMessage("Nombre incompleto")
-            .isLength({ min: 5 })
+            .isLength({ min: 1 })
             .withMessage('Debe tener al menos 5 caracteres'),
         body("descripcion")
             .notEmpty()
@@ -48,7 +48,7 @@ module.exports = {
         body("album")
             .notEmpty()
             .withMessage("Nombre incompleto")
-            .isLength({ min: 5 })
+            .isLength({ min: 1 })
             .withMessage('Debe tener al menos 5 caracteres'),
         body("descripcion")
             .notEmpty()
@@ -66,20 +66,7 @@ module.exports = {
         body("discografica")
             .notEmpty()
             .withMessage("Debes elegir una discográfica"),
-        body('cover').custom((value, { req }) => {
-            let file = req.file;
-            let acceptedExtensions = ['.jpg', '.png', '.gif', '.jfif', '.webp', '.svg'];
 
-            if (!file) {
-                throw new Error('Tienes que subir una imagen');
-            } else {
-                let fileExtension = path.extname(file.originalname);
-                if (!acceptedExtensions.includes(fileExtension)) {
-                    throw new Error('Las extensiones de archivo permitidas son: .jpg, .png, .gif, .jfif, .webp y .svg');
-                }
-            }
-            return true;
-        })
 
     ]
 }
