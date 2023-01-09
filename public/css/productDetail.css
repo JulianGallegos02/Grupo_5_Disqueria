@@ -215,6 +215,106 @@ header{
     display: none;
 }
 
+.detalle-compra{
+    display: flex;
+    flex-direction: column;
+}
+
+.elegir-formato{
+    background-color: black;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 1px white;
+    position: relative;
+    z-index: 1;
+}
+
+.opciones-formato{
+    background-color: white;
+    color: black;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px black;
+    display: none;
+    position: relative;
+    top: -76px;
+    z-index: 0;
+}
+
+.opcion-formato{
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px white;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+}
+
+.formato-icono{
+    margin: 10px;
+    font-size: 50px;
+}
+
+.formato-texto{
+    margin: 10px;
+    font-size: 20px;
+}
+
+.formato-precio{
+    margin: 10px;
+    font-weight: bold;
+    color: forestgreen;
+    font-size: 22px;
+}
+
+.opcion-formato:hover{
+    border: solid 1px black;
+}
+
+.agregar-carrito{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.seleccionado{
+    background-color: black;
+    color: white;
+}
+
+.elegir-placeholder{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.mostrar-opciones{
+    display: flex;
+}
+
+.agregar-carrito:hover{
+    background-color:#fb8501;
+    color: black;
+    transition: 0.3s;
+}
+
 .titulo-banda{
     width: 90%;
     margin-left: 32px;
@@ -298,94 +398,6 @@ header{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-}
-
-.opcion-agregar-carrito{
-    flex-direction: column;
-    display: flex;
-    width: 100%;
-    margin: 10px;
-    padding: 15px;
-    font-size: x-large;
-    
-}
-
-.agregar-carrito{
-    display: flex;
-    justify-content: space-between;
-    margin: 5px;
-    margin-bottom: auto;
-    align-items: baseline;
-    width: 90%;
-    border: solid 3px black;
-    padding: 20px;
-    background-color: #ffffffc2;
-}
-
-.boton-carrito{
-    background-color: black;
-    padding: 10px;
-    border: none;
-    width: 90%;
-    margin-left: 5px;
-    text-align: center;
-    transition: 500ms;
-}
-
-.boton-carrito:hover {
-    background-color: #fb8501;
-}
-
-.boton-carrito a{
-    text-decoration: none;
-}
-
-.botonCarrito{
-    color: white;
-    background: none;
-    border: none;
-    padding: 16px;
-    font-size: inherit;
-    transition: 500ms;
-}
-
-.boton-carrito:hover .botonCarrito{
-    color: black;
-}
-
-.detalle-compra{
-    display: flex;
-    flex-direction: column;
-}
-
-.opciones{
-    flex-direction: column;
-    display: flex;
-    width: 100%;
-    margin: 10px;
-    padding: 15px;
-    font-size: x-large;
-}
-
-.opciones i{
-    font-size: 30px;
-}
-
-.icono-cassette{
-    width: 30px;
-    position: relative;
-    top: 5px;
-}
-
-.formato-precio{        
-    display: flex;
-    justify-content: space-between;
-    margin: 5px;
-    align-items: baseline;
-    width: 90%;
-    border: solid 3px black;
-    padding: 20px;
-    background-color: #ffffffc2;
 }
 
 .descripcion{
@@ -556,18 +568,6 @@ footer{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;  
-    }
-
-    .agregar-carrito {
-        display: flex;
-        justify-content: space-between;
-        margin: 5px;
-        margin-bottom: 0px;
-        align-items: baseline;
-        width: 90%;
-        border: solid 3px black;
-        padding: 20px;
-    
     }
 
     .boton-opciones{

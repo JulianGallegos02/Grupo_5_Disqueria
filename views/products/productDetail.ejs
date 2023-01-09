@@ -24,14 +24,42 @@
                     </article>
 
                     <article class="boton-opciones">
-                        <article class="opcion-agregar-carrito">
-
-
-
+                        <article class="elegir-formato">
+                            <p>Elegi un formato</p>
+                        </article>
+                        <article class="opciones-formato">
+                            <article class="elegir-placeholder">
+                                <p>Elegi un formato</p>
+                            </article>
+                            <div class="opcion-formato" id="op1">
+                                <i class="fas fa-record-vinyl formato-icono"></i>
+                                <p class="formato-texto">Vinilo</p>
+                                <p class="formato-precio">$<%= discoEncontrado.price + 1000%></p>
+                            </div>
+                            <div class="opcion-formato" id="op2">
+                                <i class="fas fa-tape formato-icono"></i>
+                                <p class="formato-texto">Cassette</p>
+                                <p class="formato-precio">$<%= discoEncontrado.price + 500%></p>
+                            </div>
+                            <div class="opcion-formato" id="op3">
+                                <i class="fas fa-compact-disc formato-icono"></i>
+                                <p class="formato-texto">CD's</p>
+                                <p class="formato-precio">$<%= discoEncontrado.price + 100%></p>
+                            </div>
+                            <div class="opcion-formato" id="op4">
+                                <i class="far fa-play-circle formato-icono"></i>
+                                <p class="formato-texto">Digital</p>
+                                <p class="formato-precio">$<%= discoEncontrado.price%></p>
+                            </div>
+                            <a class="agregar-carrito" href="/products/cart">Agregar al carrito</a>
                         </article>
 
                         <article class="spotify-player">
-                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4NNq2vwTapv4fSJcrZbPH7?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <iframe style="border-radius:12px"
+                                src="https://open.spotify.com/embed/album/4NNq2vwTapv4fSJcrZbPH7?utm_source=generator"
+                                width="100%" height="380" frameBorder="0" allowfullscreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
 
                         </article>
                     </article>
@@ -86,5 +114,5 @@
 
             <%- include("./partials/footer") %>
     </body>
-
+    <script src="/js/productDetail.js"></script>
 </html>
