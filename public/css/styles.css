@@ -186,7 +186,7 @@ header{
 
 .titular {
     font-family: 'Rubik Mono One', sans-serif;
-    margin: 50px;
+    margin: 20px;
     text-align: center;
     color: #ffb703;
     font-size: xx-large;
@@ -236,8 +236,12 @@ header{
     padding: 12px;
 }
 
-.album:hover .titulo-album, .album:hover .banda-album {
+ .album:hover .banda-album {
     color: white;
+}
+
+.album:hover .titulo-album {
+    color: #fb8501;
 }
 
 footer{

@@ -175,17 +175,17 @@ header{
 }
 
 .albumesArtista{
-    width: 80%;
+    width: 95%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .album{
-    width: 30%;
+    width: 43%;
     margin: 10px;
     padding: 15px;
     background-color: white;
     transition: 500ms;
-    
 }
 .albumBoton{
     text-decoration: none;
@@ -294,21 +294,19 @@ footer{
     padding: 20px;
     border-radius: 10px;
     border: none;
-    width: 30%;
+    /* width: 46%; */
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     font-size: large;
-    
-    
 }
 
 .volver-a-inicio-div{
     margin-top: 8px;
-    background-color: black;
+    /* background-color: white; */
     color: white;
     padding: 20px;
     border-radius: 10px;
-    width: 30%;
+    /* width: 59%; */
     display: inline-block;
 }
 
@@ -385,6 +383,12 @@ footer{
         margin-top: 20px;
     }
 
+    .albumesArtista{
+        width: 95%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
 }
 
 
@@ -398,6 +402,12 @@ footer{
 
     .nombre-usuario{
         display: block;
+    }
+
+    .albumesArtista{
+        width: 95%;
+        display: flex;
+        flex-wrap: nowrap;
     }
 
 
