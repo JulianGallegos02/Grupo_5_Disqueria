@@ -26,51 +26,12 @@
                     <article class="boton-opciones">
                         <article class="opcion-agregar-carrito">
 
-                            <div class="agregar-carrito">
 
-                                <div class="opciones-contenedor"><i class="fas fa-record-vinyl"></i> LP </div>
-                                <div class="precio"> $<%=discoEncontrado.price %>
-                                </div>
-                            </div>
-
-                            <div class="boton-carrito">
-                                <a href="/products/Cart">
-                                    <p class="botonCarrito"> Agregar al carrito</P>
-                                </a>
-                            </div>
 
                         </article>
 
-                        <article class="descripcion-producto">
-
-                            <div class="opciones">
-
-                                <div class="formato-precio">
-                                    <div class="opciones-contenedor"><i class="fas fa-record-vinyl"></i> LP </div>
-                                    <div class="precio"> $<%=discoEncontrado.price + 200 %>
-                                    </div>
-                                </div>
-
-                                <div class="formato-precio">
-                                    <div class="opciones-contenedor"><i class="fas fa-compact-disc"></i> CD</div>
-                                    <div class="precio"> $<%=discoEncontrado.price + 400 %>
-                                    </div>
-                                </div>
-
-                                <div class="formato-precio">
-                                    <div class="opciones-contenedor"><img src="/images\iconos-logos\cassete.svg"
-                                            class="icono-cassette"> Cassette</div>
-                                    <div class="precio"> $<%=discoEncontrado.price + 600 %>
-                                    </div>
-                                </div>
-
-                                <div class="formato-precio">
-                                    <div class="opciones-contenedor"><i class="fas fa-play"></i> Digital</div>
-                                    <div class="precio"> $<%=discoEncontrado.price + 800 %>
-                                    </div>
-                                </div>
-
-                            </div>
+                        <article class="spotify-player">
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4NNq2vwTapv4fSJcrZbPH7?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
                         </article>
                     </article>
@@ -103,7 +64,7 @@
                         <% for(let i=0; i < discosSimilares.length; i++) { %>
 
                             <article class="album">
-                                <a href="/products/detail/<%= discosSimilares[i].id%>">
+                                <a class="boton-disco" href="/products/detail/<%= discosSimilares[i].id%>">
                                     <img class="cover-art" src="/images/cover/<%=discosSimilares[i].image%>"
                                         alt="cover">
                                     <div class="info-album">

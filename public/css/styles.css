@@ -295,8 +295,12 @@ header{
     padding: 12px;
 }
 
-.album:hover .titulo-album, .album:hover .banda-album {
+ .album:hover .banda-album {
     color: white;
+}
+
+.album:hover .titulo-album {
+    color: #fb8501;
 }
 
 footer{

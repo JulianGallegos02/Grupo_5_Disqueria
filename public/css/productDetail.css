@@ -235,10 +235,8 @@ header{
 .artistBox {
     background-color: #0000002b;
     border-radius: 10px;
-    text-align: center;
     width: 95%;
     margin: auto;
-    margin-top: 40px;
     margin-bottom: 40px;
     padding: 20px;
     position: relative;
@@ -246,7 +244,7 @@ header{
 }
 
 .album{
-    width: 30%;
+    width: 43%;
     margin: 10px;
     padding: 15px;
     background-color: white;
@@ -259,9 +257,16 @@ header{
 }
 .album:hover{
     background-color: black;
-    color: white;
     box-shadow: 2px 6px 21px 7px rgba(0,0,0,0.56);
     padding: 12px;
+}
+
+.album:hover .titulo-album {
+    color: #fb8501;
+}
+
+.album:hover .banda-album {
+    color: white;
 }
 
 .tituloOtrosDiscos{
@@ -276,6 +281,7 @@ header{
     width: 90%;
     margin-left: 22px;
     margin-top: 20px;
+    box-shadow: 7px 5px 10px 0px rgba(0,0,0,0.75);
 }
 
 .albumBoton{
@@ -289,7 +295,7 @@ header{
 }
 
 .albumesArtista{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -487,6 +493,27 @@ footer{
     align-items: center;
 }
 
+.titulo-album{
+    color: #fb8501;
+}
+
+.banda-album{
+    color: #023047;
+}
+
+.boton-disco{
+    text-decoration: none;
+}
+
+.spotify-player {
+    width: 90%;
+    border-radius: 12px;
+    box-shadow: 2px 6px 21px 7px rgb(0 0 0 / 56%);
+    margin-left: 18px;
+    margin-bottom: 45px;
+}
+
+
 @media (min-width: 361px){
 
 }
@@ -558,6 +585,20 @@ footer{
         margin-top: 20px;
     }
 
+    .album {
+        width: 17%;
+        margin: 10px;
+        padding: 15px;
+        background-color: white;
+        transition: 500ms;
+
+    }
+
+    .spotify-player{
+        width: 90%;
+        border-radius: 12px;
+        box-shadow: 2px 6px 21px 7px rgb(0 0 0 / 56%);
+    }
 }
 
 
@@ -571,6 +612,12 @@ footer{
     
     .nombre-usuario{
         display: block;
+    }
+
+    .spotify-player{
+        width: 90%;
+        border-radius: 12px;
+        box-shadow: 2px 6px 21px 7px rgb(0 0 0 / 56%);
     }
 
 

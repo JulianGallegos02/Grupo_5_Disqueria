@@ -42,8 +42,12 @@ const controller = {
     },
 
     create: async function (req, res) {
-        let listaGenero = await Genre.findAll();
-        let listaArtistas = await Artist.findAll();
+        let listaGenero = await Genre.findAll({
+            order: [['genre_name','ASC']]
+        });
+        let listaArtistas = await Artist.findAll({
+            order: [['name','ASC']]
+        });
         let listaDiscografica = await Label.findAll();
 
         res.render("productCreate", { style: "productCreate", generos: listaGenero, artistas: listaArtistas, listaDiscografica });
@@ -84,9 +88,13 @@ const controller = {
     edit: function (req, res) {
         let discoId = req.params.id;
         let discoEncontrado = Album.findByPk(discoId)
-        let listaGenero = Genre.findAll();
-        let listaDiscografica = Label.findAll();
-        let listaArtistas = Artist.findAll();
+        let listaGenero =  Genre.findAll({
+            order: [['genre_name','ASC']]
+        });
+        let listaArtistas =  Artist.findAll({
+            order: [['name','ASC']]
+        });
+        let listaDiscografica =  Label.findAll();
         Promise
             .all([discoEncontrado, listaGenero, listaDiscografica, listaArtistas])
             .then(([disco, generos, label, artistas]) => {
