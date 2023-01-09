@@ -4,21 +4,6 @@
     box-sizing: border-box;
 }
 
-.menuPerfil{
-    background-color: #fb8501;
-    border: solid 1px white;
-    width: fit-content;
-    position: absolute;
-    top: 62px;
-    right: 12px;
-    padding: 10px;
-    display: none
-}
-
-.showMenu{
-    display: inline-block
-}
-
 body {
     font-family: 'Josefin Sans', sans-serif;
     height: 100vh;
